@@ -1,0 +1,2395 @@
+{
+  "source_zip_sha256": "0d66b5882dedc79143eea778a300ecac9e1c36545879ca2b41879ef167049a15",
+  "source_url": "https://adventureforge.itch.io/adventureforge-scifi-spaceship-pack",
+  "archive_padding_ignored": 14529724,
+  "assets": [
+    {
+      "archive_path": "Adventure Assets/Backgrounds/background_space_02.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/background_space_02.png",
+      "sha256": "42d5449a468ae8beeed3e992324be7f550c6880d7b3efdcd3dcb52592957d9d8",
+      "bytes": 5030611
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/background_space_03.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/background_space_03.png",
+      "sha256": "11a52b1fd143702251007f2841db8ffb5dc93ca5a262ae598d4e1f3ca004c2a1",
+      "bytes": 2045532
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/ControlRoom.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/ControlRoom.png",
+      "sha256": "7eafdecd94ba0effb24772ab20a8eb52bf8f07428389115ae3c6e0171aa97c08",
+      "bytes": 9459354
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/CrewQuarters.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/CrewQuarters.png",
+      "sha256": "93cd6d2d22cb63281358dd81c4d17db94279e690c99abd4e125191d6d384a606",
+      "bytes": 7752282
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/EngineCore.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/EngineCore.png",
+      "sha256": "214244b8b6476d70e04c605588c4dbe154563173b8f4b771b7e8cb85dfeebbb3",
+      "bytes": 13368486
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/HypersleepChamber.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/HypersleepChamber.png",
+      "sha256": "aeece1f87b8e9e4029725ef1b5823f58d0705a3b279b127077fd36458103bccf",
+      "bytes": 8450531
+    },
+    {
+      "archive_path": "Adventure Assets/Backgrounds/space_bg_01.png",
+      "local": "Assets/Art/AdventureForge/Backgrounds/space_bg_01.png",
+      "sha256": "3e4a98774b38a3ec6d4dcaa8dacc0241b994ebbb7b525250b1766bf2b5e67faa",
+      "bytes": 702646
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_blue_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_blue_masculine_fullBody_angry.png",
+      "sha256": "00b380551007953fbea7aba9ac39d7e37312e4b8643db64752bb78d6fa7b394a",
+      "bytes": 676847
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_blue_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_blue_masculine_fullBody_default.png",
+      "sha256": "5297f9691eb5065a0c3fbfb2075b7bfedea43f14209335ea5707a908b63850d1",
+      "bytes": 630442
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_blue_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_blue_masculine_fullBody_surprised.png",
+      "sha256": "c8f4af4e8ba60531bf068f61f869919cdab0d21bfceb4fc1690d0118c343811e",
+      "bytes": 582589
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_blue_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_blue_masculine_fullBody_talking.png",
+      "sha256": "386bbcea1b4a6e1758342bd38403b63496236e8a45a8475198bd33a0a1188d9c",
+      "bytes": 577535
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_blue_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_blue_masculine_portrait_default.png",
+      "sha256": "dcadca3ca8b78e8575e327b918f7824c38b6524805d659c1e4c1bfa45e53a5bc",
+      "bytes": 374534
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_skinnyLizard_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_skinnyLizard_masculine_fullBody_angry.png",
+      "sha256": "9916a9d5f0040f6e223e83841fc65178e824dcf93217b4bd11c0c55fea12c163",
+      "bytes": 673318
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_skinnyLizard_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_skinnyLizard_masculine_fullBody_default.png",
+      "sha256": "b81697944424538ea8cada567e8f2ea3968659c305b692cbfd28139a6ed0228c",
+      "bytes": 655053
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_skinnyLizard_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_skinnyLizard_masculine_fullBody_surprised.png",
+      "sha256": "9870ba83cbeae9cd5dd2d5ee5fbeee9b5532bbf730d51b6426a1ac7eb3b33717",
+      "bytes": 811616
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_skinnyLizard_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_skinnyLizard_masculine_fullBody_talking.png",
+      "sha256": "2ba5f8300ee09f6f6b4840c2e648265758ba14702b8559677cfddcb3176c9a92",
+      "bytes": 634714
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/alien_skinnyLizard_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/alien_skinnyLizard_masculine_portrait_default.png",
+      "sha256": "e90fb63744732b511907c61d1fce71c182930587c566aee5b80ed2140e049557",
+      "bytes": 332663
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_feminine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_feminine_fullBody_angry.png",
+      "sha256": "5c381fdb90d2a345fad20c56e0c9d35e5ce2e677cdb727e0a3c5d1bec5ba28c5",
+      "bytes": 575306
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_feminine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_feminine_fullBody_default.png",
+      "sha256": "148d4c78d79959694de96430f3043beab45892829f80cdfaf54770901414bb02",
+      "bytes": 613188
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_feminine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_feminine_fullBody_surprised.png",
+      "sha256": "c2280a14b012878345cd2fa1bb21b577c71c075b89b9e9cf783480ca8611b889",
+      "bytes": 567201
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_feminine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_feminine_fullBody_talking.png",
+      "sha256": "14c005ae8779a2564ee3293083734427839855408135d411ebffecbf83d1fccf",
+      "bytes": 644582
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_feminine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_feminine_portrait_default.png",
+      "sha256": "27fc52f3756ce88fe819a0457cb5deca6129f12d7986648ed7c695596bd0b79c",
+      "bytes": 397322
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_masculine_fullBody_angry.png",
+      "sha256": "c071a29f838ff6714f47fe8a17301695b14fa54b6c3eedead0c21f361028bdc7",
+      "bytes": 612319
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_masculine_fullBody_default.png",
+      "sha256": "ce0bb863df52293b350b7031f994cf8b7acf8a792f896097435018e0204564f6",
+      "bytes": 619284
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_masculine_fullBody_surprised.png",
+      "sha256": "329d97332e1d69b0493f89b7648a9878b985d1950158107a5c1fc9b371b3f759",
+      "bytes": 692726
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_masculine_fullBody_talking.png",
+      "sha256": "56ab6946748abd8d52f8583cde99898f90e22185a0e577a2cf01b977e7614b99",
+      "bytes": 574883
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_captain_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_captain_masculine_portrait_default.png",
+      "sha256": "8c3e7d5e07cf0b990e33cab4bf3389b69c6437901cbd6cf94f320eb79c74c2b9",
+      "bytes": 338694
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine.fbx",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine.fbx",
+      "sha256": "7a85a1697f41bfe83eacc07da54dc4d2b8e401ae158fd0fb48293a6f9dffd053",
+      "bytes": 1612796
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine_fullBody_angry.png",
+      "sha256": "a861cfae7248ead6d333a22e4ebe2ae7f9da6ee2cc650f0c139d7c547574f9d2",
+      "bytes": 601208
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine_fullBody_default.png",
+      "sha256": "c0c65935c5daf50c3cdfaaa645c4654a91eb017d491a9c22135c9de270d941bd",
+      "bytes": 706043
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine_fullBody_surprised.png",
+      "sha256": "6c89ba42d1f5133de24de2a7c2a783540501212ee7118de59b0cefe29bc9ca78",
+      "bytes": 577063
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine_fullBody_talking.png",
+      "sha256": "adf75fc2f7d53aecb8215d3392b90ceede8da6971386077b8a6ed6b3acae895d",
+      "bytes": 516461
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_feminine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_feminine_portrait_default.png",
+      "sha256": "d9b37d3248ee0fd627eaf1dce5aeea56df81fa0c2f8d652a5038c332bc869d05",
+      "bytes": 347971
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine.fbx",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine.fbx",
+      "sha256": "bc84c101be9891b7a68618b98ae846ecc1f1773a7e104d72004d2b22e95b77b1",
+      "bytes": 1619676
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine_fullBody_angry.png",
+      "sha256": "8c8ca522b9122113bea4ac0326360b240711de6b55c8cc6b7a722e78c85edcf1",
+      "bytes": 521055
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine_fullBody_default.png",
+      "sha256": "7c4d64b021ae462d4aaf4417e384ff7cf59ce48eccadf7bd4d9753795b9958ae",
+      "bytes": 656252
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine_fullBody_surprised.png",
+      "sha256": "6b5290d746dc261e2e3c9078a6ebfa069db062330c1362b752d42cfa615d2fff",
+      "bytes": 600021
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine_fullBody_talking.png",
+      "sha256": "0199a133381b6a5a188a2b988aa15dd366c89806c3a0d3a2db9746af1e0e5593",
+      "bytes": 487619
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_crew_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_crew_masculine_portrait_default.png",
+      "sha256": "a1d627ed03942f4080e48a1ea115885be327ff278625adbf94d68d975d1c2890",
+      "bytes": 361010
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_junker_feminine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_junker_feminine_fullBody_angry.png",
+      "sha256": "a2398603c7f54692d0b5c52d7388f42adb1edc2e5f9ece4467bc152da002c995",
+      "bytes": 651354
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_junker_feminine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_junker_feminine_fullBody_default.png",
+      "sha256": "6e1666b9f545fcbd7de781af7cf4d5f0fb78cabf96190633b0296d1cc2eb7df5",
+      "bytes": 566436
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_junker_feminine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_junker_feminine_fullBody_surprised.png",
+      "sha256": "a2f4f2411b43157c7e8a23bbeadaf270db677cb22992717e2d6771cf5a949f79",
+      "bytes": 578812
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_junker_feminine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_junker_feminine_fullBody_talking.png",
+      "sha256": "0f75af1913e353a0d2fe50957f9a444a0052f5cd95ea85672317367ce0d2b955",
+      "bytes": 580830
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_junker_feminine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_junker_feminine_portrait_default.png",
+      "sha256": "9c57d190e06517fdd7af20f4e75b1e351ab718dab5946f409e1fe6fdab0792c4",
+      "bytes": 386080
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_mechanic_feminine.fbx",
+      "local": "Assets/Art/AdventureForge/Characters/human_mechanic_feminine.fbx",
+      "sha256": "f7ee0969354409b6ca4052d1796765ee5620951c78a3cb0d6cfe715816669583",
+      "bytes": 1091116
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_medic_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_medic_masculine_fullBody_angry.png",
+      "sha256": "8246d4c2cce7f2c3d3048835627ba71d584016e064e92f1a09a2ba2f6d28baf9",
+      "bytes": 633026
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_medic_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_medic_masculine_fullBody_default.png",
+      "sha256": "128e2841a71389ed631f5ec5684cbb9871eecc1f416dc9603646907788b29c29",
+      "bytes": 634844
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_medic_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_medic_masculine_fullBody_surprised.png",
+      "sha256": "3355fcbb10b8755e9de9c17761954af704acfa59f7d20b0a796c059060610a3e",
+      "bytes": 742104
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_medic_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_medic_masculine_fullBody_talking.png",
+      "sha256": "ec0ec9bda9813d05e31c332c40bcd9628f5844155fb0eb515846b698517fb655",
+      "bytes": 662090
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/human_medic_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/human_medic_masculine_portrait_default.png",
+      "sha256": "5f28fe97fec1faac756abd2821da139642c27e516a4fe29b5da2713d3a3dbe5f",
+      "bytes": 341946
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_default_masculine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_default_masculine_fullBody_angry.png",
+      "sha256": "8ce80abe5975e98179686d9e9b64a9ebe1c163011d4c642b840bbb59894bd8a5",
+      "bytes": 680989
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_default_masculine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_default_masculine_fullBody_default.png",
+      "sha256": "5d6f0512e73727763b328167bd7d809c86476ac1908155f01a8a6c5fd8bfd841",
+      "bytes": 687830
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_default_masculine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_default_masculine_fullBody_surprised.png",
+      "sha256": "823475988f01b346cea1293b24450aa5243f6c115bcfb9b2c3195eca47900eb3",
+      "bytes": 731244
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_default_masculine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_default_masculine_fullBody_talking.png",
+      "sha256": "eabf16fb7e89d23ea9ea739f47b037ed61684b2232bf4dd9433e370ff667896d",
+      "bytes": 627628
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_default_masculine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_default_masculine_portrait_default.png",
+      "sha256": "924a7b84c09298f6c556ef11bb3cdd495dfb9c49d1b859c32cd488fde427902e",
+      "bytes": 264461
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_lens_feminine_fullBody_angry.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_lens_feminine_fullBody_angry.png",
+      "sha256": "95c7757ebb75531954d875ab9e7c265decf3c7f062a2d3a51d009e1a66861c0e",
+      "bytes": 681640
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_lens_feminine_fullBody_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_lens_feminine_fullBody_default.png",
+      "sha256": "5ed5478622eab3d61d95410b1dc9dfa863315721606ce2598e59b72731f9d91a",
+      "bytes": 752508
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_lens_feminine_fullBody_surprised.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_lens_feminine_fullBody_surprised.png",
+      "sha256": "98e399a23d453b3b5f40b434095976d6c1026ee0e702153e8c0210eba14de868",
+      "bytes": 721758
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_lens_feminine_fullBody_talking.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_lens_feminine_fullBody_talking.png",
+      "sha256": "64a98059c6d69ca57b111d4815338a8cd5cddf9da6b560d9b7e2f27c6cf9a66a",
+      "bytes": 647028
+    },
+    {
+      "archive_path": "Adventure Assets/Characters/robot_lens_feminine_portrait_default.png",
+      "local": "Assets/Art/AdventureForge/Characters/robot_lens_feminine_portrait_default.png",
+      "sha256": "9854c7b888ec24a18443bde2cc99b4f42a051fb5f5ae4d90148497231f2a190f",
+      "bytes": 346270
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_down_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_down_click.png",
+      "sha256": "a96e387835c3c47da98d6a45afbff4d3ae20d40faa44b50547cb06430a4c6599",
+      "bytes": 12541
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_down_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_down_default.png",
+      "sha256": "5c39a727a061748d81402111b136336a218d6d43b49e9d39eedcc5168f5b5931",
+      "bytes": 5466
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_down_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_down_hover.png",
+      "sha256": "f0b4110551e5d062b3803085603f86478ea7aeea9cce44eef663fe27a28894e0",
+      "bytes": 19252
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_up_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_up_click.png",
+      "sha256": "e05cbd50163caeff782bdf181c5b1569a0d026925fc86bf24cf460fca08d8fdf",
+      "bytes": 12845
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_up_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_up_default.png",
+      "sha256": "cf72015e744708f1e854e302bf8dfa288dd36830c8b53692fa8d8f4544e46aec",
+      "bytes": 5432
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_arrow_up_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_arrow_up_hover.png",
+      "sha256": "000a676bf65c8e003c5b7046924f0b9f2e130df7620492df8de7f549dbf7b36c",
+      "bytes": 18686
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exitGame_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exitGame_click.png",
+      "sha256": "182347bd693be7c100b90565d9cb6e6bb7d88c8804b6dfecf846b5541a71a264",
+      "bytes": 25421
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exitGame_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exitGame_default.png",
+      "sha256": "47d6834ba00cc8d9cfcc5c6f260365f124304e7475ddec07e546658bdacf1f15",
+      "bytes": 12175
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exitGame_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exitGame_hover.png",
+      "sha256": "d5de086222bd54f11b49d30b6e853457420889a2cd8033f764e2019d22aa1fea",
+      "bytes": 15073
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exit_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exit_click.png",
+      "sha256": "4de571ba185749b448cd9c8b237eed9b801425b7f84067af3cf9c5cb4c627320",
+      "bytes": 24433
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exit_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exit_default.png",
+      "sha256": "4e1bc54e38c26b3b7a11509daaa4947f70807cd05c668899a95d6615b44d7f53",
+      "bytes": 10853
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_exit_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_exit_hover.png",
+      "sha256": "f3c0622fcd842af0a4069f59c9fa9d2960927c2f4042c7800f76b7ec50cda6a0",
+      "bytes": 14079
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_fastforward_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_fastforward_click.png",
+      "sha256": "096264028b3962eedf9e32dab19bd78d49be516716b44f447454d124495d1ded",
+      "bytes": 11154
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_fastforward_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_fastforward_default.png",
+      "sha256": "b975eb7ae4985b4e7b06d894c973bc91d477db23ba598652f33e2ec3301c7b8f",
+      "bytes": 9886
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_fastforward_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_fastforward_hover.png",
+      "sha256": "3a27e150332a78ac9ff8f9d4d9ee3f68f9df9ad75f2bbb8b8bcb896d297cd3b5",
+      "bytes": 12906
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_load_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_load_click.png",
+      "sha256": "ff6c418b74703cda5ccbd19cf8f756a5089e77cfae3f68c485b2c06766340502",
+      "bytes": 24875
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_load_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_load_default.png",
+      "sha256": "7d553e1dc0eb6a9870fb000ce51fc6fe3984da6c6645cbbbaa47cb2c18c119c3",
+      "bytes": 11348
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_load_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_load_hover.png",
+      "sha256": "1b3e8ea5d479fe09ad5b45f8e4984ecdcbad577c7daf05d543a7f1c5b7285c9e",
+      "bytes": 14517
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_main-menu_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_main-menu_click.png",
+      "sha256": "d2475cd4b82cad5ebe480843aaab86973d7e60f78ed09b8de66865f03f9a70c0",
+      "bytes": 25340
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_main-menu_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_main-menu_default.png",
+      "sha256": "68ef301c59e6d506207ced92739f1968f8a9124f72081be2f01e99f0f7c89202",
+      "bytes": 12057
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_main-menu_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_main-menu_hover.png",
+      "sha256": "5cb20411213777d98f538aa9c95de59c1e38d8e9ab75a1979208b98102e3595d",
+      "bytes": 14855
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_response_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_response_click.png",
+      "sha256": "4cc4a0ebaa9e9f0ffb12f2d4217a6ecd2f7c1d63ebcd2cb5608c3e6dd06a8f9d",
+      "bytes": 11646
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_response_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_response_default.png",
+      "sha256": "b32db04578e8bb48f1960b075890c3d56d3d3ff7ca022db9c2bb9951e71466ef",
+      "bytes": 30778
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_response_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_response_hover.png",
+      "sha256": "f27dc47bc081a425fed84b53ef92dd4fd2f03bc34a82f1d428838c20db81d335",
+      "bytes": 76806
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_save_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_save_click.png",
+      "sha256": "4e142dffacd58f41b6211e02b40c5e5df509a90c62cbe6e0acf929de7dffc8ac",
+      "bytes": 23903
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_save_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_save_default.png",
+      "sha256": "8ad61ffd447a47e043ca5cfb0992b815975aa5bec756845c5d3ca2698cbe2f5e",
+      "bytes": 10600
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_save_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_save_hover.png",
+      "sha256": "5f583ca28746754533a4c4217759dd87af06ed1ea9f8a5706ab48d3b66859f50",
+      "bytes": 13286
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_settings_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_settings_click.png",
+      "sha256": "37176cd08c320418034c1442d0c0c6cdfff72ef6fa4723b85b8d8bc4215c53b2",
+      "bytes": 21064
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_settings_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_settings_default.png",
+      "sha256": "985e87c2e4c52c7a60b4f76f6bcb43be50b802c76484ba6ab17b2782889c1f8e",
+      "bytes": 18209
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_settings_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_settings_hover.png",
+      "sha256": "cb24b81b8d7a790569f3c433b0e973b13ae5df9caa04476af23ab0a428d9f79e",
+      "bytes": 19415
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_x_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_x_click.png",
+      "sha256": "0c4b5a7f82d662963f2edb13ef5c0f84ee1d87e4cf5734c9f339e838c5ba3ba7",
+      "bytes": 24673
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_x_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_x_default.png",
+      "sha256": "c2930686f7e86974a681abebb570d5d9d4b49074001b4e58e63ac30bcfbef94c",
+      "bytes": 10730
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/button_x_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/button_x_hover.png",
+      "sha256": "6dc8705b0c8d487ca10cd686f07a1fa5c113ba3a68ce7e83195364f74ce52358",
+      "bytes": 25666
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/cursor_click.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/cursor_click.png",
+      "sha256": "76df0f820d58c0a5063aaa24cab720f45e76acc290c783030f9ed852645bdd6f",
+      "bytes": 11404
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/cursor_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/cursor_default.png",
+      "sha256": "590c8c8e7a2499d1b6337918708e63c92788ef08543086f00e1d0179d335a6f1",
+      "bytes": 11152
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/cursor_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/cursor_hover.png",
+      "sha256": "de289e9f68dac3fb99e28d5682504abd9d029172526d83010fdbb1adb00289f0",
+      "bytes": 11513
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/indicator_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/indicator_hover.png",
+      "sha256": "94d445480d6bbcc669c4f06f803834064c0dbd87e9c4e248a45cef391108fdb9",
+      "bytes": 2753
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/indicator_invalidTile.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/indicator_invalidTile.png",
+      "sha256": "74bcf5ea68bfff7242e2fdae2880c2500adcb2e02561636d3e459a4f4451fc2a",
+      "bytes": 2889
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/indicator_selectedEmptyTile.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/indicator_selectedEmptyTile.png",
+      "sha256": "849878016d5303fb509b7b219f3a4c7d99ecb1d7e4ceed49531af56e66f445ee",
+      "bytes": 7507
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/loading_background.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/loading_background.png",
+      "sha256": "3fc93ffc4486a9b966a7e5562ce9d37d763f7fe1b5c41f69ac8b0a9b37cf726a",
+      "bytes": 858600
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/portrait_background.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/portrait_background.png",
+      "sha256": "9389fb92364df97f3914758e519d3b17268742a4d3fe411be8479c38e711acc5",
+      "bytes": 82811
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/portrait_border.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/portrait_border.png",
+      "sha256": "308781d58d65b193fca1be34db4f425c29d9a94b47ad490decde5232beaccb1e",
+      "bytes": 51978
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/scrollbar_default.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/scrollbar_default.png",
+      "sha256": "9e8f017c39b35a276a45ff086372f8d5d59d150a63a1e773c4cac69ac4f94af1",
+      "bytes": 11346
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/scrollbar_hover.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/scrollbar_hover.png",
+      "sha256": "1cdb31636c65a9e6c56605c4b2d2198f26720a6cc0908815beb4434d6f502af4",
+      "bytes": 17981
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/scrollbar_pressed.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/scrollbar_pressed.png",
+      "sha256": "73e3e41f1b8171db5af45b7244ae197f4e122069e92f28bc08785447cd7b9919",
+      "bytes": 15209
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/start_background.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/start_background.png",
+      "sha256": "3f9e1f0db33698468dbb74cc36fbf22f44398048781c7e30b6d9c3bd3f889df4",
+      "bytes": 1178814
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/textbox_response.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/textbox_response.png",
+      "sha256": "91eff88cf059ff4cb2648025b9f667fee6ebd3bfdb8d841aaaf2072e162c80a6",
+      "bytes": 7425
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/text_event_body.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/text_event_body.png",
+      "sha256": "b0af688ba83bff3ddff0e05bc43818ad659024a0aa7edd8d0247da80e01ff50c",
+      "bytes": 62018
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/text_event_header.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/text_event_header.png",
+      "sha256": "85527235340bc1e6ae833dec7de1bccd83d69ba4e9b47b47b568631adf1fe2b2",
+      "bytes": 143173
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/UISettings_background.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/UISettings_background.png",
+      "sha256": "f6ba28a8e5bc615ed2c38dc77c8811ff2954193b0a0ebffb28982a9a60d894b0",
+      "bytes": 42789
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/UISettings_volumebar_empty.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/UISettings_volumebar_empty.png",
+      "sha256": "27eed5bfb31f0c27211bf2206a4cbaf8be050f743c5042f0c5e2291b283bb1a7",
+      "bytes": 606
+    },
+    {
+      "archive_path": "Adventure Assets/Client Theming/UI_Portrait_1.png",
+      "local": "Assets/Art/AdventureForge/Client Theming/UI_Portrait_1.png",
+      "sha256": "57e16d8ad2556683cd6091823e1482d55ca39f9cafc68839ef20f73525124fdc",
+      "bytes": 86694
+    },
+    {
+      "archive_path": "Adventure Assets/Props/ac_unit.png",
+      "local": "Assets/Art/AdventureForge/Props/ac_unit.png",
+      "sha256": "e792d0b4f97807261c4f88de6a03a657adc8703a90955f9d64b524eef5be1eae",
+      "bytes": 132951
+    },
+    {
+      "archive_path": "Adventure Assets/Props/airvent_large.png",
+      "local": "Assets/Art/AdventureForge/Props/airvent_large.png",
+      "sha256": "bf7d94cc65405460e0649eeedcae875119c5bc9ca12133078e3d883d725bf514",
+      "bytes": 69335
+    },
+    {
+      "archive_path": "Adventure Assets/Props/airvent_round.png",
+      "local": "Assets/Art/AdventureForge/Props/airvent_round.png",
+      "sha256": "ccaff140c2a2b5aac01fafe54b37d50d1ccda2af3e0ea44dd2cbd7dd2b4e5ba0",
+      "bytes": 75768
+    },
+    {
+      "archive_path": "Adventure Assets/Props/airvent_small.png",
+      "local": "Assets/Art/AdventureForge/Props/airvent_small.png",
+      "sha256": "55d76206e8214e129e8ea5246a9afa7d21579fde9ad642a13546d885fb354f41",
+      "bytes": 47375
+    },
+    {
+      "archive_path": "Adventure Assets/Props/anntena_01.png",
+      "local": "Assets/Art/AdventureForge/Props/anntena_01.png",
+      "sha256": "53ab43f9e62a905356aa8aeafcb9c0e7c8eab9ab467b584edb1dd4ab28367157",
+      "bytes": 20719
+    },
+    {
+      "archive_path": "Adventure Assets/Props/anntena_02.png",
+      "local": "Assets/Art/AdventureForge/Props/anntena_02.png",
+      "sha256": "23a9b6c41267bca85a755330ea59c816cd009c6e6f7febcf920a26c87c77487b",
+      "bytes": 17510
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_cluster_01.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_cluster_01.png",
+      "sha256": "de69f69f967f2ba6c1e91ecfba2d66fea6dca2a33a82d54eb0e938ffce578b90",
+      "bytes": 107986
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_cluster_02.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_cluster_02.png",
+      "sha256": "725a69b573417445135b4954a1e1f2b6693fc1a63f283867dfcd2b3a973d07fa",
+      "bytes": 91119
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_cluster_03.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_cluster_03.png",
+      "sha256": "29f643c3e5d8f3f9cfec5d79f391edc08a1de66551d86f9e67883f59a8f82699",
+      "bytes": 58889
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_cluster_04.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_cluster_04.png",
+      "sha256": "c4152045d62e3db581a93303640ce57f08f4119689bd53f598581ba5b314c8bd",
+      "bytes": 61494
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_eroded_01.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_eroded_01.png",
+      "sha256": "acb891c1bb07990545df606c4dc32ceb9b0f33c5164674d6d303a29f1c783f17",
+      "bytes": 104546
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_eroded_02.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_eroded_02.png",
+      "sha256": "3f2ad7707898b70b7c60a51ace630be551de3c34bc8ce31b67908098bd530350",
+      "bytes": 90363
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_eroded_03.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_eroded_03.png",
+      "sha256": "b7423645964b6605f94f9410cb5c7e6dd80a3b9b5d2594ff0e0f4bd249555d3b",
+      "bytes": 121830
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_eroded_04.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_eroded_04.png",
+      "sha256": "8ff0394001469ad7d71032cd55ccee538efce2c0f1ae1f4f7b1402ecd92a9d4c",
+      "bytes": 141377
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_round_01.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_round_01.png",
+      "sha256": "4ab045d5b81648df31ce9b0c1e6a90b2edc726eb57ab38593f6cb2d5b6982c40",
+      "bytes": 157338
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_round_02.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_round_02.png",
+      "sha256": "adc22bc9d6d147f115550a6f5720ac15a3208b17dbde1fa1aeaf848aa36856db",
+      "bytes": 159624
+    },
+    {
+      "archive_path": "Adventure Assets/Props/asteroid_round_03.png",
+      "local": "Assets/Art/AdventureForge/Props/asteroid_round_03.png",
+      "sha256": "67b1cf819136a15c99d5bbe518916c30cf9e0431c19ca1b899d1a7e4081a564f",
+      "bytes": 154606
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bathroom_facility.png",
+      "local": "Assets/Art/AdventureForge/Props/bathroom_facility.png",
+      "sha256": "bcb8d651518cc8a3adf4739e81031f001ea93bbfdc152529a6c9af7590821dc3",
+      "bytes": 135013
+    },
+    {
+      "archive_path": "Adventure Assets/Props/battery_01.png",
+      "local": "Assets/Art/AdventureForge/Props/battery_01.png",
+      "sha256": "55a0bae269b73477ea2b2ed8a02e8c9d54b4e44af9cb45d851b2ae73d7c6294b",
+      "bytes": 85723
+    },
+    {
+      "archive_path": "Adventure Assets/Props/battery_02.png",
+      "local": "Assets/Art/AdventureForge/Props/battery_02.png",
+      "sha256": "6cbbfc46e1f58fb45438bd0dc428577b8f76bd02e8f1099245c399ac2a3c3a6c",
+      "bytes": 113967
+    },
+    {
+      "archive_path": "Adventure Assets/Props/beige_bed_north.png",
+      "local": "Assets/Art/AdventureForge/Props/beige_bed_north.png",
+      "sha256": "f7ada437e1cfdb74400ab6e7e96f0ba9e068537990b6a4ca651bdc06f2b59c81",
+      "bytes": 83918
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bench_01.png",
+      "local": "Assets/Art/AdventureForge/Props/bench_01.png",
+      "sha256": "8ae2148db63d4d55a897a012440c6bacfdefe4c9cba599177b6fbf1df57ce990",
+      "bytes": 97900
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bench_02.png",
+      "local": "Assets/Art/AdventureForge/Props/bench_02.png",
+      "sha256": "22840a10c8f39be3c2d45f5b85f9bd5a0467d423ddd248a3c9797e02bd267084",
+      "bytes": 68006
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bench_03.png",
+      "local": "Assets/Art/AdventureForge/Props/bench_03.png",
+      "sha256": "36d9271241476e8bab5e192abfbdee96e91754df82dffabe73b53eac4bbc8b9d",
+      "bytes": 71849
+    },
+    {
+      "archive_path": "Adventure Assets/Props/box_01.png",
+      "local": "Assets/Art/AdventureForge/Props/box_01.png",
+      "sha256": "aa6aa9092f7d8244815aea72449d53451231b9bc3a54aebc2c4646bd215cd214",
+      "bytes": 25720
+    },
+    {
+      "archive_path": "Adventure Assets/Props/box_02.png",
+      "local": "Assets/Art/AdventureForge/Props/box_02.png",
+      "sha256": "32efc2be7dd2bb0f2c7c754d22ef1896eb8a61f4b9ef8e011e71246b44badd58",
+      "bytes": 77822
+    },
+    {
+      "archive_path": "Adventure Assets/Props/box_03.png",
+      "local": "Assets/Art/AdventureForge/Props/box_03.png",
+      "sha256": "58ccf9ba81ed92659d5e705d59843afabdea8c3a00920ecccc9ef80b94c673a3",
+      "bytes": 55475
+    },
+    {
+      "archive_path": "Adventure Assets/Props/box_05.png",
+      "local": "Assets/Art/AdventureForge/Props/box_05.png",
+      "sha256": "7e25dd53090c5452a3523ea85acf7267b60540792cb89a25999ac5b12b2397e1",
+      "bytes": 71526
+    },
+    {
+      "archive_path": "Adventure Assets/Props/box_wires.png",
+      "local": "Assets/Art/AdventureForge/Props/box_wires.png",
+      "sha256": "96436322d08c23547210265b4deeb2230f67de069d0bbb9a879302f010ef57ae",
+      "bytes": 104953
+    },
+    {
+      "archive_path": "Adventure Assets/Props/breaker-box_broken.png",
+      "local": "Assets/Art/AdventureForge/Props/breaker-box_broken.png",
+      "sha256": "b47af48618aa09ad19bd76d1a4b00ee439bf2643d42081cf686497d3f9586e7e",
+      "bytes": 45480
+    },
+    {
+      "archive_path": "Adventure Assets/Props/breaker-box_intact.png",
+      "local": "Assets/Art/AdventureForge/Props/breaker-box_intact.png",
+      "sha256": "ea44ec69572f28d77792f0020f25ae02cde561a901a71a769a9c7502e01993ea",
+      "bytes": 28909
+    },
+    {
+      "archive_path": "Adventure Assets/Props/breaker-box_lights.png",
+      "local": "Assets/Art/AdventureForge/Props/breaker-box_lights.png",
+      "sha256": "30308d940793c4dfe7701e06d1a231a3386b9978c7a507ab9b964483f8d2b1db",
+      "bytes": 17015
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bridge_terminal_01.png",
+      "local": "Assets/Art/AdventureForge/Props/bridge_terminal_01.png",
+      "sha256": "bf0736ba956e53fefb24e60b5e78b24b7933bafc67529338383de4eba9e75882",
+      "bytes": 70239
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bridge_terminal_03.png",
+      "local": "Assets/Art/AdventureForge/Props/bridge_terminal_03.png",
+      "sha256": "f1dd454699f7f60641a5317c925020cbff41f5938dbddd5bb7535b65fc8f5d04",
+      "bytes": 74946
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bridge_terminal_04.png",
+      "local": "Assets/Art/AdventureForge/Props/bridge_terminal_04.png",
+      "sha256": "db19d8d555849efe70769e90f8612bfbf9adb1a82191a90a4dc33a267aacb625",
+      "bytes": 70829
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bunkbed_01.png",
+      "local": "Assets/Art/AdventureForge/Props/bunkbed_01.png",
+      "sha256": "8868976311ba04cd6e6def975b0188e30e21c1d040d50ffbd567dc5263a459b2",
+      "bytes": 646253
+    },
+    {
+      "archive_path": "Adventure Assets/Props/bunkbed_02.png",
+      "local": "Assets/Art/AdventureForge/Props/bunkbed_02.png",
+      "sha256": "1b58c42ce4f89ca5e2afa2f5a98c2c2b3e923f7d1d5a01e54b46fa13b289cc5c",
+      "bytes": 642255
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cable_01.png",
+      "local": "Assets/Art/AdventureForge/Props/cable_01.png",
+      "sha256": "d3d82b1a82b1da959d103eb25b86b238be4401185e615c56fbb300d9301ac7e1",
+      "bytes": 29606
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cable_02.png",
+      "local": "Assets/Art/AdventureForge/Props/cable_02.png",
+      "sha256": "beb9e4df50b053f352a9682a42a28958166eda2147374b07263b6ed3eb8b4fea",
+      "bytes": 19542
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cable_03.png",
+      "local": "Assets/Art/AdventureForge/Props/cable_03.png",
+      "sha256": "254f81a4eb1c4bcc81328b63b859668fb47c065ad55e5d8fb3e679d44426bbd7",
+      "bytes": 30343
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cable_04.png",
+      "local": "Assets/Art/AdventureForge/Props/cable_04.png",
+      "sha256": "dfc5508b0fd7f6d20966dadd722f40af85231014098473670b2aaf09038f8a10",
+      "bytes": 54616
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cable_machinery.png",
+      "local": "Assets/Art/AdventureForge/Props/cable_machinery.png",
+      "sha256": "2d9d83734f326b3e5e66b3805ac2dd8966d505cbf977cc98b9c89cbb861411f9",
+      "bytes": 55865
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cart_empty_01.png",
+      "local": "Assets/Art/AdventureForge/Props/cart_empty_01.png",
+      "sha256": "f9f46d238a325c864b9d772e26bf8e23614d5bca3c23f16211afca3a0fb3338d",
+      "bytes": 70108
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cart_empty_02.png",
+      "local": "Assets/Art/AdventureForge/Props/cart_empty_02.png",
+      "sha256": "68e2298ba4e9926c785ac80ef8d489f28c1eedf800346ae68057ba5b8d490618",
+      "bytes": 71855
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cart_full_01.png",
+      "local": "Assets/Art/AdventureForge/Props/cart_full_01.png",
+      "sha256": "882616b339e75c5734d6e1e1f2c6d3af51368dfadd68b39439ebea2024079bed",
+      "bytes": 90595
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cart_full_02.png",
+      "local": "Assets/Art/AdventureForge/Props/cart_full_02.png",
+      "sha256": "69323908bd09548c426056ee86a0a38e18214683a86ce472a8e65ba1fb1ab826",
+      "bytes": 88498
+    },
+    {
+      "archive_path": "Adventure Assets/Props/catwalk_metal.png",
+      "local": "Assets/Art/AdventureForge/Props/catwalk_metal.png",
+      "sha256": "739c4d1df3adeaa6f5f5f095ae548fde3e0834b28cce51b4962d8b557d2aa899",
+      "bytes": 48786
+    },
+    {
+      "archive_path": "Adventure Assets/Props/console_01.png",
+      "local": "Assets/Art/AdventureForge/Props/console_01.png",
+      "sha256": "a7211bd200e49694902b28baf44cb7eb2ffaab5089d48be42078448966c48d84",
+      "bytes": 43603
+    },
+    {
+      "archive_path": "Adventure Assets/Props/console_02.png",
+      "local": "Assets/Art/AdventureForge/Props/console_02.png",
+      "sha256": "6466d68c4786c2d449c694082942be0a740e46a2105b698c38e24e44fc09e42f",
+      "bytes": 57837
+    },
+    {
+      "archive_path": "Adventure Assets/Props/console_03.png",
+      "local": "Assets/Art/AdventureForge/Props/console_03.png",
+      "sha256": "db0fe165afa9d063c9b42808226bbbba016d369b7aef886273a187f173b055c3",
+      "bytes": 93797
+    },
+    {
+      "archive_path": "Adventure Assets/Props/console_04.png",
+      "local": "Assets/Art/AdventureForge/Props/console_04.png",
+      "sha256": "8b8b0bdc1be2d4e3abf98d476baafff537a02839ce62a07220cb234421f580f2",
+      "bytes": 55713
+    },
+    {
+      "archive_path": "Adventure Assets/Props/console_endcap.png",
+      "local": "Assets/Art/AdventureForge/Props/console_endcap.png",
+      "sha256": "78729eb6685b5c71ab8433dbd4305d0615d3685261c4d4bbabcd229890793749",
+      "bytes": 33934
+    },
+    {
+      "archive_path": "Adventure Assets/Props/control_panel.png",
+      "local": "Assets/Art/AdventureForge/Props/control_panel.png",
+      "sha256": "cf0b1d92dbf088e5fcc19f638b3fed6ab61f20c0ba7eacc95436ad8078efa226",
+      "bytes": 62399
+    },
+    {
+      "archive_path": "Adventure Assets/Props/corner_couch_north.png",
+      "local": "Assets/Art/AdventureForge/Props/corner_couch_north.png",
+      "sha256": "e88fd64d4dd58be37a404777e68906d84bd7ae08f2a9c8cf160b3f8483ab5518",
+      "bytes": 94443
+    },
+    {
+      "archive_path": "Adventure Assets/Props/corner_couch_south.png",
+      "local": "Assets/Art/AdventureForge/Props/corner_couch_south.png",
+      "sha256": "0a2470a600ada10efaa0e44eb2ccb7071a6d6d678c18af65cce199ab82cc4617",
+      "bytes": 84934
+    },
+    {
+      "archive_path": "Adventure Assets/Props/corner_couch_west.png",
+      "local": "Assets/Art/AdventureForge/Props/corner_couch_west.png",
+      "sha256": "059d3d594d1452cda17693d5187721a8c18f3a5951c9e8bbfe183107c236bc22",
+      "bytes": 97783
+    },
+    {
+      "archive_path": "Adventure Assets/Props/corner_table.png",
+      "local": "Assets/Art/AdventureForge/Props/corner_table.png",
+      "sha256": "9ae828636731ab4710df3a111db39b37a1e25dcc935833b5b4fc6805ff48157a",
+      "bytes": 110004
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_ammo_01.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_ammo_01.png",
+      "sha256": "24bd3403d339d1a8e18877c606fddc04044c8405f9f58fbbc254e691f25a37fe",
+      "bytes": 90953
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_01.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_01.png",
+      "sha256": "73e97fa8198d79c63debf5baffd62a933e2160a76e08ecd7cf2f5527476d7c0c",
+      "bytes": 75011
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_02.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_02.png",
+      "sha256": "a60ef7b5023b3b2b111898a9e25247a7eb1f90d20b896123e67a111f5b82c75d",
+      "bytes": 70773
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_ammo_short.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_ammo_short.png",
+      "sha256": "c6adaae4f4fc63e765588efbfe346623cd3ca3d5b8d5fb63ceee6d77e890fb7b",
+      "bytes": 105600
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_ammo_tall.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_ammo_tall.png",
+      "sha256": "170224e20d5a2370e3117c8d93ec6f9b209aba639fdba5f9e87b3840f150cd6e",
+      "bytes": 119550
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_health_long.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_health_long.png",
+      "sha256": "d659b7379434d38ce781e2ab2873d75d72577b25be191651a111f17307198e46",
+      "bytes": 88715
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_health_tall.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_health_tall.png",
+      "sha256": "8df5060e1b5974def61fb50db941ab04c01befdad0e863742c6a255030e2541e",
+      "bytes": 121420
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_shield_long.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_shield_long.png",
+      "sha256": "659d2c56de36aae50fcee7dc4d6d8aabcba95a3d8bf473dd988bfeb6b3f6d60b",
+      "bytes": 87596
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_combat_shield_tall.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_combat_shield_tall.png",
+      "sha256": "1b5ef5826c590040ef7325e801cdc0358229357c8466a4e31dcdb0f03acba8cc",
+      "bytes": 119227
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_companion.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_companion.png",
+      "sha256": "7f7950d03aad01eee1744e15499ce579c73c9f5f835e0aa84a6577eaf21f4717",
+      "bytes": 114368
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_footlocker.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_footlocker.png",
+      "sha256": "b446451f9dfb6f05749a9c9f0cbd0b7792d0c5aa8486f9d92d966c848528f631",
+      "bytes": 87262
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_long.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_long.png",
+      "sha256": "4efc9b263ba5aaab6754734c06c4cd9407399ed981dac8958defd3dda335a2b7",
+      "bytes": 132440
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_metal.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_metal.png",
+      "sha256": "26462c506a20998fa1c28a6cdc81a2689d5ea565bfae39a2396dcec9732ad641",
+      "bytes": 151672
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_reinforced-plastic_long.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_reinforced-plastic_long.png",
+      "sha256": "ade8a38292d27b37baef6e7768968291e099fd04434d51adaea096cdd26edb1f",
+      "bytes": 109521
+    },
+    {
+      "archive_path": "Adventure Assets/Props/crate_reinforced-plastic_short.png",
+      "local": "Assets/Art/AdventureForge/Props/crate_reinforced-plastic_short.png",
+      "sha256": "695775d9cf5ec6045ea4f7ad1e13d9dc56de53da53fb2262d013f7ecfdb72322",
+      "bytes": 82321
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cryopod_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/cryopod_closed.png",
+      "sha256": "4be41eac647c9c3840406cc73c6970994a3e85fcd96660156eb4decf0062f989",
+      "bytes": 148069
+    },
+    {
+      "archive_path": "Adventure Assets/Props/cryopod_open.png",
+      "local": "Assets/Art/AdventureForge/Props/cryopod_open.png",
+      "sha256": "e2ae53e93d3f994f5b7e286bfebc999e52ab866c0f42b6f58f74bb7ff25d36e9",
+      "bytes": 135624
+    },
+    {
+      "archive_path": "Adventure Assets/Props/door_blast-door_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/door_blast-door_closed.png",
+      "sha256": "32d5ca294c62e1a3b6a4255b4a75bb27d10a8f54a5da8820377293f586666a9e",
+      "bytes": 428678
+    },
+    {
+      "archive_path": "Adventure Assets/Props/door_blast-door_open.png",
+      "local": "Assets/Art/AdventureForge/Props/door_blast-door_open.png",
+      "sha256": "49c29ba450741e78efc73f2d94a702894ea6fa330276e251bdf9251b7c33dd3c",
+      "bytes": 383653
+    },
+    {
+      "archive_path": "Adventure Assets/Props/door_metal-hatch_open.png",
+      "local": "Assets/Art/AdventureForge/Props/door_metal-hatch_open.png",
+      "sha256": "5bd227dc9d45ddba48cc790baf3fdebafbc179dd108474e30b896c4bdfbdb276",
+      "bytes": 440435
+    },
+    {
+      "archive_path": "Adventure Assets/Props/door_metalhatch_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/door_metalhatch_closed.png",
+      "sha256": "710789a88cf73e354bb2ecace0389ee3f4539badac958eac37d5055ac05175d8",
+      "bytes": 438200
+    },
+    {
+      "archive_path": "Adventure Assets/Props/food_station.png",
+      "local": "Assets/Art/AdventureForge/Props/food_station.png",
+      "sha256": "0ab6335a52b11a7598074227c8e070b93e39f82b332f1a6f8c046a3a29a6442c",
+      "bytes": 310463
+    },
+    {
+      "archive_path": "Adventure Assets/Props/handle_01.png",
+      "local": "Assets/Art/AdventureForge/Props/handle_01.png",
+      "sha256": "6306e533cad861fd9df6970488509fb102e2671bf8ddfbe408c5de79705f4e1e",
+      "bytes": 23139
+    },
+    {
+      "archive_path": "Adventure Assets/Props/handle_02.png",
+      "local": "Assets/Art/AdventureForge/Props/handle_02.png",
+      "sha256": "ca8e72a81c88eb5f960de40fa3b4c367ea2f5367f6b3e65e90d2870fc20398d6",
+      "bytes": 20037
+    },
+    {
+      "archive_path": "Adventure Assets/Props/hvac-duct_01.png",
+      "local": "Assets/Art/AdventureForge/Props/hvac-duct_01.png",
+      "sha256": "49ccc93b25d7655f5fce0c981a99f934f47ab785b6412daae3483c25c71409bf",
+      "bytes": 64411
+    },
+    {
+      "archive_path": "Adventure Assets/Props/hvac-duct_02.png",
+      "local": "Assets/Art/AdventureForge/Props/hvac-duct_02.png",
+      "sha256": "1a0390803874789d388d4e2f5c474fc194609764dfdab6b80e3ce79711f97220",
+      "bytes": 36148
+    },
+    {
+      "archive_path": "Adventure Assets/Props/image_40.png",
+      "local": "Assets/Art/AdventureForge/Props/image_40.png",
+      "sha256": "0fef6c8910bb32aea38087d544a59077cf6feafc7ca822f7f75d0cab4da3b056",
+      "bytes": 56558
+    },
+    {
+      "archive_path": "Adventure Assets/Props/image_41.png",
+      "local": "Assets/Art/AdventureForge/Props/image_41.png",
+      "sha256": "2f24455fdc3ab8c8d750323344b0683194dee770fa725f659f102de896318aa5",
+      "bytes": 114614
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_bars.png",
+      "local": "Assets/Art/AdventureForge/Props/light_bars.png",
+      "sha256": "06ba975fa55e7f61f14a1055aa9fca1bf217e3418148602f664c1cad1864b6e7",
+      "bytes": 85963
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_bars_off.png",
+      "local": "Assets/Art/AdventureForge/Props/light_bars_off.png",
+      "sha256": "54edfdaf29c492b0c945f9338bb484a67808ee3979569badcb459fa8fc783aa8",
+      "bytes": 20682
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_grid.png",
+      "local": "Assets/Art/AdventureForge/Props/light_grid.png",
+      "sha256": "ebcfc98a42fd73e1d31eeb3dd2033334b0fd7dfd2294265e1052da2e7a651364",
+      "bytes": 84411
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_hazardous_01.png",
+      "local": "Assets/Art/AdventureForge/Props/light_hazardous_01.png",
+      "sha256": "b44d13c550c627f39c3635a8ebc843de9949a2a831a9c2f00677130bea38c26d",
+      "bytes": 7979
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_hazardous_02.png",
+      "local": "Assets/Art/AdventureForge/Props/light_hazardous_02.png",
+      "sha256": "b6bfb96cc61844d93da8e8e322c8f5a34470ea5153d0392c630f5f4d3dfcbe83",
+      "bytes": 8355
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_long_off.png",
+      "local": "Assets/Art/AdventureForge/Props/light_long_off.png",
+      "sha256": "e49e419c15128f290a0691ed2ba94819b638223c6096c3bf3884da97ddd256d6",
+      "bytes": 20021
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_long_on.png",
+      "local": "Assets/Art/AdventureForge/Props/light_long_on.png",
+      "sha256": "743a81c65ca96007b5c0dd59f2fab196c51d14476462688a00d49e1ec5b7613f",
+      "bytes": 21832
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_octogon_off.png",
+      "local": "Assets/Art/AdventureForge/Props/light_octogon_off.png",
+      "sha256": "3ba63e12b4e95962fa6301dfcb97ab66c38aae257ededf884600ab8549dd5deb",
+      "bytes": 10661
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_01.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_01.png",
+      "sha256": "4c0b168d9cb83564564cf7a1bd8f1213241a737e0b54c281f80b03610f23de07",
+      "bytes": 34855
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_02.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_02.png",
+      "sha256": "37fd41f6503a68c3fd268258f2fdb22151440c8410fba1415da37212426b93c0",
+      "bytes": 43498
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_03.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_03.png",
+      "sha256": "567bb3465f8765255064e1d41aaaed12aa1ec6e0689ea90343e81c734e772ff6",
+      "bytes": 34112
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_04.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_04.png",
+      "sha256": "e89937c352dc9262d3a52df94920e628cb717c15a30797089eb3302990133bdd",
+      "bytes": 31591
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_05.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_05.png",
+      "sha256": "9c7e0d7f605f3d51bbda93135abcc3976d0843aad6cdb1676149ece05be2f9db",
+      "bytes": 38202
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_06.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_06.png",
+      "sha256": "5c52b3b84a6d7864a81f490adb2b2c16923dfd6bd067bd03c1da292f2f628829",
+      "bytes": 7768
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_07.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_07.png",
+      "sha256": "b4fa4f247d518387cc418bd59db7d26a026702f4f54430cb2e2744a5a088c28b",
+      "bytes": 7807
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_off_08.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_off_08.png",
+      "sha256": "a9b10618dbb4bf6962726d38b3016049123235406e4775f1e2932f053dfa3531",
+      "bytes": 8610
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_short_on.png",
+      "local": "Assets/Art/AdventureForge/Props/light_short_on.png",
+      "sha256": "ff3e8b09c52960f41a9168241efc203be53d227fc3b4b91b6f0e7bc097d2696a",
+      "bytes": 10870
+    },
+    {
+      "archive_path": "Adventure Assets/Props/light_square.png",
+      "local": "Assets/Art/AdventureForge/Props/light_square.png",
+      "sha256": "3623d5e5b08f987357e46e0a2abe3ce7e4454546fdd11197b49e228a9e913230",
+      "bytes": 83543
+    },
+    {
+      "archive_path": "Adventure Assets/Props/lockerOff.png",
+      "local": "Assets/Art/AdventureForge/Props/lockerOff.png",
+      "sha256": "3885cf80b2d930cb1800757e53582403b5db797a9b15930a9f1cde75ff26274d",
+      "bytes": 67603
+    },
+    {
+      "archive_path": "Adventure Assets/Props/lockerOn.png",
+      "local": "Assets/Art/AdventureForge/Props/lockerOn.png",
+      "sha256": "8c3513451a82c1730eaa021d1a56c4d24d3d1e3efce80cb9ce7f36ae9c9c7fac",
+      "bytes": 64760
+    },
+    {
+      "archive_path": "Adventure Assets/Props/machine_03.png",
+      "local": "Assets/Art/AdventureForge/Props/machine_03.png",
+      "sha256": "e78743c111b42bd2c0c3cdbaed5d41822d8acbb4c13ac05bf3f0f3c667cca458",
+      "bytes": 67868
+    },
+    {
+      "archive_path": "Adventure Assets/Props/metal_door_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/metal_door_closed.png",
+      "sha256": "0044622dd5b651f056358157e5ff86edf60c56b8b311f2914e7ddfe1edaf708d",
+      "bytes": 98475
+    },
+    {
+      "archive_path": "Adventure Assets/Props/metal_door_open.png",
+      "local": "Assets/Art/AdventureForge/Props/metal_door_open.png",
+      "sha256": "ef3dcd5681b57df40b9d59b0c14efab3af157bc57919b9b0efef7c4797f4bdd7",
+      "bytes": 83249
+    },
+    {
+      "archive_path": "Adventure Assets/Props/metal_pipe.png",
+      "local": "Assets/Art/AdventureForge/Props/metal_pipe.png",
+      "sha256": "cc13b280f892e8aa7b6f06509ce05708e74c27f81110316b80ae5b13c89eaf47",
+      "bytes": 33383
+    },
+    {
+      "archive_path": "Adventure Assets/Props/monitor_01.png",
+      "local": "Assets/Art/AdventureForge/Props/monitor_01.png",
+      "sha256": "d3c5a77e0423dd32bc7a65677134bc484145d253b605910f17cd1509fcf38485",
+      "bytes": 29485
+    },
+    {
+      "archive_path": "Adventure Assets/Props/monitor_02.png",
+      "local": "Assets/Art/AdventureForge/Props/monitor_02.png",
+      "sha256": "644b8d45247d6293db22c26ff44b68a14dd6c2bc84678eeab0fd47e48bd944d4",
+      "bytes": 38111
+    },
+    {
+      "archive_path": "Adventure Assets/Props/navigation_setup.png",
+      "local": "Assets/Art/AdventureForge/Props/navigation_setup.png",
+      "sha256": "b43bb707f36ac19cada2d8a95bce5ddf94a65c507d951e632c9513e7a850f168",
+      "bytes": 121548
+    },
+    {
+      "archive_path": "Adventure Assets/Props/navigation_table.png",
+      "local": "Assets/Art/AdventureForge/Props/navigation_table.png",
+      "sha256": "40ff4955cf9cb06c5c4f4ef25a7814c635884cf7de43416aed3620a6606cd334",
+      "bytes": 138539
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_01.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_01.png",
+      "sha256": "c207e87ac4f8982db8c5465f43d8567f8837651977c5474a0a50550428af90e2",
+      "bytes": 73755
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_01_back.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_01_back.png",
+      "sha256": "c207e87ac4f8982db8c5465f43d8567f8837651977c5474a0a50550428af90e2",
+      "bytes": 73755
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_01_front.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_01_front.png",
+      "sha256": "60f7ca51232ac061816f48b6a57dd9a160ebb6204a53a45d0b6b658e6f040a82",
+      "bytes": 85455
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_02.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_02.png",
+      "sha256": "b10706b84c62cc5b1ba1d498aa22a246928126928f4f492e96b57551c77455d8",
+      "bytes": 76592
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_02_back.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_02_back.png",
+      "sha256": "b10706b84c62cc5b1ba1d498aa22a246928126928f4f492e96b57551c77455d8",
+      "bytes": 76592
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_02_front.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_02_front.png",
+      "sha256": "74014afd626dc881f2f9018c72b09c643632e39b796525d8c3be2b139c427765",
+      "bytes": 88786
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_03.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_03.png",
+      "sha256": "74014afd626dc881f2f9018c72b09c643632e39b796525d8c3be2b139c427765",
+      "bytes": 88786
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_04.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_04.png",
+      "sha256": "60f7ca51232ac061816f48b6a57dd9a160ebb6204a53a45d0b6b658e6f040a82",
+      "bytes": 85455
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_05.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_05.png",
+      "sha256": "fef7b9922c5a5d0f5b20cb06e5e39d1cbbcef2c3e4b5fc67623fb59015b1bc92",
+      "bytes": 50947
+    },
+    {
+      "archive_path": "Adventure Assets/Props/office_chair_06.png",
+      "local": "Assets/Art/AdventureForge/Props/office_chair_06.png",
+      "sha256": "f88f933361f71692710a5c066eb4bc73ae5bb3703a01ebf0aa7eb0855740ef0b",
+      "bytes": 59796
+    },
+    {
+      "archive_path": "Adventure Assets/Props/orange_bed_north.png",
+      "local": "Assets/Art/AdventureForge/Props/orange_bed_north.png",
+      "sha256": "8430f9c2409359d05026c5dcec95d9702620ae981718cd7d0608e94b9c7e307c",
+      "bytes": 103675
+    },
+    {
+      "archive_path": "Adventure Assets/Props/orange_bed_south.png",
+      "local": "Assets/Art/AdventureForge/Props/orange_bed_south.png",
+      "sha256": "ce2dffc878ccae3bdec2f7e778a007ad6f14d0e34acc558c6c68f2f36b51cefe",
+      "bytes": 104790
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_electronics.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_electronics.png",
+      "sha256": "164a98d473eaa6219819dc520fa6045eb751e3d9856a1e5d1ed81830833a22a5",
+      "bytes": 35729
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_fancy.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_fancy.png",
+      "sha256": "1351d6af2a2169834c09183ff885c707eb53856d68342e8d2bed69fd3379c737",
+      "bytes": 38172
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_greebled.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_greebled.png",
+      "sha256": "142824cf23e2b7dc788812f1da63436910c2342eecf083c6f2d31a0d728fd8b8",
+      "bytes": 37951
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_hexagonal.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_hexagonal.png",
+      "sha256": "33de75ce8ba4686ad9afb90f4e125088cdb42a50aba823af34231cbbef5e9ebe",
+      "bytes": 33611
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_tiled.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_tiled.png",
+      "sha256": "01581562277858efdacb81bd35d30fc0341a5c9b1931f3eee27094d8d124d300",
+      "bytes": 40732
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_vented.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_vented.png",
+      "sha256": "b6e6ccd6bfbfde20bf25d83f91abefb173efabccb1eef74f29f4ba946e332e1d",
+      "bytes": 81227
+    },
+    {
+      "archive_path": "Adventure Assets/Props/panel_vertical_hazardous.png",
+      "local": "Assets/Art/AdventureForge/Props/panel_vertical_hazardous.png",
+      "sha256": "c0ca273caf1881227f0831be5ff37a382981d6207ee4f23803a0a97d4cbfa929",
+      "bytes": 74528
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_01_east.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_01_east.png",
+      "sha256": "ae8b78de788e9853da3d6432161d62b268d02876a56c93a7239d4559f3e46dce",
+      "bytes": 44202
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_01_north.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_01_north.png",
+      "sha256": "b15243677dc727f2beadb23abe52363efeac4e42c14628c470c9a07e3e70deee",
+      "bytes": 43938
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_01_south.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_01_south.png",
+      "sha256": "901817bf2426646d4f2e2a6c6101f18bce50de38ce57467aaa6a38df5215a425",
+      "bytes": 47755
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_01_west.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_01_west.png",
+      "sha256": "96ed0ae3ddcc227fa2db6692dcec49eabd385fb763787a181af61276e5731e89",
+      "bytes": 43437
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_02_east.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_02_east.png",
+      "sha256": "3dc13ffb68103efe54fac9db483da03c35b42c8f57db5c6ad372bee30645bc8b",
+      "bytes": 42619
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_02_north.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_02_north.png",
+      "sha256": "1c3702c1469b31abcf0c955c062a695d8ccb353e8d61df284c631701f191ee48",
+      "bytes": 43428
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_02_south.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_02_south.png",
+      "sha256": "7ec88e75991d83847c867196f789ab03a5ba183361b989a5a30efd19e4cc4f16",
+      "bytes": 46361
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_02_west.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_02_west.png",
+      "sha256": "1a6ab74291bd66f5fdfafb05f764554a35d2b9acf11594f8c9b2053b0acefeb7",
+      "bytes": 41683
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_03_east.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_03_east.png",
+      "sha256": "ecc50fed9721329f43310d5ec0fe3e782d8b4e71c9855659cf39d1c751f7f4a8",
+      "bytes": 43949
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_03_north.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_03_north.png",
+      "sha256": "809ff0259c1ef1078245ca7a64d70b781df4eeb8eeebb5e9c662a4716057dd82",
+      "bytes": 43955
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_03_south.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_03_south.png",
+      "sha256": "5cbf4bc3ef022fcf0186253c944ee58ff6299884f238221e6806801a014a72aa",
+      "bytes": 48000
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_03_west.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_03_west.png",
+      "sha256": "d079726a13e7e1a67391e2bae35553e4e9b3d214a7a5befbc36049f1d4d4b333",
+      "bytes": 43212
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_back.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_back.png",
+      "sha256": "84c59cdf7a4c3bc46d1ceb858a97c7c63b3eb15b80c1af4255fd8dab22feb0af",
+      "bytes": 41241
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_front.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_front.png",
+      "sha256": "1b1964e1da5477a5a382dbb0852d4037fe123259e4df79691e6e19ae4c227ee3",
+      "bytes": 44326
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_horizontal.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_horizontal.png",
+      "sha256": "aa2ca5d80263606f919e57309f101f23ec4ac37f6d39f2eb814d3884d067abe9",
+      "bytes": 108355
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_metal_small.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_metal_small.png",
+      "sha256": "82051622e0c473e7a8cdf54e52ee108421817b042984feb2fc363345e3a08e39",
+      "bytes": 40313
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_technological.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_technological.png",
+      "sha256": "cd998eceae830504d2955e2d810b777268b2dd0602ef45d40bc206298f0c1236",
+      "bytes": 33506
+    },
+    {
+      "archive_path": "Adventure Assets/Props/pillar_vertical.png",
+      "local": "Assets/Art/AdventureForge/Props/pillar_vertical.png",
+      "sha256": "91658a87d186ccc8f4c62cb8aa9ffacd008a5417715121f9547445c88aa69ff4",
+      "bytes": 54261
+    },
+    {
+      "archive_path": "Adventure Assets/Props/platform_square.png",
+      "local": "Assets/Art/AdventureForge/Props/platform_square.png",
+      "sha256": "b8eab2dd2d998c83d7c055a1b010f3f22ff88107819379f64a58dfd1c6387633",
+      "bytes": 78889
+    },
+    {
+      "archive_path": "Adventure Assets/Props/platform_thick.png",
+      "local": "Assets/Art/AdventureForge/Props/platform_thick.png",
+      "sha256": "7089f5e098070c4f65ecd15407d4ffb39a2dbc2b55b8d9461c247feea814b0f0",
+      "bytes": 94664
+    },
+    {
+      "archive_path": "Adventure Assets/Props/power_source.png",
+      "local": "Assets/Art/AdventureForge/Props/power_source.png",
+      "sha256": "5aaf5533e60b338bc420a2c772ae46d342c8da6258b3d89bbb4c978d59db37e8",
+      "bytes": 51168
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_01.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_01.png",
+      "sha256": "a9f3c1edf3def716f4087f40e523a37f524bcbded78d29332201c56b9e1c44ae",
+      "bytes": 71864
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_02.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_02.png",
+      "sha256": "2af81f00679be7d773bfb7066d468030e2cb544cc123812be6b7c9d7f5bfe0dc",
+      "bytes": 47686
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_03.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_03.png",
+      "sha256": "e5d8c978dc4e17b58cbd0c6d9ce52e02c32ce7066144a3ad4788c02ebec4bc67",
+      "bytes": 68311
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_04.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_04.png",
+      "sha256": "1e70c2f8ad00e493a6bc552995c257f68b74f711e342a3f3bd3676c4c43ecc69",
+      "bytes": 82273
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_05.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_05.png",
+      "sha256": "f9c779a374264b5904047ad458d16ad0c2f104b5a0befbec25c59e9189565f35",
+      "bytes": 71649
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_dish_06.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_dish_06.png",
+      "sha256": "f49d486720589d579bacbc1d978d75aedccadcf899e0924535ec5fdd0a891892",
+      "bytes": 35802
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_panel_01.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_panel_01.png",
+      "sha256": "b2f574843104ee19946c34d45c05a562d520276a66abe6998b11715f96174557",
+      "bytes": 58837
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_panel_02.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_panel_02.png",
+      "sha256": "740cc23fe0a035efc055ae7190ab12d9a8763544dba018ccdc504cd28ffdaa92",
+      "bytes": 26057
+    },
+    {
+      "archive_path": "Adventure Assets/Props/radar_panel_03.png",
+      "local": "Assets/Art/AdventureForge/Props/radar_panel_03.png",
+      "sha256": "1e75cd98c45b1cd76ea5e12aaee565f97d6f4f32ee0b13a1277fab95a4470d06",
+      "bytes": 22566
+    },
+    {
+      "archive_path": "Adventure Assets/Props/reinforcements_metal.png",
+      "local": "Assets/Art/AdventureForge/Props/reinforcements_metal.png",
+      "sha256": "6945125fd423ce3ac88115d3f972b22ccd31575d99aa81c6abd1ffdfeae979c9",
+      "bytes": 53902
+    },
+    {
+      "archive_path": "Adventure Assets/Props/reinforcement_diagonal.png",
+      "local": "Assets/Art/AdventureForge/Props/reinforcement_diagonal.png",
+      "sha256": "e0ec4d702abccb13b1126e90e89130cb2c0a40120603a1c63d163de11ca662db",
+      "bytes": 32410
+    },
+    {
+      "archive_path": "Adventure Assets/Props/reinforcement_diagonal_hazardous.png",
+      "local": "Assets/Art/AdventureForge/Props/reinforcement_diagonal_hazardous.png",
+      "sha256": "774b2c75eabaee97b0f8b419e5571d5c3359746fe7f39263845c113c9ee6d42c",
+      "bytes": 52696
+    },
+    {
+      "archive_path": "Adventure Assets/Props/rocks_01.png",
+      "local": "Assets/Art/AdventureForge/Props/rocks_01.png",
+      "sha256": "a454bd413891c1236e3219990119993bb4f11d365984944cf1388e767229e4b3",
+      "bytes": 92402
+    },
+    {
+      "archive_path": "Adventure Assets/Props/rocks_02.png",
+      "local": "Assets/Art/AdventureForge/Props/rocks_02.png",
+      "sha256": "61c1b0e1a71f31f82aba81e4668ac99ad23555639e6718e57609c336d855c3f2",
+      "bytes": 82751
+    },
+    {
+      "archive_path": "Adventure Assets/Props/shower_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/shower_closed.png",
+      "sha256": "1a9162ecd40245ed860e3e10e1a2f3ca89cd97a21c85b25bc8c7f3d4cd9dccb0",
+      "bytes": 351690
+    },
+    {
+      "archive_path": "Adventure Assets/Props/shower_open.png",
+      "local": "Assets/Art/AdventureForge/Props/shower_open.png",
+      "sha256": "933a698048808ccf75520b84fdb4b622f423d25375825a663be2068372009fdc",
+      "bytes": 354918
+    },
+    {
+      "archive_path": "Adventure Assets/Props/stairs_large_thick.png",
+      "local": "Assets/Art/AdventureForge/Props/stairs_large_thick.png",
+      "sha256": "9987760df3fe18578abae8ef29d0c5b819f712f05504ad2af936115640e1e28c",
+      "bytes": 249026
+    },
+    {
+      "archive_path": "Adventure Assets/Props/stairs_large_thin.png",
+      "local": "Assets/Art/AdventureForge/Props/stairs_large_thin.png",
+      "sha256": "708572e42382d879c957109f7f600f609b98e68b177ddce132f3a66e549ec2d1",
+      "bytes": 208560
+    },
+    {
+      "archive_path": "Adventure Assets/Props/stairs_short_thick.png",
+      "local": "Assets/Art/AdventureForge/Props/stairs_short_thick.png",
+      "sha256": "cb22944ef330f837beeacffbf0d46bc18f0c601b34122bc195b8d7aec92e068a",
+      "bytes": 83609
+    },
+    {
+      "archive_path": "Adventure Assets/Props/stairs_small_thin.png",
+      "local": "Assets/Art/AdventureForge/Props/stairs_small_thin.png",
+      "sha256": "d1a8f52b66496866af8674084c528c614bcdb594641000e3895acb370e46b6a6",
+      "bytes": 35811
+    },
+    {
+      "archive_path": "Adventure Assets/Props/table_corner.png",
+      "local": "Assets/Art/AdventureForge/Props/table_corner.png",
+      "sha256": "91bfeef9e0b5972357c3b5f28ed60cc91d79024da3bb834623eed0bc486b4cc9",
+      "bytes": 49386
+    },
+    {
+      "archive_path": "Adventure Assets/Props/table_triangle.png",
+      "local": "Assets/Art/AdventureForge/Props/table_triangle.png",
+      "sha256": "15f9670d982465485788f9acde04c46ce568f1d04a832489a082e48d724ee1a3",
+      "bytes": 35430
+    },
+    {
+      "archive_path": "Adventure Assets/Props/terminal_01.png",
+      "local": "Assets/Art/AdventureForge/Props/terminal_01.png",
+      "sha256": "2bbfc708cc3a37712f2fb15a9e849bafd247dcfffa012a2d54d4fe68a37b808d",
+      "bytes": 108541
+    },
+    {
+      "archive_path": "Adventure Assets/Props/terminal_02.png",
+      "local": "Assets/Art/AdventureForge/Props/terminal_02.png",
+      "sha256": "b345e86e7c8f2d619b0d9632f9fd1a4ca739a927aa4fec95cded01a9a3fc97ee",
+      "bytes": 92659
+    },
+    {
+      "archive_path": "Adventure Assets/Props/terrarium_01.png",
+      "local": "Assets/Art/AdventureForge/Props/terrarium_01.png",
+      "sha256": "599a09c7e24facba4870277cde60fce01f27b16435aa32554833da0528abe488",
+      "bytes": 74110
+    },
+    {
+      "archive_path": "Adventure Assets/Props/vending_machine.png",
+      "local": "Assets/Art/AdventureForge/Props/vending_machine.png",
+      "sha256": "f7bad25d6a29a8482ca77659e5b4c89b63b2c6e37626c11880fd913f985c937c",
+      "bytes": 59819
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail.png",
+      "sha256": "3e524ed2cc461f0e49d3790fb7a999543d74c7d5f97cd498f97cb027c1a1f94a",
+      "bytes": 372089
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_barricade.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_barricade.png",
+      "sha256": "b3e9ed6e94e70c7fd0830e47c913e289592a3b1585e22e78759cf9aeb43d8d6d",
+      "bytes": 368930
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_closed.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_closed.png",
+      "sha256": "61836ff4c53e0e028fdee9a6e27ab4dcc86f940ebc634a5a9b11a3791ae94401",
+      "bytes": 355912
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_closed_detailed.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_closed_detailed.png",
+      "sha256": "436d0dc259740ed47996362917cfaa8d56b4d0a811641bb69c5a829ffff6f577",
+      "bytes": 365485
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_endcap_south.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_endcap_south.png",
+      "sha256": "2f24455fdc3ab8c8d750323344b0683194dee770fa725f659f102de896318aa5",
+      "bytes": 114614
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_endcap_west.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_endcap_west.png",
+      "sha256": "0fef6c8910bb32aea38087d544a59077cf6feafc7ca822f7f75d0cab4da3b056",
+      "bytes": 56558
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_machinery.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_machinery.png",
+      "sha256": "854901ed8b1b7e055b7be5d266214c56e1b3d4ec24adda785b313fad9bddcaec",
+      "bytes": 178991
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_textured_01.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_textured_01.png",
+      "sha256": "47009e324b19a2903e9825c7812a9eb0c75e4be2540bfab163fa247b698ee23d",
+      "bytes": 364591
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_textured_02.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_textured_02.png",
+      "sha256": "19e5f70fdb200e2f70e62d22f5cc1813db6351f3b417e4fef98abb839d51fd4c",
+      "bytes": 395475
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_window_long.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_window_long.png",
+      "sha256": "153a708c55babcec18bc8e098d21ff81b56c0e1502abda40a2e9c39c7b2f6f37",
+      "bytes": 389567
+    },
+    {
+      "archive_path": "Adventure Assets/Props/wall_detail_window_short.png",
+      "local": "Assets/Art/AdventureForge/Props/wall_detail_window_short.png",
+      "sha256": "6ba6954016f13a052c76f1a01c368a783351863f19c03a9a10a58f59e8424c75",
+      "bytes": 379938
+    },
+    {
+      "archive_path": "Adventure Assets/Props/white_bed_north.png",
+      "local": "Assets/Art/AdventureForge/Props/white_bed_north.png",
+      "sha256": "e5d2ea13d7b00ab4bb119a19bd56b6b088fec41ea8455f3313093ebf6f2b9322",
+      "bytes": 97686
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/composite-tech.png",
+      "local": "Assets/Art/AdventureForge/Tiles/composite-tech.png",
+      "sha256": "6719e62b9e67e42322c2fbc373ac02f48c89e3b8776c54df3b6ea72e8c18d9af",
+      "bytes": 115038
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/concrete_solid_blue.png",
+      "local": "Assets/Art/AdventureForge/Tiles/concrete_solid_blue.png",
+      "sha256": "1b46972ca6c8b17cd98c397f794f4b6b712a1aadbc79638f21cc31ada43f23e2",
+      "bytes": 78903
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/concrete_solid_gray.png",
+      "local": "Assets/Art/AdventureForge/Tiles/concrete_solid_gray.png",
+      "sha256": "5d598553b3741be0c038bfc0fc53f4892c074eeacc834ec3056260af08d75fff",
+      "bytes": 47777
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/concrete_solid_olive.png",
+      "local": "Assets/Art/AdventureForge/Tiles/concrete_solid_olive.png",
+      "sha256": "2aa0aa55ebe173cfdeb666377b93be71ea5c0363f80ec2fec675d01ce7004e09",
+      "bytes": 78834
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_cap_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_cap_northeast.png",
+      "sha256": "53927d63dbbc50ef1a78c3d0b859443936e4836d3f5699337b2ae5768ff624e3",
+      "bytes": 62898
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_cap_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_cap_northwest.png",
+      "sha256": "ce79cdfd30ee89083eab0f99d2cb9ba6ea3fa6eabf18c016b199ce6726f805b7",
+      "bytes": 63883
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_cap_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_cap_southeast.png",
+      "sha256": "25f29d25934a81f9329f20bd0d5578c47e4bfe114eacf160ab4454b69560cb44",
+      "bytes": 64029
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_cap_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_cap_southwest.png",
+      "sha256": "0efe14c9a38e1b19eef38440ea182edd388c225cf7edc8c6ba1ef7f244a56924",
+      "bytes": 63212
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_corner_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_corner_northeast.png",
+      "sha256": "088b1be5ff46ebd8e84e2015999aab46b6eec40407013eda631d5f9d49b72342",
+      "bytes": 66781
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_corner_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_corner_northwest.png",
+      "sha256": "1363af363771bc9b96e3c68a1514fde185ca96811a5a8fa0e52cf19ad4f470c7",
+      "bytes": 64835
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_corner_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_corner_southeast.png",
+      "sha256": "7e8ebbf229237727f997e262b04f9e4aad0b2221ae08dd7642211acf9b63afe0",
+      "bytes": 65207
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_corner_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_corner_southwest.png",
+      "sha256": "f16da165770712ae9ada24c68a3a64af9c30efe77f1dad1bad5515ad045d384c",
+      "bytes": 67954
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_edge_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_edge_northeast.png",
+      "sha256": "474a7bd94eadf25470752d9b8eeeb6d98a260b74f86906de840f6a906af0b6c0",
+      "bytes": 65124
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_edge_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_edge_northwest.png",
+      "sha256": "7a2bd7fbf9343d33f1be36b6e1449bdf5c98d0d1f3ee88e9fc146409524ce651",
+      "bytes": 64609
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_edge_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_edge_southeast.png",
+      "sha256": "94e7d1091d20a7c7c411e1c7fd29a22836ecc247746b9ae805964f00a63133d5",
+      "bytes": 65918
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_edge_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_edge_southwest.png",
+      "sha256": "5003ceecd3a3989ec4311d1c6307f8b429c4ab17d22c0a95b3a9514f97ab28f8",
+      "bytes": 62647
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/ground_tile_full.png",
+      "local": "Assets/Art/AdventureForge/Tiles/ground_tile_full.png",
+      "sha256": "a78ff882df03fcc90c1230194397a1ee9fe27d8673be86573edc8ddb8c29bd9b",
+      "bytes": 62290
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazardous-industrial.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazardous-industrial.png",
+      "sha256": "8e262022cf3c8bde7eeda1e55a178ecb312ed101ec5b0e01f04da2ffdaaf12c2",
+      "bytes": 113615
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_blank.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_blank.png",
+      "sha256": "b656ca9c8969283d7588accc8725a18cc04c9585d7baff80af17af690a35c0a7",
+      "bytes": 68159
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_cap-northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_cap-northeast.png",
+      "sha256": "e70c0ec098127e857eb556ef3f6170070302087d6a6941f51a010dd57ea65030",
+      "bytes": 69752
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_cap-northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_cap-northwest.png",
+      "sha256": "b863a438558076180233da69d1a5b046ab6a95d98f0d63379f2385e59a2e7ccc",
+      "bytes": 68554
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_cap-southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_cap-southeast.png",
+      "sha256": "693df2e34fdc6a1333a18ed4fc2a883d66fe734931d2dbf982a7fac27b267e45",
+      "bytes": 68400
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_cap-southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_cap-southwest.png",
+      "sha256": "611d8a50fc72ae316480168d85c827e056e9023adc68ba5e703e95aad8bd2a23",
+      "bytes": 66166
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_corner-northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_corner-northeast.png",
+      "sha256": "11faebba615e846fec78d97c7ea693f815414b6af7a70e6a858caa60ed833dd6",
+      "bytes": 69861
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_corner-northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_corner-northwest.png",
+      "sha256": "30bc48ec20373f25c851ad22d5faf870c2dddd06dde80c41e9ce555d8cad285f",
+      "bytes": 65121
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_corner-southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_corner-southeast.png",
+      "sha256": "0062980efd192e4a3d4df7130d71f8bde9f1bd32eea5889d75f0c16bf7690424",
+      "bytes": 64359
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_corner-southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_corner-southwest.png",
+      "sha256": "2c9c923f881dcacf3c752e651d982c93b58100c655db088787ba5c60dbc199f4",
+      "bytes": 58138
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_edge_east.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_edge_east.png",
+      "sha256": "26caa5400d80f9a58e2cbdb44376d8627020aee43eb1f4de0dd90f1815714296",
+      "bytes": 70742
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_edge_north.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_edge_north.png",
+      "sha256": "0be6b0aca0edcb6c8c55409c9db4596ce4d7621ac51f1a6f340ebacdc3a837f1",
+      "bytes": 70430
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_edge_south.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_edge_south.png",
+      "sha256": "cae0f340c5397b19e827a7a1ca81218044fdd7275aaf38204f4e161bfe0308eb",
+      "bytes": 61994
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_edge_west.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_edge_west.png",
+      "sha256": "bdf47da6b2213fb5fd99848364e112d010314046c30c808e8845b412436d5eb7",
+      "bytes": 63184
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/hazard_concrete_stripes_full.png",
+      "local": "Assets/Art/AdventureForge/Tiles/hazard_concrete_stripes_full.png",
+      "sha256": "32ee07c2f9142ad403a3eb597b6ec957156c20f542b518bcf001ef836ee6bf2f",
+      "bytes": 60533
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_cap_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_cap_northwest.png",
+      "sha256": "014c287cb992a999e4487e3264ef8a45c9547166d1964d1c1c76cdaba18d6054",
+      "bytes": 77294
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_cap_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_cap_southeast.png",
+      "sha256": "e28159a7f8eccda24c2f0967c303cc2d66d49f2cd86ebd6bd6e474858cf10825",
+      "bytes": 75486
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_cap_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_cap_southwest.png",
+      "sha256": "a1088e0e07561aaecbee7ef157953f4d9cfccd18f0304d68f5a500651016498d",
+      "bytes": 79397
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_corner_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_corner_northeast.png",
+      "sha256": "1f283199d78e9796fb848e09ae6eb2f4c2604bcf95e811319b68443785e40702",
+      "bytes": 81594
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_corner_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_corner_northwest.png",
+      "sha256": "e37ef8d31db2090c4955503e1e10614eae7a0e2343ebfe511591aaa9ba076b8d",
+      "bytes": 86233
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_corner_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_corner_southeast.png",
+      "sha256": "11be836f7f42dcc64434cc399cfe80622ddb5f06f40d65c322505f6d7e44ee4c",
+      "bytes": 83056
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_corner_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_corner_southwest.png",
+      "sha256": "d3d0ed7ad65fc3434433d2626cfdec9b867e18049a2ecd4c98ca0aeda6802be3",
+      "bytes": 87306
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_edge_east.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_edge_east.png",
+      "sha256": "3a0135d286efba130ccf61771963ef8bf663eebd716b5cb6b7818cc75eabc7b9",
+      "bytes": 76958
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_edge_north.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_edge_north.png",
+      "sha256": "381cd7947aaf46a7fe097ad46a4fad170f90cafdc7fc48f88923b918d096e7d7",
+      "bytes": 78745
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_edge_south.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_edge_south.png",
+      "sha256": "a43f3c9c03ed73d247ec956b013cc14ed9610741e46cf47bfbf5eaa90a4c2036",
+      "bytes": 82174
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_edge_west.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_edge_west.png",
+      "sha256": "6ee95e56e18b860e43e3b128da2d51ff0ad461f8cb9e9e1836fc2f5f82cc5b7b",
+      "bytes": 84939
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_blue_full.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_blue_full.png",
+      "sha256": "e916fb7c0218f746a38c9c67287824fb2766119bb080ffe3093a4f79728b28af",
+      "bytes": 92576
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_metal_blank.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_metal_blank.png",
+      "sha256": "7b6daab1c3328c36f853da84832d4314598efbde00ea647f9117f765d1b6cd9f",
+      "bytes": 65216
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red.png",
+      "sha256": "446e5f283fa7b8e63fd0d6778f9bac105322d84840e61d4a1a7d6bb6fa924879",
+      "bytes": 92030
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_cap_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_cap_northeast.png",
+      "sha256": "7059ba4c111a4b7070d495fdd9f2169efcd39f1d64d2277235f287d5cda56602",
+      "bytes": 68092
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_cap_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_cap_northwest.png",
+      "sha256": "232f2841277991cfb433ccfc755371154c534d91527cbde45fd3be5f0bfec01f",
+      "bytes": 74815
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_cap_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_cap_southeast.png",
+      "sha256": "607e8bf77a8ba5e9a5ca8e716782be7ed407dc8dfb218e5367c8b3be087dac27",
+      "bytes": 73367
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_cap_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_cap_southwest.png",
+      "sha256": "5f30634bfad85edbaa20968ae99377422b7161af531bbcd499d5fd6c8746a0e1",
+      "bytes": 78887
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_corner_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_corner_northeast.png",
+      "sha256": "838c59828c570d14571631b1fc33db92353ae43f12dff35889423ec28a187782",
+      "bytes": 81805
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_corner_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_corner_northwest.png",
+      "sha256": "565b05cd9612a60e23d6a4cf16e3e5b388abe3fcc06d9622eb316e02c2045ed0",
+      "bytes": 87582
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_corner_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_corner_southeast.png",
+      "sha256": "5f5c70c12ff4efa80a5ab817c09bddc0d9f99bc764bba98cb67e690d2c989751",
+      "bytes": 86110
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_corner_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_corner_southwest.png",
+      "sha256": "e205209d5d689b8cf07529817acc1ab1eeea4dd6f89ea73cc263fad61cb90c3e",
+      "bytes": 90517
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_edge_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_edge_northeast.png",
+      "sha256": "4d9c300e86e104184d2acbed225384b40d517cd632cebdb69dfc9a46d1127d40",
+      "bytes": 77401
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_edge_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_edge_southeast.png",
+      "sha256": "b5eab9ba1839a0fbc337b8cef66f24f1ebadb3b4cf37c0ad043bd871ca2df000",
+      "bytes": 75758
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_edge_southwest-1.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_edge_southwest-1.png",
+      "sha256": "1133904860ceab48b5025857936cac96e5d64cf13e35e34e42a7d164343e6705",
+      "bytes": 85009
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/lights_red_edge_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/lights_red_edge_southwest.png",
+      "sha256": "3e7b86d427efe223c4b3fa36554cef75985d4fcdf0c3f5650865be3a9c24de14",
+      "bytes": 85168
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/metal-bolted.png",
+      "local": "Assets/Art/AdventureForge/Tiles/metal-bolted.png",
+      "sha256": "f3eb34b708a4fdb1967e5dac7e15797cc76608bb3c399abe549a7fabdc1c94aa",
+      "bytes": 150439
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_cap_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_cap_northeast.png",
+      "sha256": "ee59b790f7d9a7ca8709607263312e60f370f1f1221dd8bf6dc0375d47641b54",
+      "bytes": 22169
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_cap_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_cap_northwest.png",
+      "sha256": "d7ccf57703f8773061d8e8c7be726eff8e5e777c7b866e5240600d4a15b8affd",
+      "bytes": 22033
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_cap_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_cap_southeast.png",
+      "sha256": "8c1f8096563e40e222d99ddf2dc5ff88757f3ae767f7ef4a2c3d67db4404add1",
+      "bytes": 22130
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_cap_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_cap_southwest.png",
+      "sha256": "f4f314bfc93bbb29cee18b0e19c959fed4243fcdf13bd04f66ec3d332d971ed7",
+      "bytes": 22169
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_corner_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_corner_northeast.png",
+      "sha256": "16f10398629790f17e4b6411281355de1693dc31f9d94c97ee1c47bfce445427",
+      "bytes": 62286
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_corner_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_corner_northwest.png",
+      "sha256": "3ffd1b9ec8e2df67c49972f36aa4a429fb73b1f5b22c04ff9514b798c9c499e8",
+      "bytes": 51943
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_corner_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_corner_southeast.png",
+      "sha256": "51c0b61b24d4027e88f02ec97640c423e22912ee171c37bd2f449ea2ee091fa0",
+      "bytes": 52781
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_corner_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_corner_southwest.png",
+      "sha256": "7f542fc80ea763a8653b05b583e175ec8e5be9fe350e72bca3e06ceae2e5a331",
+      "bytes": 55138
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_edge_northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_edge_northeast.png",
+      "sha256": "888b72df1077c754f4e9baf83c25b19dfcfe147a00d8d4e321bc0abd5912a264",
+      "bytes": 42761
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_edge_northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_edge_northwest.png",
+      "sha256": "18c84262cc264faee389a4ac33c447286fd6d4c64fe37a4ffdcd3cde38b8b198",
+      "bytes": 43608
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_edge_southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_edge_southeast.png",
+      "sha256": "6ec77cec29c3f58010fdb12d7575bdf49c89f85984e947242446e32a7078b539",
+      "bytes": 41165
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/paneling_wall_edge_southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/paneling_wall_edge_southwest.png",
+      "sha256": "49fe108a8e4c3d157f246578e9077f7e969ad7fef316a8e9a45efe5726645319",
+      "bytes": 42185
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_01.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_01.png",
+      "sha256": "fcef960e48c6cae32a9113f68f9cf627ef1d0c3b5fbb4a65c67a53acdd94a1b4",
+      "bytes": 67940
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_02.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_02.png",
+      "sha256": "5e0a3ca1b98d738881084c57de4c129dbc4ffc78defb0bab0b1a2a377dd55994",
+      "bytes": 67985
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_03.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_03.png",
+      "sha256": "f29d29d521f0f835aabc5fc65f28e5d99e38e365f9fe3c60b0e04dba97a2854e",
+      "bytes": 67779
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_04.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_04.png",
+      "sha256": "591b2f0abbe934690bdeeaf7959f3e7027308d2664317ac272f8be8cc7351627",
+      "bytes": 65691
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_05.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_05.png",
+      "sha256": "a96fb7b33ec1b181088f6a835832331f81c38b677198beb80c7e4b1661fb0702",
+      "bytes": 68080
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/polymer_paneling_06.png",
+      "local": "Assets/Art/AdventureForge/Tiles/polymer_paneling_06.png",
+      "sha256": "aa988b40b35618f8d53b99dfc41f59832ccf877dfcd9e87fdcd7604c1d08beaa",
+      "bytes": 65660
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/reinforced-glass.png",
+      "local": "Assets/Art/AdventureForge/Tiles/reinforced-glass.png",
+      "sha256": "78392e3bc7c8e34daab29bd7af199cfc1f6c7ea68efb66c58c6992051dec92ea",
+      "bytes": 79500
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/riveted-paneling.png",
+      "local": "Assets/Art/AdventureForge/Tiles/riveted-paneling.png",
+      "sha256": "91c56479530910ff4a725d627f398817e6ea6853c200d95f80efb0c6bcf9add2",
+      "bytes": 134145
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate.png",
+      "sha256": "a3789682bbb49fc37ae0a7b878a0a063ebf2a3e9f0323ec07f61c4b74b1ed105",
+      "bytes": 113272
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_cap-northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_cap-northeast.png",
+      "sha256": "88eabf44567e3c245616cbd12deea4ed378ee73877604f0f4f76bfc6b080c98a",
+      "bytes": 70240
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_cap-northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_cap-northwest.png",
+      "sha256": "b175e263eda5e9905ba3d2be4b0d6e81c7b71155c650a8d1be03205b6c9b05e4",
+      "bytes": 75782
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_cap-southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_cap-southeast.png",
+      "sha256": "1bff37f9e0baebf44f36022993521be2c5fc5130985e7d7b5ac678af5daf8efd",
+      "bytes": 73666
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_cap-southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_cap-southwest.png",
+      "sha256": "c1acf11dcb65e50e7ff27e12256f5864ebd33a30986033221335bf7c79303ca6",
+      "bytes": 79330
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_corner-northeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_corner-northeast.png",
+      "sha256": "b2609cdaca1bc6c5f71efc018cb0205033424b8cf88f687436f7dd68bb12ff9f",
+      "bytes": 83351
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_corner-northwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_corner-northwest.png",
+      "sha256": "0e2746fc8ebe1228f9cd6076fa86b64a893040f13cb331ebad3145ebad758a61",
+      "bytes": 91627
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_corner-southeast.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_corner-southeast.png",
+      "sha256": "83a556cea6da3a66e7677d38da062e33d48ab37e9ba1d7cce913eb0f6ad4cdc8",
+      "bytes": 88768
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_corner-southwest.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_corner-southwest.png",
+      "sha256": "1bf7a80c9d1fa5f8b012b5f14c171a7a21e7170f132b5fa85c22460422ef3a73",
+      "bytes": 93727
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_edge-east.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_edge-east.png",
+      "sha256": "242bad23fd87a1a626f094b609ef012da1cb447220620de5e705ab474e21e2a9",
+      "bytes": 76941
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_edge-north.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_edge-north.png",
+      "sha256": "b7d111e6743fb036136b3cac2d49930c1b4b0d087ccc147df869787400f4d39f",
+      "bytes": 78816
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_edge-south.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_edge-south.png",
+      "sha256": "aa76d4291f0d8251f96b9c868b7fb3159c4b2c0d813e17c65e2b4067442b794e",
+      "bytes": 86581
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_edge-west.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_edge-west.png",
+      "sha256": "0837f1408f372296dbf46ac51346c767b16f1f30b695756b7cb0e6dc95aa429b",
+      "bytes": 88569
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_paneling_01.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_paneling_01.png",
+      "sha256": "1854ae7be850da383acd31b56239ebc25953d69ae345b9871e8d1cf83542d5c8",
+      "bytes": 73355
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_paneling_02.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_paneling_02.png",
+      "sha256": "b7a3f1db5c009c4cae63a6dc816b914558201cc09a3c4cae53b04e477e790612",
+      "bytes": 72342
+    },
+    {
+      "archive_path": "Adventure Assets/Tiles/treadplate_paneling_03.png",
+      "local": "Assets/Art/AdventureForge/Tiles/treadplate_paneling_03.png",
+      "sha256": "db82e315523667e649e804592617bfdaed2540290162cb0df423c0e2a46ecf29",
+      "bytes": 84647
+    }
+  ]
+}

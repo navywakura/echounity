@@ -1,0 +1,42 @@
+{
+  "valid": true,
+  "scope": "Current final Unity runs: hash chain, physical receipts, closed sessions",
+  "runs": [
+    {
+      "mission": "irrigation",
+      "session": "30c75734a34b49188f5248151aaa0ebe",
+      "path": "/home/roger/Unity/ECHO-Station/Artifacts/Unity/run-20261011T002728Z-8e8209075cb14edabfa7d534997252fc/thought.jsonl",
+      "valid": true,
+      "actions": 82,
+      "terminal_receipts": 1,
+      "chain": {
+        "events": 332,
+        "last_hash": "b96a324302ee90bdcdc6c4f51733ef361b5556951a4faa74716f39a58905412a"
+      }
+    },
+    {
+      "mission": "delivery",
+      "session": "850ecd7fadde4dc49657e1435ba16c14",
+      "path": "/home/roger/Unity/ECHO-Station/Artifacts/Unity/run-20261011T002752Z-0ed4dcca8d53460cbf4ed1437dc1473a/thought.jsonl",
+      "valid": true,
+      "actions": 73,
+      "terminal_receipts": 1,
+      "chain": {
+        "events": 296,
+        "last_hash": "47d4b14d1e5fd7b6bfb9dd123908f011a21cb1e3d4a393d52fa5dea98793d173"
+      }
+    },
+    {
+      "mission": "detour",
+      "session": "93da4c52a5514e8b8b711b99d95567e7",
+      "path": "/home/roger/Unity/ECHO-Station/Artifacts/Unity/run-20261011T002813Z-f5411a2ae1564fb9956b741ac9e76e2f/thought.jsonl",
+      "valid": true,
+      "actions": 96,
+      "terminal_receipts": 1,
+      "chain": {
+        "events": 388,
+        "last_hash": "c8dfeb51c0118b4e1e53a166c84f437c99ea2331ccf0a9954f39871c5a4fc8c2"
+      }
+    }
+  ]
+}

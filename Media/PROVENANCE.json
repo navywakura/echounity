@@ -1,0 +1,31 @@
+{
+  "schema": "echounity.media.v1",
+  "recorded_date": "2026-10-11",
+  "frames": [
+    {
+      "file": "navigation-lab.png",
+      "sha256": "0f408ee3aae718455d9a83c4791ffd553c88841ab086366206ab34d68fd0de7b",
+      "source_video": "2026-10-11 03-34-48.mp4",
+      "source_video_sha256": "9cc2d0b07b7739f87519ecd5fe8150cb3a8e3313e0b305dc3230cb39c69aa2e3",
+      "seek_seconds": 60,
+      "processing": "ffmpeg decoded one frame; no cropping, image generation or retouching"
+    },
+    {
+      "file": "station-overview.png",
+      "sha256": "c58130b60365dec7e6108fd9c82ffefd854dc4bba5c7cc68d6740a5df2c0582d",
+      "source_video": "2026-10-11 02-29-57.mp4",
+      "source_video_sha256": "2689dc31a7f0cad5634a15ef772ac0fd50aca15875d3c07c60b147f4e22a5530",
+      "seek_seconds": 15,
+      "processing": "ffmpeg decoded one frame; no cropping, image generation or retouching"
+    },
+    {
+      "file": "obstacle-replanning.png",
+      "sha256": "a6b4c6f0429d46aa5939c7d7658cf3fdd764d20b73d96bc685dd524f1f6ee084",
+      "source_video": "2026-10-11 03-34-48.mp4",
+      "source_video_sha256": "9cc2d0b07b7739f87519ecd5fe8150cb3a8e3313e0b305dc3230cb39c69aa2e3",
+      "seek_seconds": 115,
+      "processing": "ffmpeg decoded one frame; no cropping, image generation or retouching"
+    }
+  ],
+  "note": "Source recordings remain local. Screenshots illustrate recorded development sessions; they are not benchmark or release evidence."
+}

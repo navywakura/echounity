@@ -1,0 +1,10 @@
+{
+  "schema": "echo.navigation.live-model.v1",
+  "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+  "modelSha256": "283725b485e3b758d632fdc1600a106bfe4d34bf0dcdef29f12a47b0aa7011a7",
+  "origin": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd",
+  "audit": "/home/roger/Unity/ECHO-Station/Logs/navigation-physical-audit.json",
+  "auditSha256": "ded29d87b7a55ac6b9f7593189fbeebcbaea23e148c116a8cd75acef7771fb5e",
+  "destination": "/home/roger/Unity/ECHO-Station/Artifacts/Navigation/model.json",
+  "scope": "Copy of physically acquired and audited model; no new weights or evidence added."
+}

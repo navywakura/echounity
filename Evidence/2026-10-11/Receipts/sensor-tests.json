@@ -1,0 +1,86 @@
+{
+    "unityVersion": "6000.0.84f1",
+    "utc": "2026-10-11T01:31:21.9941290Z",
+    "passed": true,
+    "failures": 0,
+    "tests": [
+        {
+            "name": "front_wall_and_occluded_endpoints",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 33.0476
+        },
+        {
+            "name": "behind_camera_not_observed",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.391
+        },
+        {
+            "name": "ten_metre_range_from_eye",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.2648
+        },
+        {
+            "name": "odometry_origin_and_camera_frustum",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 3.4746
+        },
+        {
+            "name": "absolute_rotated_fov_and_yaw_wrapping",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.3207
+        },
+        {
+            "name": "outside_fov_not_observed",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.7277
+        },
+        {
+            "name": "own_identity_layers_and_triggers",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 8.9945
+        },
+        {
+            "name": "physics_only_without_map_or_semantics",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 3.5644
+        },
+        {
+            "name": "preview_physics_scenes_are_isolated",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.6876
+        },
+        {
+            "name": "rgb_geometry_occlusion_and_original_robot",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 98.5171
+        },
+        {
+            "name": "billboards_face_each_rendering_camera",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 14.0347
+        },
+        {
+            "name": "reinitialize_and_owned_resource_cleanup",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 3.7196000000000004
+        },
+        {
+            "name": "invalid_inputs_fail_explicitly",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.5244
+        }
+    ]
+}
