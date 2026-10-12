@@ -38,6 +38,10 @@ def main():
     parser.add_argument('--bridge-only',action='store_true')
     parser.add_argument('--classic',action='store_true',help='Open the earlier scripted station missions')
     args=parser.parse_args()
+    if args.classic:
+        command=[sys.executable,'-B',str(ROOT/'Tools/start_arachnid.py'),'--station','--no-blender']
+        if args.bridge_only:command.append('--bridge-only')
+        return subprocess.call(command)
     (ROOT/'Logs').mkdir(exist_ok=True)
     state=health()
     if not state:
@@ -65,4 +69,4 @@ def main():
     print('Unity opening, PID',process.pid)
 
 
-if __name__=='__main__': main()
+if __name__=='__main__': raise SystemExit(main())

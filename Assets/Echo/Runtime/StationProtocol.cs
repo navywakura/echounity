@@ -33,5 +33,6 @@ namespace EchoStation
         public int seq,x,z,budgetUsed,budgetRemaining;
         public string[] hypotheses,evidence;
         public CellData[] knownCells,plan;
+        public NavBasalState basal;
     }
 }

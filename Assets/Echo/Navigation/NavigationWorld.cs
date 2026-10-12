@@ -20,6 +20,10 @@ namespace EchoStation
     {
         public static string NextCase="";
         public static string NextProfile="trained";
+        public static string DatasetOverride=""; // evaluator-only; never enters observations
+        // Optional presentation variant. The navigation policy and world observations stay the same.
+        public GameObject VisualPrefab;
+        public float SensorMountHeight=.92f;
         public NavWorldCase Case {get;private set;}
         public Transform Robot {get;private set;}
         public PredictiveMotor Motor {get;private set;}
@@ -38,6 +42,7 @@ namespace EchoStation
         public static NavWorldCase[] Cases()
         {
             string path=Path.Combine(Application.streamingAssetsPath,"Navigation/worlds-v2.json");
+            if(!string.IsNullOrEmpty(DatasetOverride))path=DatasetOverride;
             var data=JsonUtility.FromJson<NavWorldSet>(File.ReadAllText(path));
             if(data.schema!="echo.navigation.worlds.v1" || data.cases==null || data.cases.Length==0)throw new InvalidDataException("Invalid navigation dataset");
             return data.cases;
@@ -87,8 +92,9 @@ namespace EchoStation
             {float sign=i%2==0?1:-1;var offset=i<2?new Vector3(sign*.65f,.45f,0):new Vector3(0,.45f,sign*.65f);
              Cube("Waypoint post",Point(c.goal.x,c.goal.z)+offset,new Vector3(.09f,.9f,.09f),green,0,false);}
             var robot=new GameObject("ECHO — learning robot");robot.transform.SetParent(generated.transform,false);Robot=robot.transform;
-            Robot.position=Point(c.start.x,c.start.z);Motor=robot.AddComponent<PredictiveMotor>();RobotVisual.Build(Robot);
-            Sensor=robot.AddComponent<RobotSensor>();Sensor.Initialize(Robot);Sensor.SetYaw(0);
+            Robot.position=Point(c.start.x,c.start.z);Motor=robot.AddComponent<PredictiveMotor>();
+            if(VisualPrefab)Instantiate(VisualPrefab,Robot,false);else RobotVisual.Build(Robot);
+            Sensor=robot.AddComponent<RobotSensor>();Sensor.MountHeight=SensorMountHeight;Sensor.Initialize(Robot);Sensor.SetYaw(0);
             if(Camera.main)
             {
                 var iso=Camera.main.GetComponent<IsoCamera>();
@@ -104,12 +110,14 @@ namespace EchoStation
             occupied[p]=block;
             if(!changed)Cube("Wall light",Point(p.x,p.y)+Vector3.up*1.37f,new Vector3(1.8f,.035f,.05f),trim,0,false);
         }
-        public bool SetObstacle(Vector2Int p,bool present)
+        public bool SetObstacle(Vector2Int p,bool present,bool preserveGoalAccess=false)
         {
             if(p==Position || p==new Vector2Int(Case.goal.x,Case.goal.z) || p.x<=0 || p.y<=0 || p.x>=Case.width-1 || p.y>=Case.height-1)return false;
             if(present && occupied.ContainsKey(p))return false;
             var proposed=new Bounds(Point(p.x,p.y)+Vector3.up*.675f,new Vector3(1.92f,1.35f,1.92f));
             if(present && proposed.Intersects(Robot.GetComponent<CharacterController>().bounds))return false;
+            // Evaluator-only probe guard: consult actual geometry, never send it to the actor.
+            if(present && preserveGoalAccess && !NavigationRunCheck.StillReachable(Case,Position,p,occupied.Keys))return false;
             if(present)AddWall(p,true);
             else if(occupied.TryGetValue(p,out var go)){go.SetActive(false);DestroyObject(go);occupied.Remove(p);}
             Physics.SyncTransforms();return true;

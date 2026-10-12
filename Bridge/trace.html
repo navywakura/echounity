@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="es"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ECHO · Inspector causal</title><link rel="stylesheet" href="/trace.css">
+<body><header><h1>Inspector causal</h1><p>ECHO-Station · Observaciones y recibos del agente</p>
+<label>Sesión <select id="session" aria-label="Sesión observada"></select></label>
+<button id="refresh">Actualizar</button><span id="status" role="status">Buscando sesiones…</span></header>
+<main><aside><h2>Decisiones</h2><p>Selecciona un veto para abrir su evidencia.</p><nav id="steps" aria-label="Decisiones registradas"></nav></aside>
+<article><h2 id="title">Esperando una sesión</h2><div id="chain" aria-label="Cadena de causa y efecto"></div>
+<details open><summary>Observación actual</summary><pre id="observation">Inicia una misión en Unity.</pre></details>
+<details open><summary>Recibo histórico que motivó el veto</summary><pre id="receipt">Selecciona una decisión con veto.</pre></details>
+<details><summary>Predicción, decisión y presupuesto</summary><pre id="decision"></pre></details>
+<details><summary>Últimos episodios CAM</summary><pre id="memories"></pre></details></article></main>
+<footer>Lectura pasiva · drives_policy = false. D = 0 y B = 0: sin transductor físico asignado.<br>
+Las explicaciones muestran campos registrados; no son un monólogo interno.</footer><script src="/trace.js"></script></body></html>

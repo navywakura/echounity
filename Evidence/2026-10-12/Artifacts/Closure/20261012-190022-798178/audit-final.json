@@ -1,0 +1,27 @@
+{
+  "valid": true,
+  "journals": [
+    {
+      "valid": true,
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190022-798178/offline/brain/run-771db33752ac49f3be44e39a74b8389b/thought.jsonl",
+      "sha256": "f594bc973c3f0ba1303a8d222a9110cb25008dd2382d63f6c850abef9fcf87b3",
+      "events": 194,
+      "last_hash": "6f65208aaf3cb924e1b600c4e65ddedde9100039f525b76f5e411be736600f36",
+      "e_updates": 31,
+      "cam_receipts": 30,
+      "verified_reads": 0,
+      "interventions": 0,
+      "repositions": 0,
+      "completed": true,
+      "budgetUsed": 196145,
+      "metrics": {
+        "calibrationAccepted": 23,
+        "confirmedMoves": 23,
+        "decisions": 31,
+        "moves": 23,
+        "restored": 0,
+        "scans": 7
+      }
+    }
+  ]
+}

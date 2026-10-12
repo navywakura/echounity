@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-12",
+  "images": [
+    {
+      "path": "unity-live-1.0.png",
+      "source": "Logs/Closure/unity-live-1.0.png",
+      "sha256": "aa5dc2536f7cdc80ab752b8c406b585006bb255e7f8a3fb3f4d2dc5446890ca6",
+      "bytes": 374912,
+      "kind": "actual application screenshot"
+    },
+    {
+      "path": "trace-inspector.png",
+      "source": "Logs/Closure/trace-inspector.png",
+      "sha256": "d1ae9899b3f414a9e67747e9075f7055efd0b0a01016a4b64b08d110368dabff",
+      "bytes": 73421,
+      "kind": "actual application screenshot"
+    }
+  ],
+  "note": "Actual Unity window and actual read-only causal inspector. No synthetic illustration."
+}

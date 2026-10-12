@@ -12,6 +12,7 @@ namespace EchoStation
     public sealed class NavigationClient : MonoBehaviour
     {
         public NavigationWorld World;
+        public string Endpoint="http://127.0.0.1:8770";
         public bool Automatic {get;private set;}
         public bool Connected {get;private set;}
         public string Status="Conectando con ECHO…";
@@ -24,6 +25,12 @@ namespace EchoStation
         public bool TerminalCompleted {get;private set;}
         public bool TerminalPending {get;private set;}
         public bool ModelSaved {get;private set;}
+        public bool SessionEnded {get;private set;}
+        public bool Closing {get;private set;}
+        public bool UserPaused=>sessionOpen && !Automatic && !stopRequested;
+        public string RunState=>Closing?"CERRANDO SESIÓN":Automatic?"EXPLORANDO":UserPaused?"PAUSA MANUAL":
+            TerminalCompleted?"META CONFIRMADA":SessionEnded?"DETENIDO · VER MOTIVO":Connected?"LISTO":"SIN CONEXIÓN";
+        public string RunButton=>Automatic?"Pausar":UserPaused?"Continuar":SessionEnded?"Reiniciar mapa":"Iniciar";
         public string TerminalError {get;private set;}="";
         // Evaluator hook to inject an actual obstacle after sensing, before the motor ticks.
         public event Action<Vector2Int> MovementPrepared;
@@ -35,6 +42,8 @@ namespace EchoStation
         LineRenderer line;
         void Start()
         {
+            var args=Environment.GetCommandLineArgs();int endpointIndex=Array.IndexOf(args,"-closureEndpoint");
+            if(endpointIndex>=0)Endpoint=args[endpointIndex+1];
             Session=Guid.NewGuid().ToString("N");Application.targetFrameRate=40;
             var go=new GameObject("Plan from acquired model");go.transform.SetParent(transform,false);
             line=go.AddComponent<LineRenderer>();line.material=new Material(Shader.Find("Sprites/Default"));
@@ -46,7 +55,7 @@ namespace EchoStation
         }
         IEnumerator Health()
         {
-            using(var q=UnityWebRequest.Get("http://127.0.0.1:8770/health"))
+            using(var q=UnityWebRequest.Get(Endpoint+"/health"))
             {q.timeout=4;yield return q.SendWebRequest();Connected=q.result==UnityWebRequest.Result.Success;
              Status=Connected?"Listo · cámara y aprendizaje local":"Puente apagado · ejecuta Tools/start.sh";}
         }
@@ -74,9 +83,10 @@ namespace EchoStation
         }
         public void Begin()
         {
+            if(Closing)return;
             if(sessionOpen){Automatic=true;Status="Continuando la misma sesión y su memoria";return;}
             Session=Guid.NewGuid().ToString("N");Sequence=0;Latest=null;World.LastOutcome=new NavOutcome();usedBridge=true;sessionOpen=true;stopRequested=false;
-            lastSent=null;TerminalAcknowledged=false;TerminalCompleted=false;TerminalPending=true;ModelSaved=false;TerminalError="";
+            lastSent=null;TerminalAcknowledged=false;TerminalCompleted=false;TerminalPending=true;ModelSaved=false;TerminalError="";SessionEnded=false;
             Automatic=true;Status="Observando a través de la cámara de profundidad";StartCoroutine(Loop());
         }
         void FinalizeMove(bool cancelled)
@@ -87,8 +97,16 @@ namespace EchoStation
         }
         public void Pause()
         {
+            if(!sessionOpen)return;
             Automatic=false;
             Status=Pending?"Pausa solicitada · termina el movimiento actual":"Pausado · continúa esta sesión al iniciar";
+        }
+        public void ToggleRun()
+        {
+            if(Closing)return;
+            if(Automatic)Pause();
+            else if(SessionEnded)Load(World.Case.id,Profile);
+            else Begin();
         }
         public void StopSession()
         {
@@ -97,7 +115,7 @@ namespace EchoStation
         }
         void Finish()
         {
-            if(!usedBridge || !World || World.Case==null)return;usedBridge=false;
+            if(!usedBridge || !World || World.Case==null)return;usedBridge=false;Closing=true;
             string closingSession=Session;int closingSeq=Sequence;
             // No new action: close the exact request, even if the world changed meanwhile.
             var observation=lastSent!=null && lastSent.seq==Sequence?lastSent:World.Observe(Session,Sequence,Profile);
@@ -114,7 +132,8 @@ namespace EchoStation
                     bool ok=receipt!=null && receipt.schema=="echo.navigation.finish.v1" && receipt.status=="closed" && receipt.session==closingSession && receipt.seq==closingSeq;
                     if(Session==closingSession)
                     {TerminalAcknowledged=ok;TerminalError=ok?"":q.downloadHandler.text;
-                     if(ok){TerminalCompleted=receipt.completed;TerminalPending=receipt.pending;ModelSaved=receipt.modelSaved;}}
+                     if(ok){TerminalCompleted=receipt.completed;TerminalPending=receipt.pending;ModelSaved=receipt.modelSaved;}
+                     if(ok || attempt>=2)Closing=false;}
                     if(!ok && attempt<2)SendClose(observation,closingSession,closingSeq,attempt+1);
                     else if(!ok)Debug.LogWarning("Navigation terminal receipt not acknowledged after retries: "+q.downloadHandler.text);
                 }
@@ -123,7 +142,7 @@ namespace EchoStation
         }
         UnityWebRequest Request(string route,NavObservation observation)
         {
-            var q=new UnityWebRequest("http://127.0.0.1:8770"+route,"POST");
+            var q=new UnityWebRequest(Endpoint+route,"POST");
             q.uploadHandler=new UploadHandlerRaw(Encoding.UTF8.GetBytes(JsonUtility.ToJson(observation)));
             q.downloadHandler=new DownloadHandlerBuffer();q.SetRequestHeader("Content-Type","application/json");q.timeout=15;return q;
         }
@@ -173,7 +192,7 @@ namespace EchoStation
                 }
                 Status="Presupuesto de 320 decisiones agotado";
             }
-            finally {Automatic=false;FinalizeMove(true);if(World && World.Motor)World.Motor.Stop();Finish();sessionOpen=false;}
+            finally {Automatic=false;SessionEnded=true;FinalizeMove(true);if(World && World.Motor)World.Motor.Stop();Finish();sessionOpen=false;}
         }
         void DrawPlan(NavPoint[] plan)
         {
@@ -198,7 +217,7 @@ namespace EchoStation
         }
         void Update()
         {
-            if(Input.GetKeyDown(KeyCode.Space)){if(Automatic)Pause();else Begin();}
+            if(Input.GetKeyDown(KeyCode.Space))ToggleRun();
             if(Input.GetKeyDown(KeyCode.V))World.Motor.ShowPrediction=!World.Motor.ShowPrediction;
             if(Input.GetKeyDown(KeyCode.B))PlaceObstacle();
             if(!Automatic && Input.GetKeyDown(KeyCode.Q))World.Sensor.SetYaw(World.Sensor.Yaw-90);

@@ -4,7 +4,7 @@ No evaluator, command mapping, effect prior, RGB semantics, or world generator
 is available here. Geometric sensing/frontier selection are declared algorithms.
 """
 
-from collections import Counter
+from collections import Counter, deque
 from dataclasses import dataclass
 from fractions import Fraction
 import hashlib
@@ -415,8 +415,7 @@ class NavigationAgent:
             return self._decision(obs, "scan", "Girar la cámara para medir espacio todavía incierto.", yaw=candidates[0])
         return None
 
-    def _probe(self, obs, *, allow_ambiguous=False):
-        origin, free = _point(obs), self._free(obs)
+    def _probe_options(self, origin, free, *, allow_ambiguous=False):
         ranked = []
         for command, candidates in enumerate(self.model["hypotheses"]):
             self.budget.consume("navigation_probe", 1 + len(candidates))
@@ -432,11 +431,62 @@ class NavigationAgent:
                 continue
             ranked.append((not safe, self.attempts[(origin, command)],
                            self.model["support"][command], -len(destinations & free), command))
+        return ranked
+
+    def _probe(self, obs, *, allow_ambiguous=False):
+        ranked = self._probe_options(_point(obs), self._free(obs), allow_ambiguous=allow_ambiguous)
         if not ranked:
             return None
         command = min(ranked)[-1]
         return self._decision(obs, "move", "Muestra física para identificar un comando; efecto aún no adquirido con dos recibos.",
                               command=command)
+
+    def _reposition_for_probe(self, obs):
+        """Replay confirmed local edges to a NEW sample; do not inflate support.
+
+        A single receipt is enough to revisit that observed edge. Generalized
+        planning still requires two independent samples in the unchanged core.
+        Only this session's physical calibration receipts form the graph.
+        """
+        if obs['profile'] == 'no_memory':
+            return None
+        origin, free = _point(obs), self._free(obs)
+        edges = {}
+        for sample in self.calibrations:
+            self.budget.consume('navigation_reposition_receipt')
+            receipt = sample['outcome']
+            source = (receipt['fromX'], receipt['fromZ'])
+            target = (receipt['x'], receipt['z'])
+            command = receipt['command']
+            if (receipt['session'] == obs['session'] and receipt['status'] == 'arrived'
+                    and source in free and target in free
+                    and (source, command) not in self.blocked_edges
+                    and self._target(source, command) == target):
+                edges.setdefault(source, set()).add((command, target))
+        frontier, parents = deque([origin]), {origin: None}
+        while frontier:
+            node = frontier.popleft()
+            self.budget.consume('navigation_reposition_node')
+            if node != origin and self._probe_options(node, free):
+                actions, positions, cursor = [], [node], node
+                while cursor != origin:
+                    self.budget.consume('navigation_reposition_extract')
+                    previous, command = parents[cursor]
+                    actions.append(command);positions.append(previous);cursor = previous
+                route = dict(status='planned', actions=list(reversed(actions)),
+                             positions=[[z,x] for x,z in reversed(positions)],
+                             source='confirmed_session_receipts')
+                self.recorder.write(kind='navigation_calibration_reposition', session=obs['session'],
+                                    seq=obs['seq'], route=route, sample_origin=list(node),
+                                    support=list(self.model['support']))
+                return self._decision(obs, 'move',
+                    'Revisitar un recorrido confirmado para adquirir una muestra nueva de calibración.', route=route)
+            for command, target in sorted(edges.get(node, ())):
+                self.budget.consume('navigation_reposition_edge')
+                if target not in parents:
+                    parents[target] = (node, command)
+                    frontier.append(target)
+        return None
 
     def _choose(self, obs):
         if self.stopped:
@@ -453,6 +503,9 @@ class NavigationAgent:
             scan = self._scan(obs)
             if scan:
                 return scan
+            reposition = self._reposition_for_probe(obs)
+            if reposition:
+                return reposition
             probe = self._probe(obs, allow_ambiguous=True)
             if probe:
                 return probe
@@ -469,7 +522,9 @@ class NavigationAgent:
             frontiers += [p for p in free if p != origin and p not in frontiers]
         self.budget.consume("navigation_frontiers", len(free))
         frontiers.sort(key=lambda p: (self.visits[p] > 3, _distance(p, goal), self.visits[p], _distance(origin, p), p))
-        for target in frontiers[:8]:
+        # A cap of eight unreachable candidates is not evidence of no route.
+        # Work remains bounded by the shared budget and finite observed map.
+        for target in dict.fromkeys(frontiers):
             route = self._route(obs, target)
             if route:
                 return self._decision(obs, "move", "Explorar una frontera mediante PLAN aprendido.", route=route)
@@ -603,7 +658,9 @@ class NavigationService:
     separate artifact_root and model_path. No global model or map cache exists.
     """
 
-    def __init__(self, artifact_root, model_path=None):
+    def __init__(self, artifact_root, model_path=None, *, agent_type=NavigationAgent):
+        # Optional actor adapter; the default and the original server stay unchanged.
+        self.agent_type = agent_type
         self.artifact_root = Path(artifact_root).expanduser().resolve()
         self.model_path = (self.artifact_root / "model.json" if model_path is None
                            else Path(model_path).expanduser().resolve())
@@ -740,7 +797,7 @@ class NavigationService:
         journal = self.artifact_root / ("run-" + uuid.uuid4().hex) / "thought.jsonl"
         recorder = Recorder(journal)
         try:
-            agent = NavigationAgent(core=core, budget=budget, recorder=recorder, journal_path=journal)
+            agent = self.agent_type(core=core, budget=budget, recorder=recorder, journal_path=journal)
             agent.metrics["restored"] = int(restored)
             self._load_map(obs, agent)
             recorder.write(kind="navigation_session", session=obs["session"], world=obs["world"],

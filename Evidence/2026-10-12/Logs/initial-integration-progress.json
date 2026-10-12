@@ -1,0 +1,39 @@
+{
+    "valid": false,
+    "scope": "Unity + ECHO external planner, three development missions",
+    "runs": [
+        {
+            "mission": "irrigation",
+            "session": "3d07688a635c432b93f83960cc572da7",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "actions": 82,
+            "decisions": 82,
+            "battery": 78.16007232666016,
+            "seconds": 22.47504234313965
+        },
+        {
+            "mission": "delivery",
+            "session": "8d74b13cefdd4c519078fe64afcd4428",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "actions": 73,
+            "decisions": 73,
+            "battery": 79.88008117675781,
+            "seconds": 20.755708694458009
+        },
+        {
+            "mission": "detour",
+            "session": "445c3c9d44c542d3bf07d50cee211643",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "actions": 82,
+            "decisions": 82,
+            "battery": 78.16007232666016,
+            "seconds": 22.466339111328126
+        }
+    ]
+}

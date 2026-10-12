@@ -1,0 +1,21 @@
+test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge (test_navigation_corner.NavigationCornerTests.test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge) ... FAIL
+
+======================================================================
+FAIL: test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge (test_navigation_corner.NavigationCornerTests.test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roger/Unity/ECHO-Station/Bridge/tests/test_navigation_corner.py", line 57, in test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge
+    self.assertEqual(
+AssertionError: Tuples differ: ('free', False) != ('occupied', True)
+
+First differing element 0:
+'free'
+'occupied'
+
+- ('free', False)
++ ('occupied', True) : A grazing ray must preserve occupied memory and its blocked edge
+
+----------------------------------------------------------------------
+Ran 1 test in 0.018s
+
+FAILED (failures=1)

@@ -1,4 +1,40 @@
-# Historical evidence selection — 2026-10-11
+# Unity evidence archive
+
+## Full record snapshot — 2026-10-12
+
+[1,363 files / 569,887,676 bytes](2026-10-12/MANIFEST.json),
+copied byte-for-byte from the Unity project's scientific records. This snapshot
+contains all existing `Artifacts` JSON/JSONL, including complete CPU navigation
+transcripts, physical missions, failed development runs, CAM checkpoints and
+source manifests; historical Unity-specific source snapshots; selected test
+receipts and clean captures from `Logs`.
+
+The reference closure is
+[`20261012-191553-460628`](2026-10-12/Artifacts/Closure/20261012-191553-460628/status.json):
+16/16 held-out maps, 3/3 Station missions and 34 audited journals. Earlier failed
+or interrupted runs are retained as history and must not be counted as passes.
+Original SHA-256 chains and absolute paths are preserved. These paths identify
+provenance; the archive auditor explicitly maps them into this archive and
+rejects references outside it. No live original directory is consulted.
+
+```sh
+python3 -B Tools/check_publication.py
+python3 -B Tools/test_audit_arachnid_archive.py
+```
+
+The first command checks distributed file hashes, all snapshot hashes and the
+34 reference closure journals. It does not assert that every archived failed
+run passes the current semantic auditor. Neither command reruns missions,
+trains the agent or opens a sealed confirmation. New verification receipts
+are written only under ignored `Logs/`.
+
+Excluded: engine licensing logs, browser profiles, PID/control scratch files,
+crash dumps, Unity caches and non-Unity core source copies. ECHO's implementation
+belongs to `navywakura/echoai`; original dependency hashes remain in the records.
+Captured test logs contain test outcomes, not raw Unity licensing messages.
+Historical names and dates are not rewritten to match the public package.
+
+## Previous bounded selection — 2026-10-11
 
 This bounded archive contains **50 original files, 5,239,293 bytes**. Every file
 is copied byte-for-byte; [MANIFEST.json](2026-10-11/MANIFEST.json) records relative
@@ -15,7 +51,8 @@ The original `Artifacts/` inventory was **1,479 files / 505,148,447 bytes**:
 Navigation 1,435 / 488,954,962; NavigationPhysical 30 / 3,368,981;
 Unity 14 / 12,824,504. Receipts selected from the original `Logs/` add a small
 amount outside that inventory. The other CPU campaigns, duplicated development
-runs, exploratory sessions and unused checkpoints are omitted. Journals included
+runs, exploratory sessions and unused checkpoints were omitted from this first selection;
+they are now included in the October 12 archive below. Journals included
 here are complete; no selected session is shortened or rechained.
 
 Records contain this project's simulator observations, explicit hypotheses,
@@ -46,4 +83,4 @@ instrument the sealed confirmations to validate packaging.
 
 The navigation result measures a motor-effect model and remembered geometric
 map. Depth comes from Unity raycasts; the RGB camera is displayed to the human,
-not classified by learned vision. ECHO-5 closure is pending. S6 is later work.
+not classified by learned vision. This was an October 11 navigation record. S6 is separate later work.

@@ -1,0 +1,823 @@
+{
+  "schema": "echo.navigation.physical-audit.v1",
+  "valid": true,
+  "root": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97",
+  "integration": "/home/roger/Unity/ECHO-Station/Logs/navigation-integration-tests.json",
+  "scope": "Local physical receipts, depth/odometry projections and ECHO core evidence; acquisition/development only",
+  "runs": [
+    {
+      "session": "42f6f32ba0dd41c3961a673bb9327efc",
+      "world": "c-02f08d80c4f51fa6e2d689fb",
+      "profile": "learn",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-322afee10a234dbc8f52ac5da473b877/thought.jsonl",
+      "chain": {
+        "events": 91,
+        "last_hash": "824805146554284f36ac2a0b490c207469cacdb3ad50db328976be160451f373"
+      },
+      "initialModelHash": "a64979b8d5577608475cb92ccbe7f7ed96992828cbc37c1776bd18afe004cb3d",
+      "modelHash": "5b7a6547843755bf52660d4b6b2287e879945d5afb44bb95b4b7ade2e2148dbc",
+      "initialSupport": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "support": [
+        2,
+        7,
+        7,
+        2
+      ],
+      "confirmedUnitMoves": 18,
+      "acceptedProjections": 18,
+      "duplicateProjections": 0,
+      "plansReplayedWithoutPrior": 10,
+      "modelSaved": true,
+      "closedActualSuccess": true,
+      "evidenceLinks": [
+        {
+          "observationIndex": 6,
+          "calibrationIndex": 7,
+          "proposalSeq": 1,
+          "action": 0,
+          "before": [
+            7,
+            7
+          ],
+          "after": [
+            7,
+            6
+          ],
+          "evidenceIndex": 0
+        },
+        {
+          "observationIndex": 10,
+          "calibrationIndex": 11,
+          "proposalSeq": 2,
+          "action": 1,
+          "before": [
+            7,
+            6
+          ],
+          "after": [
+            8,
+            6
+          ],
+          "evidenceIndex": 1
+        },
+        {
+          "observationIndex": 14,
+          "calibrationIndex": 15,
+          "proposalSeq": 3,
+          "action": 2,
+          "before": [
+            8,
+            6
+          ],
+          "after": [
+            8,
+            7
+          ],
+          "evidenceIndex": 2
+        },
+        {
+          "observationIndex": 18,
+          "calibrationIndex": 19,
+          "proposalSeq": 4,
+          "action": 3,
+          "before": [
+            8,
+            7
+          ],
+          "after": [
+            7,
+            7
+          ],
+          "evidenceIndex": 3
+        },
+        {
+          "observationIndex": 22,
+          "calibrationIndex": 23,
+          "proposalSeq": 5,
+          "action": 1,
+          "before": [
+            7,
+            7
+          ],
+          "after": [
+            8,
+            7
+          ],
+          "evidenceIndex": 4
+        },
+        {
+          "observationIndex": 26,
+          "calibrationIndex": 27,
+          "proposalSeq": 6,
+          "action": 0,
+          "before": [
+            8,
+            7
+          ],
+          "after": [
+            8,
+            6
+          ],
+          "evidenceIndex": 5
+        },
+        {
+          "observationIndex": 30,
+          "calibrationIndex": 31,
+          "proposalSeq": 7,
+          "action": 3,
+          "before": [
+            8,
+            6
+          ],
+          "after": [
+            7,
+            6
+          ],
+          "evidenceIndex": 6
+        },
+        {
+          "observationIndex": 34,
+          "calibrationIndex": 35,
+          "proposalSeq": 8,
+          "action": 2,
+          "before": [
+            7,
+            6
+          ],
+          "after": [
+            7,
+            7
+          ],
+          "evidenceIndex": 7
+        },
+        {
+          "observationIndex": 39,
+          "calibrationIndex": 40,
+          "proposalSeq": 9,
+          "action": 2,
+          "before": [
+            7,
+            7
+          ],
+          "after": [
+            7,
+            8
+          ],
+          "evidenceIndex": 8
+        },
+        {
+          "observationIndex": 44,
+          "calibrationIndex": 45,
+          "proposalSeq": 10,
+          "action": 2,
+          "before": [
+            7,
+            8
+          ],
+          "after": [
+            7,
+            9
+          ],
+          "evidenceIndex": 9
+        },
+        {
+          "observationIndex": 49,
+          "calibrationIndex": 50,
+          "proposalSeq": 11,
+          "action": 2,
+          "before": [
+            7,
+            9
+          ],
+          "after": [
+            7,
+            10
+          ],
+          "evidenceIndex": 10
+        },
+        {
+          "observationIndex": 54,
+          "calibrationIndex": 55,
+          "proposalSeq": 12,
+          "action": 2,
+          "before": [
+            7,
+            10
+          ],
+          "after": [
+            7,
+            11
+          ],
+          "evidenceIndex": 11
+        },
+        {
+          "observationIndex": 59,
+          "calibrationIndex": 60,
+          "proposalSeq": 13,
+          "action": 2,
+          "before": [
+            7,
+            11
+          ],
+          "after": [
+            7,
+            12
+          ],
+          "evidenceIndex": 12
+        },
+        {
+          "observationIndex": 64,
+          "calibrationIndex": 65,
+          "proposalSeq": 14,
+          "action": 1,
+          "before": [
+            7,
+            12
+          ],
+          "after": [
+            8,
+            12
+          ],
+          "evidenceIndex": 13
+        },
+        {
+          "observationIndex": 69,
+          "calibrationIndex": 70,
+          "proposalSeq": 15,
+          "action": 1,
+          "before": [
+            8,
+            12
+          ],
+          "after": [
+            9,
+            12
+          ],
+          "evidenceIndex": 14
+        },
+        {
+          "observationIndex": 74,
+          "calibrationIndex": 75,
+          "proposalSeq": 16,
+          "action": 1,
+          "before": [
+            9,
+            12
+          ],
+          "after": [
+            10,
+            12
+          ],
+          "evidenceIndex": 15
+        },
+        {
+          "observationIndex": 79,
+          "calibrationIndex": 80,
+          "proposalSeq": 17,
+          "action": 1,
+          "before": [
+            10,
+            12
+          ],
+          "after": [
+            11,
+            12
+          ],
+          "evidenceIndex": 16
+        },
+        {
+          "observationIndex": 84,
+          "calibrationIndex": 85,
+          "proposalSeq": 18,
+          "action": 1,
+          "before": [
+            11,
+            12
+          ],
+          "after": [
+            12,
+            12
+          ],
+          "evidenceIndex": 17
+        }
+      ],
+      "blocks": 0
+    },
+    {
+      "session": "709abcfcf5c64148bc2ef3f1a8ee54c5",
+      "world": "c-2a5909ebe1944d059d28374d",
+      "profile": "learn",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-febb47f511944bf4a43113a811562a36/thought.jsonl",
+      "chain": {
+        "events": 59,
+        "last_hash": "dba7dbe4be8a47dee0102428f0a5c901314303aa49eb312de9ef7f6251fb2a7c"
+      },
+      "initialModelHash": "5b7a6547843755bf52660d4b6b2287e879945d5afb44bb95b4b7ade2e2148dbc",
+      "modelHash": "9f8b1a029d2c6444fbcd1fc8fe30b27aa2ead34ce2742e3cb57699cd1709955f",
+      "initialSupport": [
+        2,
+        7,
+        7,
+        2
+      ],
+      "support": [
+        2,
+        11,
+        9,
+        2
+      ],
+      "confirmedUnitMoves": 10,
+      "acceptedProjections": 6,
+      "duplicateProjections": 4,
+      "plansReplayedWithoutPrior": 10,
+      "modelSaved": true,
+      "closedActualSuccess": true,
+      "evidenceLinks": [
+        {
+          "observationIndex": 22,
+          "calibrationIndex": 23,
+          "proposalSeq": 4,
+          "action": 1,
+          "before": [
+            7,
+            10
+          ],
+          "after": [
+            8,
+            10
+          ],
+          "evidenceIndex": 18
+        },
+        {
+          "observationIndex": 27,
+          "calibrationIndex": 28,
+          "proposalSeq": 5,
+          "action": 1,
+          "before": [
+            8,
+            10
+          ],
+          "after": [
+            9,
+            10
+          ],
+          "evidenceIndex": 19
+        },
+        {
+          "observationIndex": 32,
+          "calibrationIndex": 33,
+          "proposalSeq": 6,
+          "action": 1,
+          "before": [
+            9,
+            10
+          ],
+          "after": [
+            10,
+            10
+          ],
+          "evidenceIndex": 20
+        },
+        {
+          "observationIndex": 37,
+          "calibrationIndex": 38,
+          "proposalSeq": 7,
+          "action": 1,
+          "before": [
+            10,
+            10
+          ],
+          "after": [
+            11,
+            10
+          ],
+          "evidenceIndex": 21
+        },
+        {
+          "observationIndex": 42,
+          "calibrationIndex": 43,
+          "proposalSeq": 8,
+          "action": 2,
+          "before": [
+            11,
+            10
+          ],
+          "after": [
+            11,
+            11
+          ],
+          "evidenceIndex": 22
+        },
+        {
+          "observationIndex": 47,
+          "calibrationIndex": 48,
+          "proposalSeq": 9,
+          "action": 2,
+          "before": [
+            11,
+            11
+          ],
+          "after": [
+            11,
+            12
+          ],
+          "evidenceIndex": 23
+        }
+      ],
+      "blocks": 0
+    },
+    {
+      "session": "82b68298caae42f0b4f324916a8fd655",
+      "world": "c-15c9cc4f996f425259c1948f",
+      "profile": "learn",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-495eda2ebf924a3daab8d3fa5f2591ee/thought.jsonl",
+      "chain": {
+        "events": 59,
+        "last_hash": "8f65d566c76a09df3abf9dcc9f145da0e58ec1afd97acc3844ed56d6bd360dee"
+      },
+      "initialModelHash": "9f8b1a029d2c6444fbcd1fc8fe30b27aa2ead34ce2742e3cb57699cd1709955f",
+      "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "initialSupport": [
+        2,
+        11,
+        9,
+        2
+      ],
+      "support": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "confirmedUnitMoves": 10,
+      "acceptedProjections": 3,
+      "duplicateProjections": 7,
+      "plansReplayedWithoutPrior": 10,
+      "modelSaved": true,
+      "closedActualSuccess": true,
+      "evidenceLinks": [
+        {
+          "observationIndex": 42,
+          "calibrationIndex": 43,
+          "proposalSeq": 8,
+          "action": 1,
+          "before": [
+            11,
+            10
+          ],
+          "after": [
+            12,
+            10
+          ],
+          "evidenceIndex": 24
+        },
+        {
+          "observationIndex": 47,
+          "calibrationIndex": 48,
+          "proposalSeq": 9,
+          "action": 2,
+          "before": [
+            12,
+            10
+          ],
+          "after": [
+            12,
+            11
+          ],
+          "evidenceIndex": 25
+        },
+        {
+          "observationIndex": 52,
+          "calibrationIndex": 53,
+          "proposalSeq": 10,
+          "action": 2,
+          "before": [
+            12,
+            11
+          ],
+          "after": [
+            12,
+            12
+          ],
+          "evidenceIndex": 26
+        }
+      ],
+      "blocks": 0
+    },
+    {
+      "session": "8b651209f3554e7bad489fb322678022",
+      "world": "c-19def852bac5ba9cbf9e8858",
+      "profile": "learn",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-b0cc6a8680884f8baf73459bf64bad66/thought.jsonl",
+      "chain": {
+        "events": 58,
+        "last_hash": "3a8bcdb45f0e88d0a0de778ad4bc19360d8e7b73528451f4f7df71c4f5e194de"
+      },
+      "initialModelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "initialSupport": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "support": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "confirmedUnitMoves": 10,
+      "acceptedProjections": 0,
+      "duplicateProjections": 10,
+      "plansReplayedWithoutPrior": 10,
+      "modelSaved": false,
+      "closedActualSuccess": true,
+      "evidenceLinks": [],
+      "blocks": 0
+    },
+    {
+      "session": "66df9af87fb54d25a7eb4e714ec48275",
+      "world": "c-5503c8965489acc1e3dbca62",
+      "profile": "trained",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-aa94dd0b7e28416e9b245025d2007504/thought.jsonl",
+      "chain": {
+        "events": 98,
+        "last_hash": "34be7dba3b03f1c82fc0dcef7cd1145c6708e2c6bd5af932332aab48be7fd9f2"
+      },
+      "initialModelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "initialSupport": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "support": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "confirmedUnitMoves": 20,
+      "acceptedProjections": 0,
+      "duplicateProjections": 0,
+      "plansReplayedWithoutPrior": 21,
+      "modelSaved": false,
+      "closedActualSuccess": true,
+      "evidenceLinks": [],
+      "blocks": 1
+    },
+    {
+      "session": "9c478a52652a46a18dfabe0879faaa6e",
+      "world": "c-d90be7f324fa433f0c844868",
+      "profile": "trained",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-8fd19d56997845d4a4b358a663f524f1/thought.jsonl",
+      "chain": {
+        "events": 68,
+        "last_hash": "0c734a8d1be63fc023af4cdaf25cbc4b901937cd27a2c81f003fd80bef10e2e7"
+      },
+      "initialModelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "initialSupport": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "support": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "confirmedUnitMoves": 15,
+      "acceptedProjections": 0,
+      "duplicateProjections": 0,
+      "plansReplayedWithoutPrior": 15,
+      "modelSaved": false,
+      "closedActualSuccess": true,
+      "evidenceLinks": [],
+      "blocks": 0
+    },
+    {
+      "session": "94a55b2a034742a1a97c53bcc43947ed",
+      "world": "c-571a025a879bc8a380d6d662",
+      "profile": "trained",
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-6b172ec5879948e2a48b5d5f2cf5b0a0/thought.jsonl",
+      "chain": {
+        "events": 76,
+        "last_hash": "05f21214a2f2f5a3030be59e4d967729fac1a88d434e9a7e33f9e0bd3d39d77d"
+      },
+      "initialModelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+      "initialSupport": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "support": [
+        2,
+        12,
+        11,
+        2
+      ],
+      "confirmedUnitMoves": 17,
+      "acceptedProjections": 0,
+      "duplicateProjections": 0,
+      "plansReplayedWithoutPrior": 17,
+      "modelSaved": false,
+      "closedActualSuccess": true,
+      "evidenceLinks": [],
+      "blocks": 0
+    }
+  ],
+  "errors": [],
+  "inputs": {
+    "/home/roger/Unity/ECHO-Station/Logs/navigation-integration-tests.json": {
+      "sha256": "f332b4b819bafd4796e0c51fc8a5d8029bb6352f69abbac95f760f6fa12116ec",
+      "bytes": 6635
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-322afee10a234dbc8f52ac5da473b877/thought.jsonl": {
+      "sha256": "04640ba67dc10ae1ed7904ecde7bd4827ea734cd5609d80d31323df8d1d8d004",
+      "bytes": 270467
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-495eda2ebf924a3daab8d3fa5f2591ee/thought.jsonl": {
+      "sha256": "26bea7e8793b831752a728274db85a12cd41e833a1c206fd1f65ca03b957eb24",
+      "bytes": 155466
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-6b172ec5879948e2a48b5d5f2cf5b0a0/thought.jsonl": {
+      "sha256": "9823b4de4bb30aac6ce3419aafade3a40361bf01316e8ce14bf518cf438689e4",
+      "bytes": 206184
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-8fd19d56997845d4a4b358a663f524f1/thought.jsonl": {
+      "sha256": "1c0228b0cf25a18d86528532ba9a6acbec4468d548ae684d9bbe234cb7df588b",
+      "bytes": 178007
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-aa94dd0b7e28416e9b245025d2007504/thought.jsonl": {
+      "sha256": "92687117a84d5296b127873565036d4b02cdbd0c6ff1f115cc48c9f67e0e0110",
+      "bytes": 292472
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-b0cc6a8680884f8baf73459bf64bad66/thought.jsonl": {
+      "sha256": "e7fcc73c8e582c73355d3cb3138d10b76b61f0cdf11643362e32d1a4a778d9dc",
+      "bytes": 162314
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/run-febb47f511944bf4a43113a811562a36/thought.jsonl": {
+      "sha256": "2a3d023be2f138db32cde70295a5028420697a8d5ebf603b74b83cba779b5f6b",
+      "bytes": 158519
+    },
+    "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T031556-6c7e4c97/model.json": {
+      "sha256": "56f83d090c892efc9cdcf36c1d2c482ba52539e76818eb89586d5167b72cb5bb",
+      "bytes": 25948
+    },
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/budget.py": {
+      "sha256": "d289e6d395f106e121ff53fdf5732b711931e9dee97a751eb42451c87d6caa99",
+      "bytes": 1061
+    },
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/interaction.py": {
+      "sha256": "d3d14b1a1162559ff77bf9c732f236549bbffd2842ca0399668bc3b21cd114c5",
+      "bytes": 30567
+    },
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/legacy.py": {
+      "sha256": "2363b5801bd50d8c116957e6dafa81042e5096cccf7a55de1ac051f5a7ed6dbc",
+      "bytes": 2405
+    },
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/trace.py": {
+      "sha256": "79cdd2de7f995bdd05fc20e496d40f4d10a149bd99cc0d1fa3902408a110a644",
+      "bytes": 1828
+    },
+    "/home/roger/REALRXOS/RXos/echoai/__init__.py": {
+      "sha256": "00f4117995e7cb79a59165c7082090d5183ae04e8dd956e4a96e6bff9e89cce1",
+      "bytes": 51
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/__init__.py": {
+      "sha256": "ca0ee11196db12654f14eeab58c9c3eb519678a875a12a74c37eaf49d0783036",
+      "bytes": 329
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/attend.py": {
+      "sha256": "7295453e7d0f2b96c4c03a5b0ce4e66f667db4480d028eaf3912558b6eca4398",
+      "bytes": 3723
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/constants.py": {
+      "sha256": "43666d76abfc97c57969811966e9fdd019e7a734acf32246ebe44d9c422e0c8d",
+      "bytes": 2717
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/cortex.py": {
+      "sha256": "dd486c7a01e307b9cea9d17973d209eaf634e7894641eb1169b5dba0517aec9e",
+      "bytes": 4334
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/cortex_turn.py": {
+      "sha256": "3a71aa437484aa13fb730303ac6a5cf42eff17f629dd89322fc3111281bec5ae",
+      "bytes": 1606
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/encoder.py": {
+      "sha256": "964ba0d90c832081fac0a0152f8015d97c5989742df0d43b325489b4b457e031",
+      "bytes": 8189
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/env.py": {
+      "sha256": "c27c08abc7dd699dfb617a504600b0957b18a5a28631483874aae747b43f8c0b",
+      "bytes": 5858
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/escalate.py": {
+      "sha256": "9fb8ee424ce5d53fa50104bc895df317ac1e15e3bc02737d181354f90eb8cd04",
+      "bytes": 2418
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/gate.py": {
+      "sha256": "6bce5c3aceb9dc7b7bcf0baeee33576280a1635f8b3ea58edd3841f734221790",
+      "bytes": 1831
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/lex.py": {
+      "sha256": "28b47537fa47a286327b0b67e4a072012d2ea137151467848818a53cae01a629",
+      "bytes": 25371
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/loop.py": {
+      "sha256": "0328c467140ebc24fed8334c108df6be909205e2be8f3ddf8af58676c32a515b",
+      "bytes": 42752
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/oracle.py": {
+      "sha256": "2a71c086a164edbb0cb39345fe6f0ad1f9b82cb1e009f31e31e89a7f4f763b22",
+      "bytes": 2895
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/pattern.py": {
+      "sha256": "ce79617b70620f2dd05fd4cc64417fd31e9246aeeb80a6c7ccd12517ae3e0796",
+      "bytes": 8511
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/plan.py": {
+      "sha256": "6ee84342d39f18d186877993f77ce8831872b1990ff986c838e42ff0469cf52b",
+      "bytes": 2637
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/qtable.py": {
+      "sha256": "a44faacce40d63159a9e13294394269d5f463e642fec07fe29fbeae32913ccfc",
+      "bytes": 11685
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/thought.py": {
+      "sha256": "93faf71caac8e1f94a55ddc75bf7181f59a648642031ec030d81cdd3a7f61328",
+      "bytes": 4297
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/types.py": {
+      "sha256": "43f77add5fc9136bd1d3ba101250ae3bdd92102062b87e421f4931ea64d1e1f0",
+      "bytes": 5473
+    },
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/world.py": {
+      "sha256": "c2b7ca38250ce58492429d0ff385885a4cb6e0d5f09e06fb6ae0339644f991e4",
+      "bytes": 7010
+    },
+    "/home/roger/Unity/ECHO-Station/Bridge/navigation.py": {
+      "sha256": "192971ec3984ad4757d0a10634bcaa948b1ae7114f8d28b107486830ca8d18eb",
+      "bytes": 42470
+    },
+    "/home/roger/Unity/ECHO-Station/Tools/audit_physical_navigation.py": {
+      "sha256": "3d048676cab79e37930d17da73e408b704ee88825eda5f208ec88645805ccc52",
+      "bytes": 32487
+    }
+  },
+  "coreSource": "/home/roger/REALRXOS/RXos/echoai/ECHO-5",
+  "sources": {
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/budget.py": "d289e6d395f106e121ff53fdf5732b711931e9dee97a751eb42451c87d6caa99",
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/interaction.py": "d3d14b1a1162559ff77bf9c732f236549bbffd2842ca0399668bc3b21cd114c5",
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/legacy.py": "2363b5801bd50d8c116957e6dafa81042e5096cccf7a55de1ac051f5a7ed6dbc",
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/src/echo5/trace.py": "79cdd2de7f995bdd05fc20e496d40f4d10a149bd99cc0d1fa3902408a110a644",
+    "/home/roger/REALRXOS/RXos/echoai/__init__.py": "00f4117995e7cb79a59165c7082090d5183ae04e8dd956e4a96e6bff9e89cce1",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/__init__.py": "ca0ee11196db12654f14eeab58c9c3eb519678a875a12a74c37eaf49d0783036",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/attend.py": "7295453e7d0f2b96c4c03a5b0ce4e66f667db4480d028eaf3912558b6eca4398",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/constants.py": "43666d76abfc97c57969811966e9fdd019e7a734acf32246ebe44d9c422e0c8d",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/cortex.py": "dd486c7a01e307b9cea9d17973d209eaf634e7894641eb1169b5dba0517aec9e",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/cortex_turn.py": "3a71aa437484aa13fb730303ac6a5cf42eff17f629dd89322fc3111281bec5ae",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/encoder.py": "964ba0d90c832081fac0a0152f8015d97c5989742df0d43b325489b4b457e031",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/env.py": "c27c08abc7dd699dfb617a504600b0957b18a5a28631483874aae747b43f8c0b",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/escalate.py": "9fb8ee424ce5d53fa50104bc895df317ac1e15e3bc02737d181354f90eb8cd04",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/gate.py": "6bce5c3aceb9dc7b7bcf0baeee33576280a1635f8b3ea58edd3841f734221790",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/lex.py": "28b47537fa47a286327b0b67e4a072012d2ea137151467848818a53cae01a629",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/loop.py": "0328c467140ebc24fed8334c108df6be909205e2be8f3ddf8af58676c32a515b",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/oracle.py": "2a71c086a164edbb0cb39345fe6f0ad1f9b82cb1e009f31e31e89a7f4f763b22",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/pattern.py": "ce79617b70620f2dd05fd4cc64417fd31e9246aeeb80a6c7ccd12517ae3e0796",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/plan.py": "6ee84342d39f18d186877993f77ce8831872b1990ff986c838e42ff0469cf52b",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/qtable.py": "a44faacce40d63159a9e13294394269d5f463e642fec07fe29fbeae32913ccfc",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/thought.py": "93faf71caac8e1f94a55ddc75bf7181f59a648642031ec030d81cdd3a7f61328",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/types.py": "43f77add5fc9136bd1d3ba101250ae3bdd92102062b87e421f4931ea64d1e1f0",
+    "/home/roger/REALRXOS/RXos/echoai/nexus0/world.py": "c2b7ca38250ce58492429d0ff385885a4cb6e0d5f09e06fb6ae0339644f991e4",
+    "/home/roger/Unity/ECHO-Station/Bridge/navigation.py": "192971ec3984ad4757d0a10634bcaa948b1ae7114f8d28b107486830ca8d18eb",
+    "/home/roger/Unity/ECHO-Station/Tools/audit_physical_navigation.py": "3d048676cab79e37930d17da73e408b704ee88825eda5f208ec88645805ccc52"
+  },
+  "modelHash": "71ca93ee55e0a82cda022ce65775dce339a80bcb8384096bcb48342311203028",
+  "modelFileSha256": "56f83d090c892efc9cdcf36c1d2c482ba52539e76818eb89586d5167b72cb5bb",
+  "support": [
+    2,
+    12,
+    11,
+    2
+  ],
+  "evidenceCount": 27,
+  "coreRestoreExact": true,
+  "firstLearnZeroSupport": true,
+  "firstLearnModelSaved": true,
+  "trainedModelFrozen": true,
+  "plansReplayedWithoutPriors": 93,
+  "finishedUtc": "2026-10-11T01:25:14.562879+00:00"
+}

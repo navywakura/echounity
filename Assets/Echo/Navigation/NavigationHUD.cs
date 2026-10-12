@@ -43,7 +43,7 @@ namespace EchoStation
             Box(new Rect(0,0,width,80),ink);Box(new Rect(side,80,410,h-80),panel);
             Text(24,17,420,40,"ECHO / NAVEGACIÓN",title);
             Text(430,20,main-460,42,"Cámara RGB-D · mapa parcial · modelo motor aprendido",small);
-            Text(side+20,17,360,40,Client.Automatic?"●  EJECUTANDO":"○  EN PAUSA",body);
+            Text(side+20,17,360,40,Client.RunState,body);
             Text(24,90,main-30,42,"VISTA DEL EVALUADOR  /  el robot no recibe este mapa completo",small);
             var d=Client.Latest;var world=Client.World;
             float x=side+22,w=366;
@@ -71,7 +71,9 @@ namespace EchoStation
             Text(362,730,220,23,"MEMORIA DEL MAPA",small);Map(new Rect(362,761,182,182),d);
             Text(560,760,main-574,45,"Oscuro: desconocido · azul: libre\nRojo: ocupado · ámbar: inferido",small);
             Text(560,812,main-574,30,$"Posición ({world.Position.x},{world.Position.y})  →  meta indicada ({world.Case.goal.x},{world.Case.goal.z})",small);
-            if(GUI.Button(new Rect(560,850,145,36),Client.Automatic?"Pausar":"Iniciar",button)){if(Client.Automatic)Client.Pause();else Client.Begin();}
+            GUI.enabled=!Client.Closing;
+            if(GUI.Button(new Rect(560,850,145,36),Client.RunButton,button))Client.ToggleRun();
+            GUI.enabled=true;
             if(GUI.Button(new Rect(717,850,145,36),"Adquirir modelo",button))Client.Train();
             if(GUI.Button(new Rect(874,850,145,36),"Otro mundo",button))Client.NextMap();
             if(GUI.Button(new Rect(560,896,145,36),"Repetir / memoria",button))Client.Load(world.Case.id,"remembered");

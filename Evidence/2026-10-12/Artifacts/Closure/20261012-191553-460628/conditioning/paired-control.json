@@ -1,0 +1,6 @@
+{
+  "original_cam_sha256": "80daa4eb452f717704e843644e6ea7a53e2f63b29e01d678c2e85c446fb86853",
+  "control_cam_sha256": "80daa4eb452f717704e843644e6ea7a53e2f63b29e01d678c2e85c446fb86853",
+  "memory_initial_state_identical": true,
+  "only_intervention": "memory_control=False"
+}

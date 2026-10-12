@@ -13,9 +13,10 @@ namespace EchoStation.Editor
             EchoStation.MotionVerification.Run();
             Run();
         }
-        public static void Run()
+        public static void Run(bool createScene=true)
         {
-            StationEditor.CreateScene();
+            if(createScene)StationEditor.CreateScene();
+            else UnityEditor.SceneManagement.EditorSceneManager.OpenScene(StationEditor.ScenePath);
             var world=UnityEngine.Object.FindFirstObjectByType<StationWorld>();
             var checks=new List<string>();
             void Check(bool value,string name) {if(!value) throw new Exception(name); checks.Add(name);}

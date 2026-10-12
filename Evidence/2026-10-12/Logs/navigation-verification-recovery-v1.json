@@ -1,0 +1,23 @@
+{
+  "schema": "echo.navigation.verification-recovery.v1",
+  "valid": true,
+  "checks": {
+    "python_passed": true,
+    "unity_sensor_world_passed": true,
+    "physical_integration_passed": true,
+    "audit_passed": true,
+    "same_physical_run": true,
+    "fresh_physical_model": true,
+    "executed_sources_unchanged": true,
+    "audited_inputs_unchanged": true
+  },
+  "original": {
+    "path": "/home/roger/Unity/ECHO-Station/Logs/navigation-verification.json",
+    "sha256": "88164252ca80dabd409287c273a037cfb154adae10ddb00c4102b61d98722018"
+  },
+  "audit": {
+    "path": "/home/roger/Unity/ECHO-Station/Logs/navigation-physical-audit.json",
+    "sha256": "aaa561e886610632e5108eed1e8b725459e1876d7e8f3a5a2d314af7d31ca645"
+  },
+  "recovery": "The original final audit command ran before its script was available (exit 2). The auditor was then completed and independently reran against the unchanged physical receipts. Original failed verification remains preserved."
+}

@@ -1,5 +1,19 @@
 # ECHO Station bridge
 
+**Current unified demo:** `python3 Tools/start_arachnid.py --bridge-only` from
+the project root starts `arachnid_server.py` on loopback **8771**. It serves
+both navigation and Station missions with E[6]/CAM. GET `/` opens the passive
+causal inspector; `/sessions`, `/trace?session=...`, `/diagnostic` and `/metrics`
+are local read-only views. Native POST restrictions remain in force. The
+navigation CAM persists in `Artifacts/Arachnid/runtime-v1/cam.json`; only one
+active navigation writer is allowed. `--no-persistence` isolates benchmark
+sessions. Station CAM remains session-local. See
+[the 1.0 closure contract and evidence](../Docs/Arachnid/CLOSURE-1.0.md).
+
+The sections below document the original **8770** service. Its strict response
+schema is unchanged; the unified 8771 variant additionally returns `basal`
+telemetry and exposes the inspector routes described above.
+
 Stdlib Python sidecar for the native Unity station. It imports the installed
 ECHO-5 `HypothesisAgent.plan`, `Budget`, and `Recorder`. No dependency installation,
 LLM, hidden Unity map, replacement route planner, or second thought bus is used.
@@ -8,7 +22,7 @@ The frozen sources are read only; imports disable bytecode writes.
 ## Start
 
 ```sh
-cd Bridge  # from the echounity project root
+cd echounity/Bridge
 python3 -B server.py
 ```
 
@@ -19,10 +33,9 @@ loopback port for development. `ECHO5_SOURCE` is an explicit source-root overrid
 ECHO5_SOURCE=/path/to/echoai/ECHO-5 python3 -B server.py
 ```
 
-By default the bridge imports the sibling `../echoai/ECHO-5` checkout (relative
-to the project root). `ECHOAI_SOURCE` can name an alternate complete echoai
-checkout; `ECHO5_SOURCE` takes precedence. The source must retain the layout
-required by `echo5.legacy`; no package or virtual environment is installed or copied.
+The default is a sibling `echoai/ECHO-5` checkout; `ECHOAI_SOURCE` can select another checkout. It must contain `src/echo5/interaction.py` and
+retain the installed sibling layout required by `echo5.legacy`. Only that
+root's `src` is prepended to `sys.path`; no package is installed or copied.
 An already imported, different ECHO-5 installation is rejected.
 
 ## HTTP contract
@@ -239,7 +252,7 @@ the production adapter; the exact map appears only in the test evaluator.
 Each session creates a fresh, exclusive file:
 
 ```text
-<project>/Artifacts/Unity/run-<UTC>-<random>/thought.jsonl
+Artifacts/Unity/run-<UTC>-<random>/thought.jsonl
 ```
 
 The response's `journal` names that local file. It uses the existing ECHO-5
@@ -266,7 +279,7 @@ session instead of allowing a possibly repeated unrecorded action.
 Run with system Python; no virtual environment or dependencies are needed:
 
 ```sh
-cd Bridge  # from the echounity project root
+cd echounity/Bridge
 python3 -B -u -m unittest discover -s tests -p test_station_agent.py -v > /tmp/echo-station-tests.log 2>&1 &
 ```
 

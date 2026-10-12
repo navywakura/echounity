@@ -1,73 +1,84 @@
 # Portable setup and verification
 
-Use Unity **6000.0.84f1** (revision `78ab6fc243d5`) for the recorded editor
-version. Package dependencies and their lock are in `Packages/`. Use system
-Python 3; Python 3.12 is the ECHO-5 reference runtime. The bridge is stdlib-only
-and does not need a virtual environment, pip installation, GPU or LLM.
-
-Clone the official repositories as siblings:
+Use Unity **6000.0.84f1** and Python 3. The original scientific closure used
+CPython 3.12.13; publication checks identify their interpreter separately.
+The runtime bridge uses only the standard library. Unity and Blender are
+separate installations, and the optional resource sampler uses `psutil`.
 
 ```sh
 git clone https://github.com/navywakura/echoai.git
 git clone https://github.com/navywakura/echounity.git
 cd echounity
+export UNITY_EDITOR=/path/to/Unity/Editor/Unity
 python3 -B Tools/check.py --worker --python-only
+python3 -B Tools/start_arachnid.py --no-blender
+```
+
+The checked official ECHO dependency is commit
+`f6062de0462a523296eb2cbb704472f4faa4a022`. Its complete source tree is required,
+including `ECHO-5/src/echo5`, `nexus0`, `core` and `echo_arc/observe.py`.
+The importer uses a sibling `echoai` checkout by default. Set `ECHOAI_SOURCE`
+to another complete checkout, or `ECHO5_SOURCE` to its ECHO-5 directory.
+No legacy project environment or duplicate implementation is installed.
+
+The arachnid bridge uses **127.0.0.1:8771** for navigation, Station missions,
+E[6]/CAM and the passive browser inspector. `--bridge-only` keeps Unity manual;
+`--station` opens the three station missions. `BLENDER_EDITOR` selects Blender
+when launching without `--no-blender`. On Hyprland the launcher requests
+workspace 2 for Unity and workspace 3 for Blender.
+
+`Tools/launch.py` still starts the historical NavigationLab service on 8770.
+Its `--classic` option now routes Station to the unified arachnid service on
+8771. Do not connect a Station client expecting basal telemetry to the old
+service. Launchers do not stop other projects or services.
+
+## Inspect the saved evidence
+
+```sh
 python3 -B Tools/check_evidence.py --tamper-tests
+python3 -B Tools/check_publication.py
 ```
 
-The echoai checkout must include `ECHO-5/src/echo5/{interaction,budget,trace,legacy}.py`
-and its inherited modules, including `echo_arc/observe.py` and `nexus0/world.py`.
-An older ECHO-5 scaffold is insufficient: the loader fails with an explicit list
-of missing files. No alternate legacy implementation is bundled here.
+The first command verifies the original October 11 selection and its physical
+plan replay. The second checks the full published source manifest, October 12
+archive hashes and the 34 closure journals through an explicit original-root
+mapping. These are read-only audits, not new missions. Historic absolute paths
+remain byte-identical inside hash chains and are not dereferenced on the host.
 
-For another checkout layout, set one of:
+## New development and confirmation
+
+Close the root project in Unity, then:
 
 ```sh
-export ECHOAI_SOURCE=/path/to/echoai
-# Or a more specific override:
-export ECHO5_SOURCE=/path/to/echoai/ECHO-5
+python3 -B Tools/check.py --integration --development-only
 ```
 
-`ECHO5_SOURCE` takes precedence over `ECHOAI_SOURCE`, then the sibling checkout.
-The inherited `echo5.legacy` loader retains module identities. Bytecode writing
-is disabled when importing that source. Keep any optional Python tooling in a
-separately managed environment; no historical project environment is used.
+This creates a unique directory under ignored `Artifacts/Closure/`, returns a
+background PID and runs Python, Unity geometry, physical conditioning,
+development maps, Station missions, resource measurement and an offline CPU
+mission. It requires Linux with user/network namespaces enabled, `ip`, and
+`psutil` available to the selected interpreter. It does not disable the host
+network. See [closure scope](Arachnid/CLOSURE-1.0.md).
 
-Open the project in Unity Hub, or use the launcher on Linux:
+`python3 -B Tools/check.py --integration` additionally freezes sources and
+opens 16 fresh confirmation cases **only after development passes**. Do not
+use confirmation for tuning. Archived examinations are never reopened.
+`--worker` keeps the command in the foreground for CI/log collection.
+
+The public Station uses geometric props in place of unbundled artwork.
+Its arachnid body is already integrated. The editor method
+`EchoStation.Arachnid.Editor.ClosureEditor.PreparePublicProject` can perform
+that integration and the read-only geometry checks on an existing scene.
+
+## Separate World Prototype
+
+Open `WorldPrototype/` in Unity Hub, or run:
 
 ```sh
-export UNITY_EDITOR=/path/to/Unity/6000.0.84f1/Editor/Unity
-./Tools/start.sh                 # bridge + NavigationLab
-./Tools/start.sh --classic       # bridge + EchoStation
-./Tools/start.sh --bridge-only   # bridge only
+python3 WorldPrototype/Tools/world.py verify
+python3 WorldPrototype/Tools/world.py open
 ```
 
-`UNITY_EDITOR` selects the editor executable; `Unity` on `PATH` is also accepted.
-The launcher reuses the local bridge on `127.0.0.1:8770`. The shell wrapper uses
-`python3`; launching `python3 -B Tools/launch.py` directly is equivalent. For a
-foreground bridge, use `python3 -B Bridge/server.py`. `--port` and
-`--navigation-root` support isolated developer instances; the Unity client uses
-8770 by default.
-
-Start the navigation lab in Play mode and press **Iniciar** or space. The public
-copy starts without a preloaded motor checkpoint. **Adquirir modelo** selects
-acquisition; start each episode to acquire evidence. **Otro mundo** selects a
-development world using your locally acquired model. The historical checkpoint
-is archived evidence and is not installed as the live model. **Repetir / memoria**
-revisits the same world. See [USO.md](Navigation/USO.md) for controls and limits.
-
-For the classic scene, press space to run a mission; WASD or floor clicks allow
-manual movement. The public scene uses original geometric placeholders. No art
-download is needed; optional authorized import is documented in [ASSETS.md](ASSETS.md).
-
-The first two checks above are bounded CPU checks. They write fresh results
-under ignored `Logs/`; they do not open Unity or run a confirmation campaign.
-Historical results are under [Evidence](../Evidence/INDEX.md).
-
-To run new Unity development verification yourself, first close this project
-in the editor, then use `python3 -B Tools/check_navigation.py --integration` or
-`python3 -B Tools/check.py --integration`. These commands launch Unity and create
-new local runs; they were not executed as part of this publication preparation.
-New CPU development runs use `python3 -B Tools/nav_benchmark.py --phase development`.
-Published confirmation records are frozen; publication changes do not establish
-a new confirmation or satisfy ECHO-5 closure. S6 remains later work.
+This local voxel prototype does not use the ECHO dependency yet. Its tests and
+screenshots are separate from Station's cognitive experiments. See its README
+for asset fallbacks, controls and the explicitly unfinished multiplayer scope.

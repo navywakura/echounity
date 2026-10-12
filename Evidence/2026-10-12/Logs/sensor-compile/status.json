@@ -1,0 +1,13 @@
+{
+  "scope": "Unity RGB-D sidecar",
+  "unity_launched_by_sidecar": false,
+  "editor_compile_exit": 0,
+  "player_compile_exit": 0,
+  "warnings_as_errors": true,
+  "runtime_verification": "Coordinator run: 12/13 passed; edit-mode cleanup callback fix now compiled, awaiting coordinator rerun.",
+  "files": {
+    "Assets/Echo/Navigation/RobotSensor.cs": "32162c636fb0eb7fe753db878b969bd8439f72e6306ab8142c095299780af115",
+    "Assets/Echo/Editor/SensorVerification.cs": "e8cf4ee497a26aabbd248ded6eef945bb50342f8309f035c18e7a3dc5cef2c95",
+    "Assets/Echo/Runtime/CameraFacing.cs": "3a6a35fd85b28dd0412e9c981d866c3bd36a435a855ee276e61c0a53c4043a65"
+  }
+}

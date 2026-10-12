@@ -1,154 +1,111 @@
-<p align="center"><img src="Media/navigation-lab.png" width="100%" alt="ECHO navigating a Unity world, with its first-person camera, observed map and decision panel" /></p>
+<p align="center"><img src="Media/unity-live-1.0.png" width="100%" alt="ECHO-5 mechanical arachnid in Unity, with its observed map, camera and E6/CAM panel" /></p>
 <h1 align="center">ECHO Unity</h1>
 <p align="center">
-  <img src="https://img.shields.io/badge/Unity-6000.0.84f1-222222?logo=unity&logoColor=white" alt="Unity 6000.0.84f1" />
-  <img src="https://img.shields.io/badge/C%23-simulation-512BD4" alt="C# simulation" />
-  <img src="https://img.shields.io/badge/Python-local_bridge-3776AB?logo=python&logoColor=white" alt="Python bridge" />
-  <img src="https://img.shields.io/badge/ECHO--5-research_in_progress-d97706" alt="ECHO-5 research in progress" />
+  <img src="https://img.shields.io/badge/Unity-6000.0.84f1-222222?logo=unity&amp;logoColor=white" alt="Unity 6000.0.84f1" />
+  <img src="https://img.shields.io/badge/C%23-worlds-512BD4" alt="C# worlds" />
+  <img src="https://img.shields.io/badge/Python-local_brain-3776AB?logo=python&amp;logoColor=white" alt="Python local brain" />
+  <img src="https://img.shields.io/badge/Station_1.0-contract_passed-238636" alt="Station 1.0 contract passed" />
+  <img src="https://img.shields.io/badge/World_Prototype-beta_0.0.2-d97706" alt="World prototype beta 0.0.2" />
 </p>
 
-A Unity sandbox for watching [ECHO-AI](https://github.com/navywakura/echoai)
-observe, build a map, test a movement model and act. It contains an isometric
-3D robot, a first-person camera, an accumulated observation map and a panel
-showing hypotheses, actions and measured consequences.
+Unity worlds, original models and local interfaces for [ECHO-AI](https://github.com/navywakura/echoai).
+This repository contains two separate Unity projects:
 
-**ECHO-5 is still under investigation.** These scenes and navigation results do
-not certify its full release or S6. The screenshots are genuine frames from
-development recordings, with [timestamps and hashes](Media/PROVENANCE.json).
-The public project includes original geometry and placeholder visuals;
-third-party artwork visible in the recordings is an optional local import.
+- **Root — ECHO-Station 1.0:** the eight-legged mechanical arachnid, navigation laboratory, three station missions, E[6]/CAM integration and a causal inspector. Its [closure contract](Docs/Arachnid/CLOSURE-1.0.md) passed in the recorded simulation runs.
+- **[WorldPrototype/](WorldPrototype/)** — **Echo MMO Prototype BETA 0.0.2:** a playable local isometric voxel world with procedural terrain, building, inventory, survival controls and local chat. Networking and ECHO NPCs are future work.
 
-## Open the project
+The ECHO brain stays in **navywakura/echoai** and is imported as a sibling checkout. This repository contains Unity adapters and evidence, without duplicating the ECHO implementation. S6 is separate research deferred until after ECHO-5.5.
 
-Use Unity **6000.0.84f1**, Python **3** and the complete official ECHO-AI
-checkout. The bridge uses the standard library; ECHO-5's scientific reference
-runtime is CPython 3.12.13. Keep the two repositories beside each other:
+## Run the arachnid
+
+Use Unity **6000.0.84f1** and Python **3**. The bridge uses the standard library; Blender is optional for editing the original model.
 
 ```sh
 git clone https://github.com/navywakura/echoai.git
 git clone https://github.com/navywakura/echounity.git
 cd echounity
 export UNITY_EDITOR='/path/to/Unity/Editor/Unity'
-python3 -B Tools/launch.py
+python3 -B Tools/start_arachnid.py --no-blender
 ```
 
-The launcher starts a local Python bridge at `127.0.0.1:8770` and opens
-`Assets/Scenes/NavigationLab.unity`. Enter Play mode, then press **Iniciar**
-or Space. Alternatively, open this folder through Unity Hub and run only
-the bridge with `Tools/launch.py --bridge-only` using the same Python.
-
-The launcher and automated editor checks are primarily developed on Linux.
-For a different directory layout, set `ECHOAI_SOURCE` to the ECHO-AI checkout,
-or `ECHO5_SOURCE` directly to its `ECHO-5/` folder. Unity is a separate
-installation; its editor, generated caches and binaries are not bundled.
-
-## Navigation Lab
-
-The robot starts with partial observations. It integrates depth rays and
-odometry into an occupancy map, retains explored areas and plans through its
-current map. A bounded hypothesis model learns the observed effects of four
-movement commands. The first-person RGB view is a real Unity camera; **the
-policy currently uses depth and odometry, not learned recognition from RGB**.
-
-- **Adquirir modelo** opens an acquisition world; **Iniciar** runs it.
-- **Otro mundo** changes the development map while retaining the acquired model.
-- **Repetir / memoria** revisits the same world with its remembered map.
-- **Desde cero** resets the relevant learned state for comparison.
-- **Añadir obstáculo** changes the world so the robot must react to new evidence.
-
-![Recorded navigation scene after an obstacle is introduced](Media/obstacle-replanning.png)
-
-Sensor geometry, map integration, frontier selection, path search and low-level
-locomotion are programmed algorithms. The learned component is the limited
-command-effect model. The full world shown to the viewer is not supplied as
-the robot's hidden map. [Design and limitations](Docs/Navigation/DESIGN.md) ·
-[Panel controls](Docs/Navigation/USO.md).
-
-## Station missions
-
-Open `Assets/Scenes/EchoStation.unity`, or launch with `--classic`:
+Enter Play mode in `Assets/Scenes/ECHO5_ArachnidLab.unity`. The launcher starts the local bridge on **127.0.0.1:8771**. The browser inspector is at **http://127.0.0.1:8771/**. To use a different checkout layout, set `ECHOAI_SOURCE` or `ECHO5_SOURCE`; see [setup and verification](Docs/REPRODUCE.md).
 
 ```sh
-python3 -B Tools/launch.py --classic
+python3 -B Tools/start_arachnid.py --bridge-only         # use an already open editor
+python3 -B Tools/start_arachnid.py --station --no-blender # irrigation, delivery, detour
+python3 -B Tools/launch.py                              # historical NavigationLab, port 8770
 ```
 
-The original station has storage, workshop, energy, greenhouse and charging
-areas. Its three missions restore irrigation, deliver a parcel and deal with
-a blocked route, each with a return to the charging area.
+The arachnid has eight articulated legs with procedural IK, original Blender/FBX/GLB assets, four emissive optical sensors and a first-person RGB camera. Its controller uses **simulated depth and odometry**, not learned recognition from RGB. It accumulates an observed map and learns the effects of four movement commands. Planning, sensor integration, task dependencies and locomotion are programmed algorithms.
 
-![Original five-room station recorded in Unity](Media/station-overview.png)
+E[6] records measured consequence signals. CAM stores verified episodes, persists its 4,096 slots and can inhibit a previously blocked command in the same compatible context. New depth evidence can retire that inhibition while preserving the episode. D and B have no physical transducer in this demo. The 256-unit LIF observer is explicitly **passive: `drives_policy = false`**.
 
-Space starts or pauses ECHO; WASD or a floor click moves manually; **E / I**
-uses or inspects the nearest object. **V** shows curved predictive collision
-volumes, **B** adds an obstacle and **F** follows the robot. Scroll zooms,
-middle drag pans and Home restores the camera.
+## Inspect actual decisions
 
-The robot and procedural animation are original geometry. Curved capsules
-in front and behind anticipate collisions, followed by bounded physical
-movement. This is an engineered motor controller. Mission dependencies are
-explicit knowledge in the adapter; the station does not demonstrate that
-ECHO independently discovered those rules.
+![Causal inspector with a verified CAM receipt](Media/trace-inspector.png)
 
-## Evidence and limits
+Select a CAM veto to inspect **observation → context → memory slot and SHA-256 → gate → executed command**. The viewer reads the existing `thought.jsonl`; it neither fabricates inner speech nor feeds explanations back to the actor. No LLM is required.
 
-Navigation revision 2 solved **16/16 held-out CPU maps**, compared with
-**15/16** learning from scratch and **0/16** without a persistent map. The
-acquired-model arm used 427 evaluation actions; acquisition added 67 actions.
-Seven separate Unity simulation episodes covered four acquisition and three
-development runs. These are distinct experiments, not 23 held-out successes.
+## Recorded Station 1.0 results
 
-The original station previously completed **3/3 integrated missions**.
-Published screenshots show those local development environments. The portable
-export changes source paths and replaces optional art with placeholders; its
-packaging checks do not re-certify the historical Unity runs.
+| Check | Recorded result |
+|---|---|
+| Controlled physical conditioning | 6/6 checks: second encounter, safe context, extinction, restart and paired control |
+| Development navigation and station missions | 8/8 maps + 3/3 missions |
+| Fresh held-out maps | 16/16; four families; no irrecoverable blocks |
+| Journal audit | 34/34 valid |
+| Software and geometry | 121 Python tests; 22 world checks; 12 motion checks |
+| Brain RSS, sampled every 50 ms | Peak 35.08 MB in development; Unity excluded |
+| Offline test | Complete CPU geometric mission; zero external packets in a loopback-only namespace |
 
-Read [navigation results](Docs/Navigation/RESULTS.md),
-[the protocol](Docs/Navigation/PROTOCOL.md) and
-[station verification](Docs/VERIFICATION.md) for controls, acquisition costs,
-audits and limitations. The Gazebo/PX4 confirmation required for ECHO-5
-remains a separate unresolved gate. S6 is deferred until after ECHO-5.5.
+These are **bounded simulation results**, not universal intelligence, biological learning, zero-error guarantees or measured power savings. The conditioning test fixes the proposed command to isolate memory; the held-out navigation test is separate. The offline run does not include Unity/PhysX. [Full methodology, metrics and limits](Docs/Arachnid/CLOSURE-1.0.md).
 
-The bridge reuses ECHO-5's `HypothesisAgent`, `Budget` and `Recorder`.
-No LLM runs in these demonstrations. The display explains recorded evidence;
-it does not fabricate an inner monologue or feed its text back to the policy.
+The [archive](Evidence/INDEX.md) includes complete historical records and unsuccessful runs with original hashes. The [publication report](Docs/PUBLICATION-20261012.md) separately records checks of this portable export. Original closure manifests describe the original execution, not subsequent packaging edits.
 
-## Source and checks
+## World Prototype BETA 0.0.2
+
+Open **WorldPrototype/** as a separate project in Unity Hub, or:
+
+```sh
+python3 WorldPrototype/Tools/world.py open
+```
+
+Procedural chunks, biomes, caves and trees; click/WASD movement; manual jump; blocks and magnetized drops; ten inventory slots; torches; 20 HP; stamina; fall damage; a 15-minute day and 15-minute night; local speech bubbles and a pause/restart menu. See [features, controls and screenshots](WorldPrototype/README.md).
+
+The coordinate range and chunk system do not demonstrate a 200-player MMO. Multiplayer, public/private servers, factions, enemies, XP progression and ECHO-controlled NPCs are not implemented.
+
+## Source and verification
 
 ```text
-Assets/Echo/       Robot, sensing, world rules, UI and editor checks
-Assets/Scenes/     NavigationLab and EchoStation
-Assets/StreamingAssets/  Navigation world definitions
-Bridge/            Python policy adapter, HTTP server and tests
-Tools/             Launch, evaluation, audit and optional import tools
-Docs/              Designs, protocols, results and asset notices
-Media/             Frames from the original recordings and provenance
-Packages/          Unity package declarations and lock
-ProjectSettings/   Portable Unity project settings
+Assets/               Station, NavigationLab and ArachnidLab scenes, C# and prefabs
+ArtSource/            Original Blender model, exports, render and generation report
+Bridge/               Local HTTP service, E6/CAM, causal inspector and Python tests
+Tools/                Launchers, Blender generator, checks, resource measurement and audits
+Docs/                 Design, measured results, closure contract and asset notices
+Evidence/             Original scientific records, including unsuccessful development
+Media/                Real captures and provenance
+WorldPrototype/       Separate playable voxel-world Unity project
 ```
 
-With the sibling ECHO-AI checkout installed, bounded bridge tests run without
-opening Unity:
+Bounded checks without running a new confirmation:
 
 ```sh
 python3 -B Tools/check.py --worker --python-only
 python3 -B Tools/check_evidence.py --tamper-tests
+python3 -B Tools/check_publication.py
+python3 -B WorldPrototype/Tools/world.py verify
 ```
 
-For full editor checks, close this project's editor first and use
-`Tools/check.py --integration` or `Tools/check_navigation.py` with the same
-Python and `UNITY_EDITOR`. These write local `Logs/` and `Artifacts/` and
-must not share an active scientific run. See the tool's `--help` and protocol
-before starting a benchmark. Installing or opening the project does not run
-an exam automatically. [Complete setup guide](Docs/REPRODUCE.md) ·
-[Publication checks](Docs/PUBLICATION.md) · [Historical evidence](Evidence/INDEX.md).
+For **new development runs** with this root project closed in Unity:
 
-## Artwork and license
+```sh
+python3 -B Tools/check.py --integration --development-only
+```
 
-The public scene works with original geometry and placeholder props. The
-recordings also show [Adventure Forge — Sci-fi Spaceship](https://adventureforge.itch.io/adventureforge-scifi-spaceship-pack)
-by Endless Adventures / Adventure Forge. The original pack is not redistributed.
-[Asset instructions and terms](Docs/ASSETS.md) explain optional local import
-and which files are excluded.
+Omitting `--development-only` deliberately opens a **new** frozen-source confirmation after development passes; it does not replay the archived examination. The complete pipeline needs Linux user/network namespaces, `ip` and `psutil` in the selected Python environment.
 
-Original project code uses [GPL-3.0-or-later](LICENSE), matching the ECHO-AI source
-distribution. It grants no rights to separately licensed third-party art.
+## Assets and licenses
+
+Original code: **GPL-3.0-or-later**. Original arachnid geometry/materials: **CC0-1.0**, with [its asset notice](ArtSource/ECHO5_Arachnid/ASSET-NOTICE.md). Redistributable WorldPrototype textures retain their individual [credits](WorldPrototype/Docs/ASSETS.md).
+
+Adventure Forge source artwork and standalone atlases without confirmed redistribution terms are excluded. The public worlds have visual fallbacks; historical captures can depict optional local artwork. No editor caches, private agent configuration or browser profiles are distributed. See [NOTICE.md](NOTICE.md) and [local asset import](Docs/ASSETS.md).

@@ -1,0 +1,8 @@
+{
+  "chain": "Rayos de profundidad\u2192Contexto (SHA-256 del JSON) 061dd08aa08487b6\u2026\u2192CAM #1961 \u00b7 extracto verificado\u2192Gate BLOCK\u2192Comando: wait",
+  "nodes": 5,
+  "receipt_open": true,
+  "sha256": "dcf27bb3d831590573a4f9a64de462883352136cb214fe4c11e576ff867f1477",
+  "slot": 1961,
+  "verified": true
+}

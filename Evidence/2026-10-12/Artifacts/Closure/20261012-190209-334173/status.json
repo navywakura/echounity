@@ -1,0 +1,17 @@
+{
+  "started": "2026-10-12T17:02:09.420574+00:00",
+  "valid": false,
+  "checks": {
+    "bridge_tests": true,
+    "unity_prepare": true,
+    "conditioning_physics": false,
+    "development": false,
+    "station": false,
+    "offline": true,
+    "resources_below_60mb": true,
+    "audit": false
+  },
+  "error": "RuntimeError('development failed; fresh confirmation not opened')",
+  "finished": "2026-10-12T17:03:11.075771+00:00",
+  "development_only": true
+}

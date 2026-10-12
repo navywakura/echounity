@@ -1,0 +1,23 @@
+{
+  "valid": true,
+  "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/live-20261012-022623-186412/run-8efacd5196cb47fd9f52252a4c73e7b2/thought.jsonl",
+  "sha256": "193f6dd2c2594af631ef9fb26d54cfad58d1973cf34805f53e2d6aef44746cee",
+  "events": 277,
+  "last_hash": "f559e64781be106045b7d93351e5ab37a26736dbe12a09eebb264daa7922e972",
+  "e_updates": 35,
+  "cam_receipts": 34,
+  "verified_reads": 1,
+  "interventions": 1,
+  "completed": true,
+  "budgetUsed": 236180,
+  "metrics": {
+    "calibrationAccepted": 29,
+    "confirmedMoves": 29,
+    "decisions": 35,
+    "failedMoves": 1,
+    "moves": 30,
+    "repeatedFailures": 0,
+    "restored": 0,
+    "scans": 4
+  }
+}

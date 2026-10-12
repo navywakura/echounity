@@ -1,0 +1,162 @@
+{
+  "schema": "echo.arachnid.figures.v1",
+  "sources": {
+    "search_fresh": {
+      "file": "/home/roger/REALRXOS/RXos/echoai/ECHO-5/artifacts/efficiency-pilot-20261012-r3/search_fresh/result.json",
+      "sha256": "c22095116d56e1970974965eaa8616a3e68b038779786999d1c1f9c623532bc0"
+    },
+    "exploration": {
+      "file": "/home/roger/REALRXOS/RXos/echoai/ECHO-5/artifacts/efficiency-pilot-20261012-r3/exploration/result.json",
+      "sha256": "087371c2270c51cadf8a414714bb1ca2f6be719a44861d36a68f1bd9ff1e7752"
+    },
+    "curriculum": {
+      "file": "/home/roger/REALRXOS/RXos/echoai/ECHO-5/artifacts/efficiency-pilot-20261012-r3/curriculum/result.json",
+      "sha256": "9bac8015780f5597e59bd639f485392790db2aa5d3641eedafd8b1940d62ddce"
+    }
+  },
+  "search": {
+    "independent": {
+      "baseline": {
+        "cases": 18,
+        "exact": 0,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 35995373,
+        "statuses": {
+          "budget_exhausted": 18
+        }
+      },
+      "memoized": {
+        "cases": 18,
+        "exact": 0,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 35996308,
+        "statuses": {
+          "budget_exhausted": 18
+        }
+      },
+      "certified": {
+        "cases": 18,
+        "exact": 6,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 29476235,
+        "statuses": {
+          "budget_exhausted": 12,
+          "solved": 6
+        }
+      },
+      "certified_bound": {
+        "cases": 18,
+        "exact": 12,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 25951431,
+        "statuses": {
+          "solved": 12,
+          "budget_exhausted": 6
+        }
+      }
+    },
+    "template": {
+      "baseline": {
+        "cases": 9,
+        "exact": 0,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 17999298,
+        "statuses": {
+          "budget_exhausted": 9
+        }
+      },
+      "memoized": {
+        "cases": 9,
+        "exact": 0,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 17999583,
+        "statuses": {
+          "budget_exhausted": 9
+        }
+      },
+      "certified": {
+        "cases": 9,
+        "exact": 0,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 17999420,
+        "statuses": {
+          "budget_exhausted": 9
+        }
+      },
+      "certified_bound": {
+        "cases": 9,
+        "exact": 9,
+        "wrong": 0,
+        "false_commitments": 0,
+        "work": 11814821,
+        "statuses": {
+          "solved": 9
+        }
+      }
+    }
+  },
+  "exploration": {
+    "frontier_information": {
+      "episodes": 28,
+      "successes": 28,
+      "actions": 322,
+      "work": 264261,
+      "budget_exhausted": 0
+    },
+    "frontier_nearest": {
+      "episodes": 28,
+      "successes": 28,
+      "actions": 332,
+      "work": 248277,
+      "budget_exhausted": 0
+    },
+    "frontier_random": {
+      "episodes": 28,
+      "successes": 28,
+      "actions": 357,
+      "work": 300762,
+      "budget_exhausted": 0
+    },
+    "frontier_hybrid": {
+      "episodes": 28,
+      "successes": 28,
+      "actions": 332,
+      "work": 237220,
+      "budget_exhausted": 0
+    }
+  },
+  "curriculum": {
+    "sequential": {
+      "runs": 8,
+      "exact": 56,
+      "cases": 64,
+      "work": 1249296
+    },
+    "random": {
+      "runs": 8,
+      "exact": 56,
+      "cases": 64,
+      "work": 1132054
+    },
+    "adaptive": {
+      "runs": 8,
+      "exact": 64,
+      "cases": 64,
+      "work": 2701505
+    },
+    "adaptive_efficient": {
+      "runs": 8,
+      "exact": 64,
+      "cases": 64,
+      "work": 1371583
+    }
+  },
+  "scope": "Descriptive ECHO-5 pilot, not ECHO-4 versus ECHO-5. Logical work is not energy or wall time."
+}

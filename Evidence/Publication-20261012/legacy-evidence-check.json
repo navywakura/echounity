@@ -1,0 +1,904 @@
+{
+  "schema": "echounity.evidence-check.v1",
+  "valid": true,
+  "scope": "Archive hashes, journal chains and acquisition/development replay; no Unity or campaign",
+  "filesVerified": 50,
+  "bytesVerified": 5239293,
+  "journals": {
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-0d47f377ee334016ab0192f54ef1a42f/thought.jsonl": {
+      "events": 65,
+      "last_hash": "e533a0e902e3e0c097f379858b76d8c22ae78547e3163f3bd9af3147d2b39b19"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7185a3fdfcc0403e959e3ae8c3b8d061/thought.jsonl": {
+      "events": 71,
+      "last_hash": "a48fe9fd73126b1e8115bfa6e4600cda4366fa588425324bf541d52dc4917bf1"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7d33f055feba4edfbd8a522e5a9ed1ff/thought.jsonl": {
+      "events": 121,
+      "last_hash": "658746a38c574d335bc87b7d6d52c9ce7f64856371c28b9e6536b726aa74d870"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-81a8e5c4b3bd4f4680ac096a55a4de5f/thought.jsonl": {
+      "events": 136,
+      "last_hash": "8aed7958b5361ef4a3f8e0ae6dc626b57897fbd9e9e5890d364af1368c4ab415"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-8d0a414e5c4a48d09dd0cd9d3496ebbc/thought.jsonl": {
+      "events": 128,
+      "last_hash": "230ed88d15a978165b22084453530c31dd01fc7b75cd00438c8bf08575369fc6"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-92d685c5358f4419a2912e80b9f3c550/thought.jsonl": {
+      "events": 64,
+      "last_hash": "84412d315cea95b68255be69b2bc6f43322890e315d3cf536e5773f42d1447d4"
+    },
+    "Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-a01ae4bd22014ad598751619240f29d7/thought.jsonl": {
+      "events": 97,
+      "last_hash": "fb053d0e4993705944d07c4dda3f7a8432bff11d876bd513a7a523c2faa7ab2f"
+    },
+    "Artifacts/Unity/run-20261011T002728Z-8e8209075cb14edabfa7d534997252fc/thought.jsonl": {
+      "events": 332,
+      "last_hash": "b96a324302ee90bdcdc6c4f51733ef361b5556951a4faa74716f39a58905412a"
+    },
+    "Artifacts/Unity/run-20261011T002752Z-0ed4dcca8d53460cbf4ed1437dc1473a/thought.jsonl": {
+      "events": 296,
+      "last_hash": "47d4b14d1e5fd7b6bfb9dd123908f011a21cb1e3d4a393d52fa5dea98793d173"
+    },
+    "Artifacts/Unity/run-20261011T002813Z-f5411a2ae1564fb9956b741ac9e76e2f/thought.jsonl": {
+      "events": 388,
+      "last_hash": "c8dfeb51c0118b4e1e53a166c84f437c99ea2331ccf0a9954f39871c5a4fc8c2"
+    }
+  },
+  "physical": {
+    "schema": "echo.navigation.physical-audit.v1",
+    "valid": true,
+    "root": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd",
+    "integration": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Receipts/navigation-integration-tests.json",
+    "scope": "Local physical receipts, depth/odometry projections and ECHO core evidence; acquisition/development only",
+    "runs": [
+      {
+        "session": "52eca4330a5c4dffb2ae8c6e24860c3a",
+        "world": "c-fa1653f5f3b261cfbc203e9e",
+        "profile": "learn",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-a01ae4bd22014ad598751619240f29d7/thought.jsonl",
+        "chain": {
+          "events": 97,
+          "last_hash": "fb053d0e4993705944d07c4dda3f7a8432bff11d876bd513a7a523c2faa7ab2f"
+        },
+        "initialModelHash": "a64979b8d5577608475cb92ccbe7f7ed96992828cbc37c1776bd18afe004cb3d",
+        "modelHash": "3e08693e75fa3397365a72d6358d67cc6dc09ba3e3b6180bd0117e839e7b8a3c",
+        "initialSupport": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "support": [
+          2,
+          7,
+          7,
+          2
+        ],
+        "confirmedUnitMoves": 18,
+        "acceptedProjections": 18,
+        "duplicateProjections": 0,
+        "plansReplayedWithoutPrior": 10,
+        "modelSaved": true,
+        "closedActualSuccess": true,
+        "evidenceLinks": [
+          {
+            "observationIndex": 12,
+            "calibrationIndex": 13,
+            "proposalSeq": 3,
+            "action": 0,
+            "before": [
+              7,
+              7
+            ],
+            "after": [
+              7,
+              6
+            ],
+            "evidenceIndex": 0
+          },
+          {
+            "observationIndex": 16,
+            "calibrationIndex": 17,
+            "proposalSeq": 4,
+            "action": 1,
+            "before": [
+              7,
+              6
+            ],
+            "after": [
+              8,
+              6
+            ],
+            "evidenceIndex": 1
+          },
+          {
+            "observationIndex": 20,
+            "calibrationIndex": 21,
+            "proposalSeq": 5,
+            "action": 2,
+            "before": [
+              8,
+              6
+            ],
+            "after": [
+              8,
+              7
+            ],
+            "evidenceIndex": 2
+          },
+          {
+            "observationIndex": 24,
+            "calibrationIndex": 25,
+            "proposalSeq": 6,
+            "action": 3,
+            "before": [
+              8,
+              7
+            ],
+            "after": [
+              7,
+              7
+            ],
+            "evidenceIndex": 3
+          },
+          {
+            "observationIndex": 28,
+            "calibrationIndex": 29,
+            "proposalSeq": 7,
+            "action": 1,
+            "before": [
+              7,
+              7
+            ],
+            "after": [
+              8,
+              7
+            ],
+            "evidenceIndex": 4
+          },
+          {
+            "observationIndex": 32,
+            "calibrationIndex": 33,
+            "proposalSeq": 8,
+            "action": 0,
+            "before": [
+              8,
+              7
+            ],
+            "after": [
+              8,
+              6
+            ],
+            "evidenceIndex": 5
+          },
+          {
+            "observationIndex": 36,
+            "calibrationIndex": 37,
+            "proposalSeq": 9,
+            "action": 3,
+            "before": [
+              8,
+              6
+            ],
+            "after": [
+              7,
+              6
+            ],
+            "evidenceIndex": 6
+          },
+          {
+            "observationIndex": 40,
+            "calibrationIndex": 41,
+            "proposalSeq": 10,
+            "action": 2,
+            "before": [
+              7,
+              6
+            ],
+            "after": [
+              7,
+              7
+            ],
+            "evidenceIndex": 7
+          },
+          {
+            "observationIndex": 45,
+            "calibrationIndex": 46,
+            "proposalSeq": 11,
+            "action": 2,
+            "before": [
+              7,
+              7
+            ],
+            "after": [
+              7,
+              8
+            ],
+            "evidenceIndex": 8
+          },
+          {
+            "observationIndex": 50,
+            "calibrationIndex": 51,
+            "proposalSeq": 12,
+            "action": 2,
+            "before": [
+              7,
+              8
+            ],
+            "after": [
+              7,
+              9
+            ],
+            "evidenceIndex": 9
+          },
+          {
+            "observationIndex": 55,
+            "calibrationIndex": 56,
+            "proposalSeq": 13,
+            "action": 2,
+            "before": [
+              7,
+              9
+            ],
+            "after": [
+              7,
+              10
+            ],
+            "evidenceIndex": 10
+          },
+          {
+            "observationIndex": 60,
+            "calibrationIndex": 61,
+            "proposalSeq": 14,
+            "action": 1,
+            "before": [
+              7,
+              10
+            ],
+            "after": [
+              8,
+              10
+            ],
+            "evidenceIndex": 11
+          },
+          {
+            "observationIndex": 65,
+            "calibrationIndex": 66,
+            "proposalSeq": 15,
+            "action": 1,
+            "before": [
+              8,
+              10
+            ],
+            "after": [
+              9,
+              10
+            ],
+            "evidenceIndex": 12
+          },
+          {
+            "observationIndex": 70,
+            "calibrationIndex": 71,
+            "proposalSeq": 16,
+            "action": 1,
+            "before": [
+              9,
+              10
+            ],
+            "after": [
+              10,
+              10
+            ],
+            "evidenceIndex": 13
+          },
+          {
+            "observationIndex": 75,
+            "calibrationIndex": 76,
+            "proposalSeq": 17,
+            "action": 1,
+            "before": [
+              10,
+              10
+            ],
+            "after": [
+              11,
+              10
+            ],
+            "evidenceIndex": 14
+          },
+          {
+            "observationIndex": 80,
+            "calibrationIndex": 81,
+            "proposalSeq": 18,
+            "action": 2,
+            "before": [
+              11,
+              10
+            ],
+            "after": [
+              11,
+              11
+            ],
+            "evidenceIndex": 15
+          },
+          {
+            "observationIndex": 85,
+            "calibrationIndex": 86,
+            "proposalSeq": 19,
+            "action": 2,
+            "before": [
+              11,
+              11
+            ],
+            "after": [
+              11,
+              12
+            ],
+            "evidenceIndex": 16
+          },
+          {
+            "observationIndex": 90,
+            "calibrationIndex": 91,
+            "proposalSeq": 20,
+            "action": 1,
+            "before": [
+              11,
+              12
+            ],
+            "after": [
+              12,
+              12
+            ],
+            "evidenceIndex": 17
+          }
+        ],
+        "blocks": 0
+      },
+      {
+        "session": "41db0ecdb9984676b7f6042f8d8a3afb",
+        "world": "c-e1511350658e1ba1127dd8fd",
+        "profile": "learn",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7185a3fdfcc0403e959e3ae8c3b8d061/thought.jsonl",
+        "chain": {
+          "events": 71,
+          "last_hash": "a48fe9fd73126b1e8115bfa6e4600cda4366fa588425324bf541d52dc4917bf1"
+        },
+        "initialModelHash": "3e08693e75fa3397365a72d6358d67cc6dc09ba3e3b6180bd0117e839e7b8a3c",
+        "modelHash": "b0bf86281d7a7ab04ea05da8c87244d1643d00482abe51683dfa226e1b006419",
+        "initialSupport": [
+          2,
+          7,
+          7,
+          2
+        ],
+        "support": [
+          2,
+          11,
+          8,
+          2
+        ],
+        "confirmedUnitMoves": 10,
+        "acceptedProjections": 5,
+        "duplicateProjections": 5,
+        "plansReplayedWithoutPrior": 16,
+        "modelSaved": true,
+        "closedActualSuccess": true,
+        "evidenceLinks": [
+          {
+            "observationIndex": 28,
+            "calibrationIndex": 29,
+            "proposalSeq": 6,
+            "action": 2,
+            "before": [
+              7,
+              10
+            ],
+            "after": [
+              7,
+              11
+            ],
+            "evidenceIndex": 18
+          },
+          {
+            "observationIndex": 33,
+            "calibrationIndex": 34,
+            "proposalSeq": 7,
+            "action": 1,
+            "before": [
+              7,
+              11
+            ],
+            "after": [
+              8,
+              11
+            ],
+            "evidenceIndex": 19
+          },
+          {
+            "observationIndex": 41,
+            "calibrationIndex": 42,
+            "proposalSeq": 8,
+            "action": 1,
+            "before": [
+              8,
+              11
+            ],
+            "after": [
+              9,
+              11
+            ],
+            "evidenceIndex": 20
+          },
+          {
+            "observationIndex": 49,
+            "calibrationIndex": 50,
+            "proposalSeq": 9,
+            "action": 1,
+            "before": [
+              9,
+              11
+            ],
+            "after": [
+              10,
+              11
+            ],
+            "evidenceIndex": 21
+          },
+          {
+            "observationIndex": 54,
+            "calibrationIndex": 55,
+            "proposalSeq": 10,
+            "action": 1,
+            "before": [
+              10,
+              11
+            ],
+            "after": [
+              11,
+              11
+            ],
+            "evidenceIndex": 22
+          }
+        ],
+        "blocks": 0
+      },
+      {
+        "session": "3a9077455ade45019ca78e0d2f09dd1f",
+        "world": "c-9f6948e8c1fc2cd7fbb2f376",
+        "profile": "learn",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-92d685c5358f4419a2912e80b9f3c550/thought.jsonl",
+        "chain": {
+          "events": 64,
+          "last_hash": "84412d315cea95b68255be69b2bc6f43322890e315d3cf536e5773f42d1447d4"
+        },
+        "initialModelHash": "b0bf86281d7a7ab04ea05da8c87244d1643d00482abe51683dfa226e1b006419",
+        "modelHash": "b0bf86281d7a7ab04ea05da8c87244d1643d00482abe51683dfa226e1b006419",
+        "initialSupport": [
+          2,
+          11,
+          8,
+          2
+        ],
+        "support": [
+          2,
+          11,
+          8,
+          2
+        ],
+        "confirmedUnitMoves": 10,
+        "acceptedProjections": 0,
+        "duplicateProjections": 10,
+        "plansReplayedWithoutPrior": 10,
+        "modelSaved": false,
+        "closedActualSuccess": true,
+        "evidenceLinks": [],
+        "blocks": 0
+      },
+      {
+        "session": "a437d47152444fc0bad6e3a883a33c06",
+        "world": "c-50bda6258a321a31a0804851",
+        "profile": "learn",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-0d47f377ee334016ab0192f54ef1a42f/thought.jsonl",
+        "chain": {
+          "events": 65,
+          "last_hash": "e533a0e902e3e0c097f379858b76d8c22ae78547e3163f3bd9af3147d2b39b19"
+        },
+        "initialModelHash": "b0bf86281d7a7ab04ea05da8c87244d1643d00482abe51683dfa226e1b006419",
+        "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "initialSupport": [
+          2,
+          11,
+          8,
+          2
+        ],
+        "support": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "confirmedUnitMoves": 10,
+        "acceptedProjections": 4,
+        "duplicateProjections": 6,
+        "plansReplayedWithoutPrior": 10,
+        "modelSaved": true,
+        "closedActualSuccess": true,
+        "evidenceLinks": [
+          {
+            "observationIndex": 38,
+            "calibrationIndex": 39,
+            "proposalSeq": 8,
+            "action": 2,
+            "before": [
+              9,
+              10
+            ],
+            "after": [
+              9,
+              11
+            ],
+            "evidenceIndex": 23
+          },
+          {
+            "observationIndex": 43,
+            "calibrationIndex": 44,
+            "proposalSeq": 9,
+            "action": 2,
+            "before": [
+              9,
+              11
+            ],
+            "after": [
+              9,
+              12
+            ],
+            "evidenceIndex": 24
+          },
+          {
+            "observationIndex": 48,
+            "calibrationIndex": 49,
+            "proposalSeq": 10,
+            "action": 1,
+            "before": [
+              9,
+              12
+            ],
+            "after": [
+              10,
+              12
+            ],
+            "evidenceIndex": 25
+          },
+          {
+            "observationIndex": 53,
+            "calibrationIndex": 54,
+            "proposalSeq": 11,
+            "action": 1,
+            "before": [
+              10,
+              12
+            ],
+            "after": [
+              11,
+              12
+            ],
+            "evidenceIndex": 26
+          }
+        ],
+        "blocks": 0
+      },
+      {
+        "session": "41a744f5bd1445fdaf0fea5d9a76b4ec",
+        "world": "c-1a9cb6beb4ea73fc4aca99ce",
+        "profile": "trained",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7d33f055feba4edfbd8a522e5a9ed1ff/thought.jsonl",
+        "chain": {
+          "events": 121,
+          "last_hash": "658746a38c574d335bc87b7d6d52c9ce7f64856371c28b9e6536b726aa74d870"
+        },
+        "initialModelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "initialSupport": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "support": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "confirmedUnitMoves": 21,
+        "acceptedProjections": 0,
+        "duplicateProjections": 0,
+        "plansReplayedWithoutPrior": 41,
+        "modelSaved": false,
+        "closedActualSuccess": true,
+        "evidenceLinks": [],
+        "blocks": 1
+      },
+      {
+        "session": "1b9ebd89e4c846a2b9fe9ef420444f9b",
+        "world": "c-b3126f2da82f0a48e35db489",
+        "profile": "trained",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-81a8e5c4b3bd4f4680ac096a55a4de5f/thought.jsonl",
+        "chain": {
+          "events": 136,
+          "last_hash": "8aed7958b5361ef4a3f8e0ae6dc626b57897fbd9e9e5890d364af1368c4ab415"
+        },
+        "initialModelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "initialSupport": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "support": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "confirmedUnitMoves": 30,
+        "acceptedProjections": 0,
+        "duplicateProjections": 0,
+        "plansReplayedWithoutPrior": 35,
+        "modelSaved": false,
+        "closedActualSuccess": true,
+        "evidenceLinks": [],
+        "blocks": 0
+      },
+      {
+        "session": "44feaec9844e4b64a28f189945ba5904",
+        "world": "c-575b9a64ab80f1e5f85d3653",
+        "profile": "trained",
+        "journal": "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-8d0a414e5c4a48d09dd0cd9d3496ebbc/thought.jsonl",
+        "chain": {
+          "events": 128,
+          "last_hash": "230ed88d15a978165b22084453530c31dd01fc7b75cd00438c8bf08575369fc6"
+        },
+        "initialModelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+        "initialSupport": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "support": [
+          2,
+          13,
+          10,
+          2
+        ],
+        "confirmedUnitMoves": 30,
+        "acceptedProjections": 0,
+        "duplicateProjections": 0,
+        "plansReplayedWithoutPrior": 30,
+        "modelSaved": false,
+        "closedActualSuccess": true,
+        "evidenceLinks": [],
+        "blocks": 0
+      }
+    ],
+    "errors": [],
+    "inputs": {
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Receipts/navigation-integration-tests.json": {
+        "sha256": "aa16e666732bc5a330396dbc8d639dab53d03355723098c37b51fc8635297ca1",
+        "bytes": 6632
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-0d47f377ee334016ab0192f54ef1a42f/thought.jsonl": {
+        "sha256": "73c2205b5b7e54e04978b9157cd7731b5335a16142dc00ca8743a46ecd5b4dec",
+        "bytes": 176217
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7185a3fdfcc0403e959e3ae8c3b8d061/thought.jsonl": {
+        "sha256": "571a9f4c27967a0b92c5f2c850a16d7074ac64486faa974a2cb98e82ffbfe6ec",
+        "bytes": 178284
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-7d33f055feba4edfbd8a522e5a9ed1ff/thought.jsonl": {
+        "sha256": "c3de7af5856c4c52c70f8292108fd8910ff6c93278f54fffa5a285f136c921b4",
+        "bytes": 285032
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-81a8e5c4b3bd4f4680ac096a55a4de5f/thought.jsonl": {
+        "sha256": "8741fd99da56b5b47a9c5a433b81ec5848086406a245943441ee790322a69f04",
+        "bytes": 355458
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-8d0a414e5c4a48d09dd0cd9d3496ebbc/thought.jsonl": {
+        "sha256": "562f9364521ac084f816a1533cc1da926164b44b95c02f316c479f63d06578f9",
+        "bytes": 379760
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-92d685c5358f4419a2912e80b9f3c550/thought.jsonl": {
+        "sha256": "e452265948014b75c4c55b1553dfe8c7b41e03ed10a8196ed121cca2c5aa0ff3",
+        "bytes": 175460
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/run-a01ae4bd22014ad598751619240f29d7/thought.jsonl": {
+        "sha256": "be932521a37f608bc9360b3da3b5fa441703ba84e0dc27fa51b6eb18b1ed777a",
+        "bytes": 287824
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Evidence/2026-10-11/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd/model.json": {
+        "sha256": "283725b485e3b758d632fdc1600a106bfe4d34bf0dcdef29f12a47b0aa7011a7",
+        "bytes": 25943
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/budget.py": {
+        "sha256": "d289e6d395f106e121ff53fdf5732b711931e9dee97a751eb42451c87d6caa99",
+        "bytes": 1061
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/interaction.py": {
+        "sha256": "d3d14b1a1162559ff77bf9c732f236549bbffd2842ca0399668bc3b21cd114c5",
+        "bytes": 30567
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/legacy.py": {
+        "sha256": "6d11748a55567b9a8509bed3290ce7b28103e64cb84826d6193a0255c9570e6c",
+        "bytes": 2581
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/trace.py": {
+        "sha256": "79cdd2de7f995bdd05fc20e496d40f4d10a149bd99cc0d1fa3902408a110a644",
+        "bytes": 1828
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/__init__.py": {
+        "sha256": "bb4217286cc386182261dbccc44016aa2a21e07b7646741e2c906f7772f1f9f3",
+        "bytes": 375
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/__init__.py": {
+        "sha256": "d2ae5e6acc1fa1d60b46cec38f08255a2e068982760654b9afb50c9c0bd17d06",
+        "bytes": 81
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/cam.py": {
+        "sha256": "152e8661e13ad8d1a667165e77b9eac91b4ec09bc172d839f2322ecdd5be5112",
+        "bytes": 6549
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/dag.py": {
+        "sha256": "1a3d6239974b3ed4bd685c9a6e4333aa3d1bd38a06ff22ac890108eb49836156",
+        "bytes": 1439
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/qn.py": {
+        "sha256": "9a8684626ea7031a3af1122aa99f17775f8ea03405b8052bf1d67680a99fd01c",
+        "bytes": 5388
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/spoke.py": {
+        "sha256": "1ad63b54956ab793c1f0a83920c0fa2b7b8dc8b4807948ea12d85f92c8635e87",
+        "bytes": 2039
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/core/wsp.py": {
+        "sha256": "d1a1be20a582244105c979e1b6b139bbb58fec2aae658fe790243067a10ef9c4",
+        "bytes": 3494
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/__init__.py": {
+        "sha256": "ca0ee11196db12654f14eeab58c9c3eb519678a875a12a74c37eaf49d0783036",
+        "bytes": 329
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/attend.py": {
+        "sha256": "7295453e7d0f2b96c4c03a5b0ce4e66f667db4480d028eaf3912558b6eca4398",
+        "bytes": 3723
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/constants.py": {
+        "sha256": "dacdb3af78e652996ed189a729afc43c6f15982ace980136f16ba4d689b44680",
+        "bytes": 2722
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/cortex.py": {
+        "sha256": "e81e2bec34760dacb588f6428f8ecb0491915543ea00262103ff94ab76ed1e5a",
+        "bytes": 4339
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/cortex_turn.py": {
+        "sha256": "3a71aa437484aa13fb730303ac6a5cf42eff17f629dd89322fc3111281bec5ae",
+        "bytes": 1606
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/encoder.py": {
+        "sha256": "953a112aaafe8bcb603c06bc0b0e138e610601bbf30a43e8e90bc0812d3deb8f",
+        "bytes": 8204
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/env.py": {
+        "sha256": "c27c08abc7dd699dfb617a504600b0957b18a5a28631483874aae747b43f8c0b",
+        "bytes": 5858
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/escalate.py": {
+        "sha256": "9fb8ee424ce5d53fa50104bc895df317ac1e15e3bc02737d181354f90eb8cd04",
+        "bytes": 2418
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/gate.py": {
+        "sha256": "6bce5c3aceb9dc7b7bcf0baeee33576280a1635f8b3ea58edd3841f734221790",
+        "bytes": 1831
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/lex.py": {
+        "sha256": "b5eb2655b8287dab92ea94d52ad4933ad60afbde5e3434f4aa77d19c53774e52",
+        "bytes": 25386
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/loop.py": {
+        "sha256": "0fca90d74f5a822bb7477359647eda8e6800592017d1d18680d439100ca02f04",
+        "bytes": 42782
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/oracle.py": {
+        "sha256": "2a71c086a164edbb0cb39345fe6f0ad1f9b82cb1e009f31e31e89a7f4f763b22",
+        "bytes": 2895
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/pattern.py": {
+        "sha256": "ce79617b70620f2dd05fd4cc64417fd31e9246aeeb80a6c7ccd12517ae3e0796",
+        "bytes": 8511
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/plan.py": {
+        "sha256": "6ee84342d39f18d186877993f77ce8831872b1990ff986c838e42ff0469cf52b",
+        "bytes": 2637
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/qtable.py": {
+        "sha256": "a44faacce40d63159a9e13294394269d5f463e642fec07fe29fbeae32913ccfc",
+        "bytes": 11685
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/thought.py": {
+        "sha256": "93faf71caac8e1f94a55ddc75bf7181f59a648642031ec030d81cdd3a7f61328",
+        "bytes": 4297
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/types.py": {
+        "sha256": "43f77add5fc9136bd1d3ba101250ae3bdd92102062b87e421f4931ea64d1e1f0",
+        "bytes": 5473
+      },
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/world.py": {
+        "sha256": "c8374eb3447a5243351a378224efb8601858aed59317b032571076e40e73d6ca",
+        "bytes": 7015
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Bridge/navigation.py": {
+        "sha256": "61788761d5be6462047461f91fadc05ab6e1f57d22c79f3537487fafcc8ea665",
+        "bytes": 46531
+      },
+      "/home/roger/github-restructure/publish-20261012/echounity/Tools/audit_physical_navigation.py": {
+        "sha256": "5219b70c52fe27d2026df7462bd4c467c1936c25971bdcd177e6e219a5f0fa23",
+        "bytes": 33563
+      }
+    },
+    "recordedRoot": "/home/roger/Unity/ECHO-Station/Artifacts/NavigationPhysical/run-20261011T033123-861da5fd",
+    "coreSource": "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5",
+    "sources": {
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/budget.py": "d289e6d395f106e121ff53fdf5732b711931e9dee97a751eb42451c87d6caa99",
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/interaction.py": "d3d14b1a1162559ff77bf9c732f236549bbffd2842ca0399668bc3b21cd114c5",
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/legacy.py": "6d11748a55567b9a8509bed3290ce7b28103e64cb84826d6193a0255c9570e6c",
+      "/home/roger/github-restructure/publish-20261012/echoai/ECHO-5/src/echo5/trace.py": "79cdd2de7f995bdd05fc20e496d40f4d10a149bd99cc0d1fa3902408a110a644",
+      "/home/roger/github-restructure/publish-20261012/echoai/__init__.py": "bb4217286cc386182261dbccc44016aa2a21e07b7646741e2c906f7772f1f9f3",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/__init__.py": "d2ae5e6acc1fa1d60b46cec38f08255a2e068982760654b9afb50c9c0bd17d06",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/cam.py": "152e8661e13ad8d1a667165e77b9eac91b4ec09bc172d839f2322ecdd5be5112",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/dag.py": "1a3d6239974b3ed4bd685c9a6e4333aa3d1bd38a06ff22ac890108eb49836156",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/qn.py": "9a8684626ea7031a3af1122aa99f17775f8ea03405b8052bf1d67680a99fd01c",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/spoke.py": "1ad63b54956ab793c1f0a83920c0fa2b7b8dc8b4807948ea12d85f92c8635e87",
+      "/home/roger/github-restructure/publish-20261012/echoai/core/wsp.py": "d1a1be20a582244105c979e1b6b139bbb58fec2aae658fe790243067a10ef9c4",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/__init__.py": "ca0ee11196db12654f14eeab58c9c3eb519678a875a12a74c37eaf49d0783036",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/attend.py": "7295453e7d0f2b96c4c03a5b0ce4e66f667db4480d028eaf3912558b6eca4398",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/constants.py": "dacdb3af78e652996ed189a729afc43c6f15982ace980136f16ba4d689b44680",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/cortex.py": "e81e2bec34760dacb588f6428f8ecb0491915543ea00262103ff94ab76ed1e5a",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/cortex_turn.py": "3a71aa437484aa13fb730303ac6a5cf42eff17f629dd89322fc3111281bec5ae",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/encoder.py": "953a112aaafe8bcb603c06bc0b0e138e610601bbf30a43e8e90bc0812d3deb8f",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/env.py": "c27c08abc7dd699dfb617a504600b0957b18a5a28631483874aae747b43f8c0b",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/escalate.py": "9fb8ee424ce5d53fa50104bc895df317ac1e15e3bc02737d181354f90eb8cd04",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/gate.py": "6bce5c3aceb9dc7b7bcf0baeee33576280a1635f8b3ea58edd3841f734221790",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/lex.py": "b5eb2655b8287dab92ea94d52ad4933ad60afbde5e3434f4aa77d19c53774e52",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/loop.py": "0fca90d74f5a822bb7477359647eda8e6800592017d1d18680d439100ca02f04",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/oracle.py": "2a71c086a164edbb0cb39345fe6f0ad1f9b82cb1e009f31e31e89a7f4f763b22",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/pattern.py": "ce79617b70620f2dd05fd4cc64417fd31e9246aeeb80a6c7ccd12517ae3e0796",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/plan.py": "6ee84342d39f18d186877993f77ce8831872b1990ff986c838e42ff0469cf52b",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/qtable.py": "a44faacce40d63159a9e13294394269d5f463e642fec07fe29fbeae32913ccfc",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/thought.py": "93faf71caac8e1f94a55ddc75bf7181f59a648642031ec030d81cdd3a7f61328",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/types.py": "43f77add5fc9136bd1d3ba101250ae3bdd92102062b87e421f4931ea64d1e1f0",
+      "/home/roger/github-restructure/publish-20261012/echoai/nexus0/world.py": "c8374eb3447a5243351a378224efb8601858aed59317b032571076e40e73d6ca",
+      "/home/roger/github-restructure/publish-20261012/echounity/Bridge/navigation.py": "61788761d5be6462047461f91fadc05ab6e1f57d22c79f3537487fafcc8ea665",
+      "/home/roger/github-restructure/publish-20261012/echounity/Tools/audit_physical_navigation.py": "5219b70c52fe27d2026df7462bd4c467c1936c25971bdcd177e6e219a5f0fa23"
+    },
+    "modelHash": "bf330811c855ab145a911f1553ef0dd09c912b5badf9e9a1d5885da86af60818",
+    "modelFileSha256": "283725b485e3b758d632fdc1600a106bfe4d34bf0dcdef29f12a47b0aa7011a7",
+    "support": [
+      2,
+      13,
+      10,
+      2
+    ],
+    "evidenceCount": 27,
+    "coreRestoreExact": true,
+    "firstLearnZeroSupport": true,
+    "firstLearnModelSaved": true,
+    "trainedModelFrozen": true,
+    "plansReplayedWithoutPriors": 152,
+    "finishedUtc": "2026-10-12T17:42:14.391105+00:00"
+  },
+  "tamperTestsExitCode": 0
+}

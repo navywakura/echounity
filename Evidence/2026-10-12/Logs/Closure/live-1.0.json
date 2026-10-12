@@ -1,0 +1,14 @@
+{
+  "session": {
+    "session": "c867fc1f63a64272b39c3d2384fd86bb",
+    "seq": 26,
+    "closed": true
+  },
+  "cam_used": 26,
+  "cam_destroyed": 0,
+  "cam_capacity": 4096,
+  "trace_read_only": true,
+  "unity_workspace": 2,
+  "screenshot": "Logs/Closure/unity-live-1.0.png",
+  "source": "actual graphical demo after the sealed confirmation"
+}

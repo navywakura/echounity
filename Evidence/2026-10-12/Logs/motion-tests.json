@@ -1,0 +1,80 @@
+{
+    "unityVersion": "6000.0.84f1",
+    "utc": "2026-10-12T17:16:15.7442040Z",
+    "passed": true,
+    "failures": 0,
+    "tests": [
+        {
+            "name": "arrival_and_no_drift",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 42.2242
+        },
+        {
+            "name": "acceleration_and_explicit_stop",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 8.419
+        },
+        {
+            "name": "frontal_wall_unreachable",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 32.1774
+        },
+        {
+            "name": "reverse_wall_unreachable",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 30.887500000000004
+        },
+        {
+            "name": "corner_slides_to_reachable_target",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 11.3431
+        },
+        {
+            "name": "large_dt_thin_wall_no_tunnelling",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 9.9125
+        },
+        {
+            "name": "initial_overlap_never_depenetrates",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.2617000000000004
+        },
+        {
+            "name": "own_hierarchy_and_nonworld_layers_ignored",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 23.991200000000004
+        },
+        {
+            "name": "invalid_inputs_are_inert",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.8779000000000002
+        },
+        {
+            "name": "retarget_and_blocked_state_reset",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 20.357300000000003
+        },
+        {
+            "name": "prediction_toggle_and_curvature",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 33.0262
+        },
+        {
+            "name": "visual_build_ik_planting_and_cleanup",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 128.51600000000003
+        }
+    ]
+}

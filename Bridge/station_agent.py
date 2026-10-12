@@ -17,7 +17,6 @@ import threading
 import uuid
 
 # Reading the installed source must not create bytecode in the frozen project.
-sys.dont_write_bytecode = True
 from echo_source import load_core
 ECHO5_SOURCE = load_core()
 from echo5.budget import Budget, BudgetExceeded
@@ -499,7 +498,7 @@ class BridgeService:
     """
 
     def __init__(self, *, artifact_root=DEFAULT_ARTIFACTS, budget_limit=1_000_000,
-                 max_sessions=16, max_requests=400):
+                 max_sessions=16, max_requests=400, agent_type=StationAgent):
         _integer(budget_limit, 0, 1_000_000)
         _integer(max_sessions, 1, 64)
         _integer(max_requests, 1, 400)
@@ -508,6 +507,7 @@ class BridgeService:
         self.max_sessions, self.max_requests = max_sessions, max_requests
         self.sessions = {}
         self.lock = threading.Lock()
+        self.agent_type = agent_type
 
     def process(self, raw):
         obs = decode_observation(raw)
@@ -530,7 +530,7 @@ class BridgeService:
                 run = "run-" + datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ-") + uuid.uuid4().hex
                 journal = self.artifact_root / run / "thought.jsonl"
                 recorder = Recorder(journal)
-                agent = StationAgent(budget=Budget(self.budget_limit), recorder=recorder, journal_path=journal)
+                agent = self.agent_type(budget=Budget(self.budget_limit), recorder=recorder, journal_path=journal)
                 session = Session(obs["mission"], (obs["width"], obs["height"]), agent, recorder)
                 self.sessions[obs["session"]] = session
             try:

@@ -1,0 +1,222 @@
+{
+  "schema": "echounity.publication-runs.v1",
+  "scope": "New development checks of the portable copy, no new confirmation",
+  "recordedRoot": "/home/roger/github-restructure/publish-20261012/echounity",
+  "files": [
+    {
+      "path": "development/audit-final.json",
+      "sha256": "28346803aac27f3741a81fe2653e90c180425d9518190d27c6b122d915486d4f",
+      "bytes": 13430
+    },
+    {
+      "path": "development/conditioning/brain/cam.json",
+      "sha256": "48b92e6ae0cd3f8790c17423e0b34125d726aeef4693aff53b5dc6399920ba75",
+      "bytes": 30181
+    },
+    {
+      "path": "development/conditioning/brain/empirical-motor.json",
+      "sha256": "1a0cebeefb77841d1ee62c56f641fd835c0a6e0abeac105bc7ad2b90bf2d934c",
+      "bytes": 1603
+    },
+    {
+      "path": "development/conditioning/brain/run-0e0b2955ea874118883df3c591e45333/cam-start.json",
+      "sha256": "f28ab1f613de4a70c283f495a5ddbea1b4a9b8e420f782067984b8e747a9d4c6",
+      "bytes": 26813
+    },
+    {
+      "path": "development/conditioning/brain/run-0e0b2955ea874118883df3c591e45333/thought.jsonl",
+      "sha256": "08c350105908f6789e5f4b824cc805ea63ce5218ec715482a52ff480388080fa",
+      "bytes": 19044
+    },
+    {
+      "path": "development/conditioning/brain/run-2dfdeb7601464ecb901f68e4fa48384b/cam-start.json",
+      "sha256": "f28ab1f613de4a70c283f495a5ddbea1b4a9b8e420f782067984b8e747a9d4c6",
+      "bytes": 26813
+    },
+    {
+      "path": "development/conditioning/brain/run-2dfdeb7601464ecb901f68e4fa48384b/thought.jsonl",
+      "sha256": "371b531ff0ca18b1b4bf88c2e3c6b0a2ab75dd6e5724614cfde8edeb80ba16e4",
+      "bytes": 19044
+    },
+    {
+      "path": "development/conditioning/brain/run-6450eb05f9544c1fa19cf59680c6ad0f/cam-start.json",
+      "sha256": "f28ab1f613de4a70c283f495a5ddbea1b4a9b8e420f782067984b8e747a9d4c6",
+      "bytes": 26813
+    },
+    {
+      "path": "development/conditioning/brain/run-6450eb05f9544c1fa19cf59680c6ad0f/thought.jsonl",
+      "sha256": "b58a0ab01c36488c8dd6009226e02deffbb771a72ad166b1c812f863d4d6cae9",
+      "bytes": 21704
+    },
+    {
+      "path": "development/conditioning/brain/run-85ab8882b4e04bd99fb15d31fb8c1e87/thought.jsonl",
+      "sha256": "1f6705f470a20841caf8c1726a2d775f854cf6506ad92fdefd6504d6ff68f2d6",
+      "bytes": 52559
+    },
+    {
+      "path": "development/conditioning/brain/run-96c55d7bf839403aab1fccce3f4bb5f3/cam-start.json",
+      "sha256": "c03547e56108c32935d960cf65d5b0ee6fd5390b7545f0b3a87f775507fc384f",
+      "bytes": 28762
+    },
+    {
+      "path": "development/conditioning/brain/run-96c55d7bf839403aab1fccce3f4bb5f3/thought.jsonl",
+      "sha256": "8b7d032f2ba313b61f4900656a18d68a12f826536a2ba29c37ec0cfcf205736a",
+      "bytes": 23318
+    },
+    {
+      "path": "development/conditioning/conditioning-physical.json",
+      "sha256": "0cff5153415f4befa7d1dc4382f652180c1d07c782dc96e7a7f94375ce0765a2",
+      "bytes": 3203
+    },
+    {
+      "path": "development/conditioning/control-brain/cam.json",
+      "sha256": "eb120dcf287a091bde73b38deb57c1af061a4206b9896548bc62b553c82b918b",
+      "bytes": 28498
+    },
+    {
+      "path": "development/conditioning/control-brain/empirical-motor.json",
+      "sha256": "a948be7d7d69a9868532be2f07f1a4188a5967585f30b7512a356a53bf4cb166",
+      "bytes": 987
+    },
+    {
+      "path": "development/conditioning/control-brain/run-1295d32a6d8b4f84942fb66457d7de48/cam-start.json",
+      "sha256": "f28ab1f613de4a70c283f495a5ddbea1b4a9b8e420f782067984b8e747a9d4c6",
+      "bytes": 26813
+    },
+    {
+      "path": "development/conditioning/control-brain/run-1295d32a6d8b4f84942fb66457d7de48/thought.jsonl",
+      "sha256": "188788c38d7020dc576114964dcad03534c4bea3d9f28a0999e76ec40a44133f",
+      "bytes": 20213
+    },
+    {
+      "path": "development/conditioning/paired-control.json",
+      "sha256": "37ab8be77c930e04d09fff4016d734c50730a77849cd361edfee5a4de539637a",
+      "bytes": 277
+    },
+    {
+      "path": "development/conditioning/restarts.json",
+      "sha256": "a8f0455117ed03d15b80d60dd17697d3bb6dcf6973149d90f921f94c251a435c",
+      "bytes": 199
+    },
+    {
+      "path": "development/development/brain/run-17303aa432614ba2b93f234eb98f5e10/thought.jsonl",
+      "sha256": "28656457c5b29537fe110c34a2a4ab8cbfc5dceb81cb5ea53e3cf70b1da2710e",
+      "bytes": 744868
+    },
+    {
+      "path": "development/development/brain/run-191752024c1048d7a7f08a4b90977e06/thought.jsonl",
+      "sha256": "414d28b13fda047629b4594c014cadce550cc3493341c61018765bc067ce3519",
+      "bytes": 827931
+    },
+    {
+      "path": "development/development/brain/run-636a573c588a4125b8bd1f2ae4a58adb/thought.jsonl",
+      "sha256": "8359d7126404d4933a4fc11c80e2c826bf524944a37e37efced21b8d0f180b3e",
+      "bytes": 1858139
+    },
+    {
+      "path": "development/development/brain/run-9d4acd55d52647d592dbb1202aed7c61/thought.jsonl",
+      "sha256": "d0b43167c57454c3b891679acb5a00ab021ecc3de1b0ff713423edf06df6f936",
+      "bytes": 816006
+    },
+    {
+      "path": "development/development/brain/run-b06a9060597346bab89ce6914e174021/thought.jsonl",
+      "sha256": "dbd5a4a8323102c39af119814e0891f75eb92fe5034ef0b1b6849783564e6d52",
+      "bytes": 1344080
+    },
+    {
+      "path": "development/development/brain/run-bbbfdf84531c41b3b32b6bc16d2873d9/thought.jsonl",
+      "sha256": "d7e59cd78bc6bf414bca541a70ae49435f752345c11471097013c1555a4c343c",
+      "bytes": 692795
+    },
+    {
+      "path": "development/development/brain/run-e0d8c3cf0d2640d7b7c202b71477f339/thought.jsonl",
+      "sha256": "4b5f2b7ef4858c4dba27f69f74e3f3e028e667a1032fbda043a54b304cf6acb3",
+      "bytes": 1104231
+    },
+    {
+      "path": "development/development/brain/run-ead3eb5a4c0841ae88ced7543bb78cba/thought.jsonl",
+      "sha256": "5d8d78998ec672912fe1da1673b1ca030ddbf7e7f3226aa56a82399077c65598",
+      "bytes": 1314607
+    },
+    {
+      "path": "development/development/brain/station/run-20261012T174515Z-5ff86f1748e5458596fda75a1bf8cee0/thought.jsonl",
+      "sha256": "4123061efc379d0d5ef315371a8a39fd7385caa218e70634ae61efcdf915805e",
+      "bytes": 1208333
+    },
+    {
+      "path": "development/development/brain/station/run-20261012T174537Z-092f3cc525254b378ed049ebfca22e9f/thought.jsonl",
+      "sha256": "0d321875461e48bff30d6ae9291b2de1a35cf7d42b0745352505f39d4e1ea29b",
+      "bytes": 1049675
+    },
+    {
+      "path": "development/development/brain/station/run-20261012T174558Z-945ee1ffdbae4afda933eee5ff04dc5a/thought.jsonl",
+      "sha256": "904f57140a0d6cfd0c370a860b02acd14101a9018af6c9f6418a6aace731dec3",
+      "bytes": 1422091
+    },
+    {
+      "path": "development/development/latency.json",
+      "sha256": "a0e77991f9159a634146e9c9addb579d7037b0fe26fbfbe53aab24cd44e4808b",
+      "bytes": 8682
+    },
+    {
+      "path": "development/development/resources.json",
+      "sha256": "9526f3ef1310d83700121b0c886ccdc7394a7c3b0c69048e7e8b1428257c0d5f",
+      "bytes": 422220
+    },
+    {
+      "path": "development/development/unity-development.json",
+      "sha256": "ac90286be686723f9829328a183b791f11383d4ae203faccdad32af0ba0e3bac",
+      "bytes": 7009
+    },
+    {
+      "path": "development/development/unity-station.json",
+      "sha256": "e52dc22747dd06cfc1ff178f80bba76c2318af8e54df5117ea9ff7c3ea7c8f44",
+      "bytes": 9164
+    },
+    {
+      "path": "development/offline/brain/run-09bfd54342af45308f4beb4bf21966aa/thought.jsonl",
+      "sha256": "cc8ff9deed880360c980747e2c835dd357d260641551bdbf2d6a7b36f7c19a63",
+      "bytes": 448256
+    },
+    {
+      "path": "development/offline/offline.json",
+      "sha256": "b759104411880f8acf0b78930886f41b2e5ef2531aa894d7c152a3837cffcee9",
+      "bytes": 4351
+    },
+    {
+      "path": "development/process.json",
+      "sha256": "57640955ac47f41540be0fd5025a7fe00d1eb6c87214e4cdadfeaa147c95f903",
+      "bytes": 340
+    },
+    {
+      "path": "development/status.json",
+      "sha256": "e48f3df6b0c3d3e075167994352668c617956b44ca5c4180eee1ae43bb0c1df5",
+      "bytes": 411
+    },
+    {
+      "path": "development/tests.log",
+      "sha256": "3aa96f4fee7c90c458772936c788ab2f9de7f208620b3202932a1093afa4bb6f",
+      "bytes": 21029
+    },
+    {
+      "path": "world-tests.json",
+      "sha256": "5951849bee842d1c0fbeecf61982445ac0ae497d33acc41ffbf898c41cde9c32",
+      "bytes": 896
+    },
+    {
+      "path": "motion-tests.json",
+      "sha256": "e2497ed309547cf281765af4d8cc9ad552810578a8499e9fc54aaff4321e93eb",
+      "bytes": 2400
+    },
+    {
+      "path": "legacy-evidence-check.json",
+      "sha256": "dd3bbe229bfc720cc262a12e8810c7fda3f894289db0ae26138ab3571d6267ff",
+      "bytes": 34178
+    },
+    {
+      "path": "world-prototype-verification.json",
+      "sha256": "18c7c77283f2ffa1d1ef65fa58d1c804cf7f0b1fbd80eb01bd9186a8b0c57e4d",
+      "bytes": 2674
+    }
+  ]
+}

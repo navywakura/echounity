@@ -1,0 +1,18 @@
+{
+    "connected": true,
+    "completed": true,
+    "acknowledged": true,
+    "gaitReady": true,
+    "diagnosticPresent": true,
+    "observerDrivesPolicy": false,
+    "finitePose": true,
+    "decisions": 26,
+    "moves": 23,
+    "blocks": 0,
+    "poseFrames": 1511,
+    "steppingFrames": 1202,
+    "minimumPlantedFeet": 4,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/live-20261012-020645-999891/run-184e0cf2464b49e19a3597608c6ec9f7/thought.jsonl",
+    "session": "01b0c2f4eb1542c2bf0fbc05347c948b",
+    "profile": "cold"
+}

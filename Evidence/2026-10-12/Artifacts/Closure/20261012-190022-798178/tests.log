@@ -1,0 +1,138 @@
+test_closed_session_reuses_last_frame_without_reopening_journal (test_arachnid_diagnostic.DiagnosticTests.test_closed_session_reuses_last_frame_without_reopening_journal) ... ok
+test_diagnostic_does_not_change_subsequent_actions (test_arachnid_diagnostic.DiagnosticTests.test_diagnostic_does_not_change_subsequent_actions) ... ok
+test_snapshot_uses_real_layer_and_keeps_policy_unchanged (test_arachnid_diagnostic.DiagnosticTests.test_snapshot_uses_real_layer_and_keeps_policy_unchanged) ... ok
+test_active_cam_veto_and_refutation_preserve_historical_fact (test_arachnid_state.BasalTests.test_active_cam_veto_and_refutation_preserve_historical_fact) ... ok
+test_adapter_has_no_success_regression_in_four_paired_worlds (test_arachnid_state.BasalTests.test_adapter_has_no_success_regression_in_four_paired_worlds) ... ok
+test_block_receipt_raises_urgency_and_uses_real_cam_to_inspect (test_arachnid_state.BasalTests.test_block_receipt_raises_urgency_and_uses_real_cam_to_inspect) ... ok
+test_byte_retry_has_no_second_episode_or_state_update (test_arachnid_state.BasalTests.test_byte_retry_has_no_second_episode_or_state_update) ... ok
+test_cam_write_budget_exhaustion_stops_before_another_action (test_arachnid_state.BasalTests.test_cam_write_budget_exhaustion_stops_before_another_action) ... ok
+test_cancelled_or_mismatched_receipt_does_not_create_fact (test_arachnid_state.BasalTests.test_cancelled_or_mismatched_receipt_does_not_create_fact) ... ok
+test_diagnostic_does_not_change_cam_e6_or_actions_and_keeps_final_state (test_arachnid_state.BasalTests.test_diagnostic_does_not_change_cam_e6_or_actions_and_keeps_final_state) ... ok
+test_ephemeral_cam_is_not_shared_between_sessions (test_arachnid_state.BasalTests.test_ephemeral_cam_is_not_shared_between_sessions) ... ok
+test_full_cam_never_evicts_or_invents_an_episode (test_arachnid_state.BasalTests.test_full_cam_never_evicts_or_invents_an_episode) ... ok
+test_initial_state_is_not_an_episode (test_arachnid_state.BasalTests.test_initial_state_is_not_an_episode) ... ok
+test_removing_either_control_removes_its_extra_inspection (test_arachnid_state.BasalTests.test_removing_either_control_removes_its_extra_inspection) ... ok
+test_successive_scans_record_receipts_and_decay_urgency_to_floor (test_arachnid_state.BasalTests.test_successive_scans_record_receipts_and_decay_urgency_to_floor) ... ok
+test_wrong_context_or_corrupt_extract_cannot_veto (test_arachnid_state.BasalTests.test_wrong_context_or_corrupt_extract_cannot_veto) ... ok
+test_different_motor_meaning_does_not_restore_veto (test_cam_persistence.PersistenceTests.test_different_motor_meaning_does_not_restore_veto) ... ok
+test_second_encounter_veto_safe_context_and_extinction_survive_restart (test_cam_persistence.PersistenceTests.test_second_encounter_veto_safe_context_and_extinction_survive_restart) ... ok
+test_tampered_checkpoint_rejected_even_when_envelope_rehashed (test_cam_persistence.PersistenceTests.test_tampered_checkpoint_rejected_even_when_envelope_rehashed) ... ok
+test_decisions_are_capped_without_stopping_terminal_receipt (test_nav_worlds.AuditTests.test_decisions_are_capped_without_stopping_terminal_receipt) ... ok
+test_done_claim_does_not_make_failure_a_success (test_nav_worlds.AuditTests.test_done_claim_does_not_make_failure_a_success) ... ok
+test_evaluator_interface (test_nav_worlds.AuditTests.test_evaluator_interface) ... ok
+test_frozen_profile_cannot_change_model_in_memory (test_nav_worlds.AuditTests.test_frozen_profile_cannot_change_model_in_memory) ... ok
+test_position_scoring_and_complete_replay_reject_forged_transcripts (test_nav_worlds.AuditTests.test_position_scoring_and_complete_replay_reject_forged_transcripts) ... ok
+test_resealed_terminal_cannot_invent_work_or_a_different_finish_sequence (test_nav_worlds.AuditTests.test_resealed_terminal_cannot_invent_work_or_a_different_finish_sequence) ... ok
+test_transfer_gate_never_labels_development_as_valid_transfer (test_nav_worlds.AuditTests.test_transfer_gate_never_labels_development_as_valid_transfer) ... ok
+test_acquisition_needs_two_physical_samples_per_identified_command (test_nav_worlds.CampaignTests.test_acquisition_needs_two_physical_samples_per_identified_command) ... ok
+test_confirmation_requires_explicit_freeze_and_worker_cap (test_nav_worlds.CampaignTests.test_confirmation_requires_explicit_freeze_and_worker_cap) ... ok
+test_launcher_interface (test_nav_worlds.CampaignTests.test_launcher_interface) ... ok
+test_raw_actor_input_and_import_boundary (test_nav_worlds.CampaignTests.test_raw_actor_input_and_import_boundary) ... ok
+test_snapshot_refuses_changed_source_and_checkpoint (test_nav_worlds.CampaignTests.test_snapshot_refuses_changed_source_and_checkpoint) ... ok
+test_source_freeze_includes_lazily_loaded_core_dependencies (test_nav_worlds.CampaignTests.test_source_freeze_includes_lazily_loaded_core_dependencies) ... ok
+test_blocked_motion_has_actual_pose_and_goal_is_position_judged (test_nav_worlds.SensorTests.test_blocked_motion_has_actual_pose_and_goal_is_position_judged) ... ok
+test_box_faces_parallel_miss_and_inside (test_nav_worlds.SensorTests.test_box_faces_parallel_miss_and_inside) ... ok
+test_emulator_is_available (test_nav_worlds.SensorTests.test_emulator_is_available) ... ok
+test_projected_pixels_not_equal_angle_and_ten_metre_range (test_nav_worlds.SensorTests.test_projected_pixels_not_equal_angle_and_ten_metre_range) ... ok
+test_sensor_occlusion_yaw_and_raw_public_observation (test_nav_worlds.SensorTests.test_sensor_occlusion_yaw_and_raw_public_observation) ... ok
+test_development_topologies_and_acquisition_clearance (test_nav_worlds.WorldTests.test_development_topologies_and_acquisition_clearance) ... ok
+test_disconnected_goal_is_rejected (test_nav_worlds.WorldTests.test_disconnected_goal_is_rejected) ... ok
+test_generator_is_available (test_nav_worlds.WorldTests.test_generator_is_available) ... ok
+test_320_decisions_limit_retains_exact_retry_and_terminal_receipt (test_navigation.NavigationTests.test_320_decisions_limit_retains_exact_retry_and_terminal_receipt) ... ok
+test_budget_exhaustion_waits_and_finish_still_records (test_navigation.NavigationTests.test_budget_exhaustion_waits_and_finish_still_records) ... ok
+test_cancelled_finish_never_teaches_the_command (test_navigation.NavigationTests.test_cancelled_finish_never_teaches_the_command) ... ok
+test_cli_navigation_root_is_used_by_fresh_server (test_navigation.NavigationTests.test_cli_navigation_root_is_used_by_fresh_server) ... ok
+test_closed_sessions_do_not_exhaust_active_limit_and_old_ids_do_not_replay (test_navigation.NavigationTests.test_closed_sessions_do_not_exhaust_active_limit_and_old_ids_do_not_replay) ... ok
+test_cold_ignores_saved_model_and_does_not_persist (test_navigation.NavigationTests.test_cold_ignores_saved_model_and_does_not_persist) ... ok
+test_collision_infers_cell_separately_and_never_repeats_same_failed_edge (test_navigation.NavigationTests.test_collision_infers_cell_separately_and_never_repeats_same_failed_edge) ... ok
+test_completed_flag_without_goal_pose_cannot_save_or_claim_done (test_navigation.NavigationTests.test_completed_flag_without_goal_pose_cannot_save_or_claim_done) ... ok
+test_core_duplicates_add_no_support_and_do_not_fail_session (test_navigation.NavigationTests.test_core_duplicates_add_no_support_and_do_not_fail_session) ... ok
+test_dynamic_obstacle_between_decision_and_motor_gets_a_detour (test_navigation.NavigationTests.test_dynamic_obstacle_between_decision_and_motor_gets_a_detour) ... ok
+test_exact_retry_is_byte_identical_and_does_not_add_work_or_journal (test_navigation.NavigationTests.test_exact_retry_is_byte_identical_and_does_not_add_work_or_journal) ... ok
+test_fail_closed_after_journal_error_and_service_close (test_navigation.NavigationTests.test_fail_closed_after_journal_error_and_service_close) ... ok
+test_finish_cannot_credit_teleport_after_wait (test_navigation.NavigationTests.test_finish_cannot_credit_teleport_after_wait) ... ok
+test_finish_is_idempotent_never_plans_and_does_not_save_incomplete_training (test_navigation.NavigationTests.test_finish_is_idempotent_never_plans_and_does_not_save_incomplete_training) ... ok
+test_frozen_model_conflict_stops_without_learning_a_new_mapping (test_navigation.NavigationTests.test_frozen_model_conflict_stops_without_learning_a_new_mapping) ... ok
+test_frozen_profiles_never_observe_and_plan_without_prior (test_navigation.NavigationTests.test_frozen_profiles_never_observe_and_plan_without_prior) ... ok
+test_hit_wins_over_free_in_same_frame_independent_of_ray_order (test_navigation.NavigationTests.test_hit_wins_over_free_in_same_frame_independent_of_ray_order) ... ok
+test_initial_sequence_and_receipt_are_strict (test_navigation.NavigationTests.test_initial_sequence_and_receipt_are_strict) ... ok
+test_learning_transfers_for_multiple_private_command_permutations (test_navigation.NavigationTests.test_learning_transfers_for_multiple_private_command_permutations) ... ok
+test_missing_trained_model_fails_without_creating_session (test_navigation.NavigationTests.test_missing_trained_model_fails_without_creating_session) ... ok
+test_negative_direction_hit_at_cell_face_uses_far_side (test_navigation.NavigationTests.test_negative_direction_hit_at_cell_face_uses_far_side) ... ok
+test_new_http_endpoints_preserve_old_server_constructor (test_navigation.NavigationTests.test_new_http_endpoints_preserve_old_server_constructor) ... ok
+test_new_measurement_can_refute_inferred_obstacle (test_navigation.NavigationTests.test_new_measurement_can_refute_inferred_obstacle) ... ok
+test_no_memory_discards_previous_ray_cells_but_preserves_model (test_navigation.NavigationTests.test_no_memory_discards_previous_ray_cells_but_preserves_model) ... ok
+test_offset_ray_origin_and_forged_checkpoint (test_navigation.NavigationTests.test_offset_ray_origin_and_forged_checkpoint) ... ok
+test_only_arrived_unit_motion_with_small_residual_is_learned (test_navigation.NavigationTests.test_only_arrived_unit_motion_with_small_residual_is_learned) ... ok
+test_outside_endpoints_and_corner_crossings_do_not_invent_cells (test_navigation.NavigationTests.test_outside_endpoints_and_corner_crossings_do_not_invent_cells) ... ok
+test_pause_same_observation_does_not_execute_pending_proposal (test_navigation.NavigationTests.test_pause_same_observation_does_not_execute_pending_proposal) ... ok
+test_projection_keeps_physical_coordinates_and_independent_tick_zero (test_navigation.NavigationTests.test_projection_keeps_physical_coordinates_and_independent_tick_zero) ... ok
+test_ray_integration_uses_world_mm_and_preserves_unknown_and_occlusion (test_navigation.NavigationTests.test_ray_integration_uses_world_mm_and_preserves_unknown_and_occlusion) ... ok
+test_remembered_map_survives_restart_and_isolated_by_world (test_navigation.NavigationTests.test_remembered_map_survives_restart_and_isolated_by_world) ... ok
+test_session_identity_goal_and_profile_cannot_change (test_navigation.NavigationTests.test_session_identity_goal_and_profile_cannot_change) ... ok
+test_strict_schema_rejects_privileged_fields_and_wrong_json_types (test_navigation.NavigationTests.test_strict_schema_rejects_privileged_fields_and_wrong_json_types) ... ok
+test_trained_visit_persists_map_for_remembered_after_restart (test_navigation.NavigationTests.test_trained_visit_persists_map_for_remembered_after_restart) ... ok
+test_unknown_map_scans_and_empty_model_has_no_fake_support (test_navigation.NavigationTests.test_unknown_map_scans_and_empty_model_has_no_fake_support) ... ok
+test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge (test_navigation_corner.NavigationCornerTests.test_grazing_emulator_ray_preserves_occupied_cell_and_blocked_edge) ... ok
+test_confirmed_edge_can_reach_a_new_calibration_sample (test_navigation_reposition.RepositionTests.test_confirmed_edge_can_reach_a_new_calibration_sample) ... ok
+test_no_memory_never_replays_history (test_navigation_reposition.RepositionTests.test_no_memory_never_replays_history) ... ok
+test_reposition_cannot_borrow_receipts_from_another_session (test_navigation_reposition.RepositionTests.test_reposition_cannot_borrow_receipts_from_another_session) ... ok
+test_reposition_respects_blocked_edges_and_never_invents_them (test_navigation_reposition.RepositionTests.test_reposition_respects_blocked_edges_and_never_invents_them) ... ok
+test_400_unique_requests_limit (test_station_agent.BridgeTests.test_400_unique_requests_limit) ... ok
+test_all_missions_finish_with_partial_observations (test_station_agent.BridgeTests.test_all_missions_finish_with_partial_observations) ... ARACHNID_PAIRED_RESULTS=[{"arms": [{"actor": "NavigationAgent", "budgetUsed": 7916, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}, {"actor": "ArachnidAgent", "budgetUsed": 86571, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}], "world": 0}, {"arms": [{"actor": "NavigationAgent", "budgetUsed": 7745, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}, {"actor": "ArachnidAgent", "budgetUsed": 86400, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}], "world": 1}, {"arms": [{"actor": "NavigationAgent", "budgetUsed": 11112, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 21, "failedMoves": 1, "moves": 15, "repeatedFailures": 0, "restored": 0, "scans": 5}}, {"actor": "ArachnidAgent", "budgetUsed": 94188, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 20, "failedMoves": 1, "moves": 15, "repeatedFailures": 0, "restored": 0, "scans": 4}}], "world": 2}, {"arms": [{"actor": "NavigationAgent", "budgetUsed": 7505, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}, {"actor": "ArachnidAgent", "budgetUsed": 86160, "completed": true, "metrics": {"calibrationAccepted": 14, "confirmedMoves": 14, "decisions": 19, "moves": 14, "restored": 0, "scans": 4}}], "world": 3}]
+MISSION irrigation/0: 108 requests, 85799 logical units, 1 recharges
+MISSION irrigation/1: 109 requests, 79759 logical units, 1 recharges
+MISSION delivery/0: 112 requests, 93844 logical units, 1 recharges
+MISSION delivery/1: 112 requests, 90615 logical units, 1 recharges
+MISSION detour/0: 116 requests, 101382 logical units, 1 recharges
+MISSION detour/1: 117 requests, 88758 logical units, 1 recharges
+ok
+test_arrival_at_200mm_requires_matching_receipt_and_pose (test_station_agent.BridgeTests.test_arrival_at_200mm_requires_matching_receipt_and_pose) ... ok
+test_changed_object_identity_and_unbounded_history_are_rejected (test_station_agent.BridgeTests.test_changed_object_identity_and_unbounded_history_are_rejected) ... ok
+test_changed_retry_sequence_gap_and_changed_mission_are_rejected (test_station_agent.BridgeTests.test_changed_retry_sequence_gap_and_changed_mission_are_rejected) ... ok
+test_completed_observation_is_authority (test_station_agent.BridgeTests.test_completed_observation_is_authority) ... ok
+test_exact_unity_world_occlusion_pickup_disappearance_and_detour (test_station_agent.BridgeTests.test_exact_unity_world_occlusion_pickup_disappearance_and_detour) ... UNITY irrigation/0: 83 requests, 73531 logical units, 0 recharges
+UNITY irrigation/1: 84 requests, 73573 logical units, 1 recharges
+UNITY delivery/0: 74 requests, 66452 logical units, 0 recharges
+UNITY delivery/1: 75 requests, 66494 logical units, 1 recharges
+UNITY detour/0: 97 requests, 89250 logical units, 0 recharges
+UNITY detour/1: 98 requests, 89292 logical units, 1 recharges
+ok
+test_finish_does_not_credit_stale_outcome_for_latest_proposal (test_station_agent.BridgeTests.test_finish_does_not_credit_stale_outcome_for_latest_proposal) ... ok
+test_finish_is_exact_byte_idempotent_and_closed_session_cannot_decide (test_station_agent.BridgeTests.test_finish_is_exact_byte_idempotent_and_closed_session_cannot_decide) ... ok
+test_finish_missing_receipt_closes_pending_without_forging_execution (test_station_agent.BridgeTests.test_finish_missing_receipt_closes_pending_without_forging_execution) ... ok
+test_finish_records_cancelled_outcome_without_choosing_or_planning (test_station_agent.BridgeTests.test_finish_records_cancelled_outcome_without_choosing_or_planning) ... ok
+test_finish_still_works_at_request_and_logical_budget_limits (test_station_agent.BridgeTests.test_finish_still_works_at_request_and_logical_budget_limits) ... ok
+test_finish_validates_existing_session_sequence_and_scenario (test_station_agent.BridgeTests.test_finish_validates_existing_session_sequence_and_scenario) ... ok
+test_initial_foreign_manual_outcome_is_not_credited (test_station_agent.BridgeTests.test_initial_foreign_manual_outcome_is_not_credited) ... ok
+test_inspected_incompatible_battery_is_not_collected (test_station_agent.BridgeTests.test_inspected_incompatible_battery_is_not_collected) ... ok
+test_inspection_requires_current_visible_inspection_fact (test_station_agent.BridgeTests.test_inspection_requires_current_visible_inspection_fact) ... ok
+test_interaction_requires_applied_and_current_public_facts (test_station_agent.BridgeTests.test_interaction_requires_applied_and_current_public_facts) ... ok
+test_inventory_full_does_not_pick_up_another_item (test_station_agent.BridgeTests.test_inventory_full_does_not_pick_up_another_item) ... ok
+test_known_blocked_route_is_avoided (test_station_agent.BridgeTests.test_known_blocked_route_is_avoided) ... ok
+test_latest_retry_is_identical_and_has_no_side_effects (test_station_agent.BridgeTests.test_latest_retry_is_identical_and_has_no_side_effects) ... ok
+test_low_battery_recharges_then_resumes (test_station_agent.BridgeTests.test_low_battery_recharges_then_resumes) ... ok
+test_low_logical_budget_stops_and_is_independent (test_station_agent.BridgeTests.test_low_logical_budget_stops_and_is_independent) ... ok
+test_missing_or_mismatched_receipt_is_unresolved_not_a_new_action (test_station_agent.BridgeTests.test_missing_or_mismatched_receipt_is_unresolved_not_a_new_action) ... ok
+test_new_visible_obstacle_replans_without_claiming_motor_learning (test_station_agent.BridgeTests.test_new_visible_obstacle_replans_without_claiming_motor_learning) ... ok
+test_outcome_is_required_and_strictly_validated (test_station_agent.BridgeTests.test_outcome_is_required_and_strictly_validated) ... ok
+test_partial_map_does_not_report_unknown_as_blocked (test_station_agent.BridgeTests.test_partial_map_does_not_report_unknown_as_blocked) ... ok
+test_real_plan_supplies_one_cell_and_public_prior (test_station_agent.BridgeTests.test_real_plan_supplies_one_cell_and_public_prior) ... ok
+test_rounded_midpoint_and_failed_status_never_confirm_arrival (test_station_agent.BridgeTests.test_rounded_midpoint_and_failed_status_never_confirm_arrival) ... ok
+test_session_and_request_caps_preserve_retry (test_station_agent.BridgeTests.test_session_and_request_caps_preserve_retry) ... ok
+test_strict_json_and_schema_validation (test_station_agent.BridgeTests.test_strict_json_and_schema_validation) ... ok
+test_unaffordable_charger_route_stops (test_station_agent.BridgeTests.test_unaffordable_charger_route_stops) ... ok
+test_unknown_compatibility_requires_inspection_even_if_true (test_station_agent.BridgeTests.test_unknown_compatibility_requires_inspection_even_if_true) ... ok
+test_unmodeled_move_failure_retries_once_then_stops (test_station_agent.BridgeTests.test_unmodeled_move_failure_retries_once_then_stops) ... ok
+test_http_finish_uses_same_guards_and_exact_retry_cache (test_station_agent.HTTPTests.test_http_finish_uses_same_guards_and_exact_retry_cache) ... ok
+test_http_health_has_no_session_state_and_post_roundtrip (test_station_agent.HTTPTests.test_http_health_has_no_session_state_and_post_roundtrip) ... ok
+test_http_rejects_ambiguous_or_oversized_framing (test_station_agent.HTTPTests.test_http_rejects_ambiguous_or_oversized_framing) ... ok
+test_http_rejects_browser_origins_hosts_and_wrong_content_type (test_station_agent.HTTPTests.test_http_rejects_browser_origins_hosts_and_wrong_content_type) ... ok
+test_actual_low_battery_and_closed_door_are_recorded (test_station_basal.StationBasalTests.test_actual_low_battery_and_closed_door_are_recorded) ... ok
+test_three_complete_public_missions_with_wsp_receipts (test_station_basal.StationBasalTests.test_three_complete_public_missions_with_wsp_receipts) ... ok
+test_http_inspector_is_passive_and_uses_actual_journal (test_trace_inspector.InspectorTests.test_http_inspector_is_passive_and_uses_actual_journal) ... ok
+
+----------------------------------------------------------------------
+Ran 120 tests in 14.709s
+
+OK

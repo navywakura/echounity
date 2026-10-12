@@ -31,7 +31,7 @@ mono_crash.*
 *.unitypackage
 /Docs/ASSET-PACK-README.txt
 
-# New runs are local; the bounded historical publication is in Evidence/.
+# New runs are local; historical scientific records are in Evidence/.
 /Artifacts/
 __pycache__/
 *.py[cod]
@@ -53,3 +53,12 @@ venv/
 /AGENTS.md
 /CLAUDE.md
 *.tmp
+
+# Original authored arachnid export; no downloaded asset archive.
+!/ArtSource/ECHO5_Arachnid_Model.zip
+/WorldPrototype/[Ll]ibrary/
+/WorldPrototype/[Tt]emp/
+/WorldPrototype/[Oo]bj/
+/WorldPrototype/[Ll]ogs/
+/WorldPrototype/[Uu]ser[Ss]ettings/
+/WorldPrototype/[Bb]uild*/

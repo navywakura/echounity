@@ -1,0 +1,20 @@
+{
+  "started": "2026-10-12T17:15:53.549913+00:00",
+  "valid": true,
+  "checks": {
+    "bridge_tests": true,
+    "unity_prepare": true,
+    "conditioning_physics": true,
+    "development": true,
+    "station": true,
+    "decision_latency_measured": true,
+    "offline": true,
+    "resources_below_60mb": true,
+    "confirmation": true,
+    "frozen_sources": true,
+    "confirmation_resources": true,
+    "audit": true
+  },
+  "finished": "2026-10-12T17:21:41.811478+00:00",
+  "development_only": false
+}

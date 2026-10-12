@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "status": "design_targets_not_a_network_server",
+  "profiles": [
+    {
+      "name": "Local development",
+      "visibility": "local",
+      "maxPlayers": 1
+    },
+    {
+      "name": "Private target",
+      "visibility": "private",
+      "maxPlayers": 16
+    },
+    {
+      "name": "Public target",
+      "visibility": "public",
+      "maxPlayers": 200
+    }
+  ],
+  "npcIntegration": "requires validated ECHO-5 adapter and independent load tests"
+}

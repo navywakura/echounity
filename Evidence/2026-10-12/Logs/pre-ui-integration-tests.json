@@ -1,0 +1,48 @@
+{
+    "valid": true,
+    "scope": "Unity + ECHO external planner, three development missions",
+    "runs": [
+        {
+            "mission": "irrigation",
+            "session": "138b19edaf554db7bab4cf7c58e1361a",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "obstacleObserved": false,
+            "usedAlternativeRoute": false,
+            "crossedBlockedCell": false,
+            "actions": 82,
+            "decisions": 82,
+            "battery": 78.16007232666016,
+            "seconds": 22.475942611694337
+        },
+        {
+            "mission": "delivery",
+            "session": "bd5ddfd161b14d9e980df2d75a7ef690",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "obstacleObserved": false,
+            "usedAlternativeRoute": false,
+            "crossedBlockedCell": false,
+            "actions": 73,
+            "decisions": 73,
+            "battery": 79.88008117675781,
+            "seconds": 20.756471633911134
+        },
+        {
+            "mission": "detour",
+            "session": "475cb639a36c47c9805ca96748d3c3bc",
+            "status": "Misión cumplida y verificada por el entorno",
+            "result": "Misión verificada: objetivo cumplido y regreso a carga.",
+            "passed": true,
+            "obstacleObserved": true,
+            "usedAlternativeRoute": true,
+            "crossedBlockedCell": false,
+            "actions": 96,
+            "decisions": 96,
+            "battery": 74.2400894165039,
+            "seconds": 26.512046813964845
+        }
+    ]
+}

@@ -1,0 +1,164 @@
+{
+  "schema": "echo.offline.mission.v1",
+  "valid": true,
+  "namespace": "net:[4026533001]",
+  "interfaces": [
+    "lo"
+  ],
+  "before": {
+    "lo": {
+      "rx_packets": 0,
+      "tx_packets": 0
+    }
+  },
+  "after": {
+    "lo": {
+      "rx_packets": 464,
+      "tx_packets": 464
+    }
+  },
+  "external_transmitted_packets": 0,
+  "host_network_modified": false,
+  "scope": "Whole CPU mission: Python brain and independent geometric simulator; no Unity rendering",
+  "finish": {
+    "basal": {
+      "E": [
+        40,
+        20,
+        0,
+        100,
+        10,
+        0
+      ],
+      "available": true,
+      "camCapacity": 4096,
+      "camDestroyed": 0,
+      "camDropped": 0,
+      "camUsed": 30,
+      "cause": "0 celdas nuevas; soporte motor 8/8; U decae.",
+      "episodes": [
+        {
+          "extractHash": "e2f3bbeeb5b3b0251900a614b43f3565b04345a9c1fc7bf02140a0fc7111beda",
+          "label": "#30 move / arrived",
+          "sequence": 30,
+          "slot": 1344,
+          "summary": "(7,1) \u2192 (6,1); comando 0; arrived",
+          "verified": true
+        },
+        {
+          "extractHash": "81c8a7b56a6735becfd2df32af52b8458d3e57980a1b926e0cbad8a50b84ce48",
+          "label": "#29 move / arrived",
+          "sequence": 29,
+          "slot": 2278,
+          "summary": "(7,2) \u2192 (7,1); comando 3; arrived",
+          "verified": true
+        },
+        {
+          "extractHash": "6580606191ab90a3f26f53ba7a76d704e2cb38551bc3adfc827c825c824fd895",
+          "label": "#28 move / arrived",
+          "sequence": 28,
+          "slot": 2811,
+          "summary": "(7,3) \u2192 (7,2); comando 3; arrived",
+          "verified": true
+        },
+        {
+          "extractHash": "38d38fc204a4898646bc04c7e6759b286b3af5d344ef14b0aebe258c779835bd",
+          "label": "#27 move / arrived",
+          "sequence": 27,
+          "slot": 3087,
+          "summary": "(8,3) \u2192 (7,3); comando 0; arrived",
+          "verified": true
+        },
+        {
+          "extractHash": "6246625793f827e69187446753d36b464d0cea35b497bf5e9ea0cc3aedcc5ed4",
+          "label": "#26 move / arrived",
+          "sequence": 26,
+          "slot": 3617,
+          "summary": "(9,3) \u2192 (8,3); comando 0; arrived",
+          "verified": true
+        },
+        {
+          "extractHash": "4c728941b97a47edd50ac01a1aef4db55fd3233bb5dc966a223dd9e45d31c18b",
+          "label": "#25 move / arrived",
+          "sequence": 25,
+          "slot": 3893,
+          "summary": "(9,4) \u2192 (9,3); comando 3; arrived",
+          "verified": true
+        }
+      ],
+      "gate": "OK / sin modificaci\u00f3n",
+      "lastRead": -1,
+      "lastWritten": 1344,
+      "memoryControl": true,
+      "memoryReads": 0,
+      "memoryVetoes": 0,
+      "schema": "echo.arachnid.basal.v1",
+      "scope": "CAM de esta sesi\u00f3n; D/B sin transductor f\u00edsico asignado; C es soporte motor, no probabilidad.",
+      "urgencyControl": true,
+      "urgencyScans": 0,
+      "wsp": "02110408281400640a0000000500001d"
+    },
+    "budgetRemaining": 1803855,
+    "budgetUsed": 196145,
+    "completed": true,
+    "confirmed": false,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/offline/brain/run-f8c46ca8ac3843bda2dcec45e62efb7f/thought.jsonl",
+    "matched": false,
+    "metrics": {
+      "calibrationAccepted": 23,
+      "confirmedMoves": 23,
+      "decisions": 31,
+      "moves": 23,
+      "restored": 0,
+      "scans": 7
+    },
+    "modelHash": "5c3ddd9d4951c7dba37537ca598788779af04b64e9878e44fc795e56f9d61c21",
+    "modelSaved": false,
+    "pending": false,
+    "resolution": "no_action",
+    "schema": "echo.navigation.finish.v1",
+    "seq": 30,
+    "session": "offline-complete-mission",
+    "status": "closed",
+    "support": [
+      5,
+      2,
+      7,
+      9
+    ]
+  },
+  "http_decision_latency_ms": [
+    15.65893,
+    12.053964,
+    12.735622,
+    15.976222,
+    19.325426,
+    14.673459,
+    12.598313,
+    14.112488,
+    13.693855,
+    11.763002,
+    13.81964,
+    13.586577,
+    11.872375,
+    11.394237,
+    13.25853,
+    13.875444,
+    13.163405,
+    11.04761,
+    11.71942,
+    10.091543,
+    12.90897,
+    11.934254,
+    8.957937,
+    13.890879,
+    13.8642,
+    12.233039,
+    11.227942,
+    12.182544,
+    12.82495,
+    10.590565,
+    10.745614
+  ],
+  "error": null
+}

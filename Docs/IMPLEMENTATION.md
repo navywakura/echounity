@@ -1,5 +1,3 @@
-> Historical implementation record. Downloaded art is excluded from the public copy; see [ASSETS.md](ASSETS.md) for its placeholder scene.
-
 # ECHO Station · Unity isométrico
 
 Objetivo autorizado: crear y abrir una estación jugable de cinco zonas en Unity

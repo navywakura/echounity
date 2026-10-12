@@ -1,0 +1,25 @@
+{
+    "scope": "Local Unity prototype smoke; no networking or ECHO validation",
+    "utc": "2026-10-11T03:30:38.9223930Z",
+    "valid": true,
+    "passed": [
+        "initial-stream-bounded-and-collider-ready",
+        "isometric-camera",
+        "click-route-planned",
+        "click-route-executed-with-collisions",
+        "place-nearby-block",
+        "placed-block-visible-to-authority",
+        "remove-nearby-block",
+        "inventory-restored-after-place-remove",
+        "teleport-collider-synchronized-immediately",
+        "large-coordinate-rebase",
+        "stream-evicts-on-travel",
+        "chat-bubble-record"
+    ],
+    "failures": [],
+    "loadedChunks": 25,
+    "loadedColumns": 49,
+    "vertices": 55924,
+    "unityAllocatedBytes": 213265279,
+    "pathSeconds": 1.5575461387634278
+}

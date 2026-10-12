@@ -1,0 +1,32 @@
+{
+  "valid": false,
+  "journals": [
+    {
+      "valid": false,
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190209-334173/conditioning/brain/run-faac182d3ea84d55b314adfa520a30ec/thought.jsonl",
+      "error": "AssertionError('not a closed run')"
+    },
+    {
+      "valid": true,
+      "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190209-334173/offline/brain/run-34051de57c664298948cba74c37611d1/thought.jsonl",
+      "sha256": "f3f04978aacb0fc4a2654b4e90e9dfb6cc41338e79ec8f06601fc1710bdd1782",
+      "events": 194,
+      "last_hash": "3ab67b9ced0d6286c88a90fff2be58f12da42546e7709e855eece3d92f92e914",
+      "e_updates": 31,
+      "cam_receipts": 30,
+      "verified_reads": 0,
+      "interventions": 0,
+      "repositions": 0,
+      "completed": true,
+      "budgetUsed": 196145,
+      "metrics": {
+        "calibrationAccepted": 23,
+        "confirmedMoves": 23,
+        "decisions": 31,
+        "moves": 23,
+        "restored": 0,
+        "scans": 7
+      }
+    }
+  ]
+}

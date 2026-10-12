@@ -1,0 +1,291 @@
+{
+  "schema": "echo.arachnid.verification.v1",
+  "date": "2026-10-12",
+  "valid": true,
+  "geometry": {
+    "schema": "echo.arachnid.geometry.v1",
+    "blender": "4.5.3 LTS",
+    "root": "Chassis_Root",
+    "collection": "ECHO5_Arachnid",
+    "units": "metres",
+    "legs": 8,
+    "eyes": 4,
+    "meshes": 48,
+    "vertices": 11816,
+    "triangles": 22972,
+    "dimensions_m": [
+      1.0640000104904175,
+      0.8982500433921814,
+      0.4389999806880951
+    ],
+    "bounds_min": [
+      -0.5320000052452087,
+      -0.4240000247955322,
+      0.0
+    ],
+    "bounds_max": [
+      0.5320000052452087,
+      0.47425001859664917,
+      0.4389999806880951
+    ],
+    "loose_vertices": 0,
+    "nonmanifold_edges": 0,
+    "inverted_meshes": [],
+    "rig": "Rigid pivot hierarchy; three leg segments, foot pivot and head pivot",
+    "animation": "Procedural IK in Unity; geometry is not an inference model",
+    "limbs": [
+      {
+        "id": "Leg_L0",
+        "coxa": [
+          -0.12700000405311584,
+          -0.1899999976158142,
+          0.23499999940395355
+        ],
+        "femur": [
+          -0.22300000488758087,
+          -0.23479999601840973,
+          0.25200000405311584
+        ],
+        "tibia": [
+          -0.3499999940395355,
+          -0.33000001311302185,
+          0.36899998784065247
+        ],
+        "foot": [
+          -0.4699999988079071,
+          -0.3790000081062317,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19718274887258533,
+        "lower_length": 0.3620013801502047
+      },
+      {
+        "id": "Leg_L1",
+        "coxa": [
+          -0.12700000405311584,
+          -0.054999999701976776,
+          0.23499999940395355
+        ],
+        "femur": [
+          -0.22300000488758087,
+          -0.0716399997472763,
+          0.25200000405311584
+        ],
+        "tibia": [
+          -0.375,
+          -0.10700000077486038,
+          0.36899998784065247
+        ],
+        "foot": [
+          -0.503000020980835,
+          -0.12520000338554382,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19504698169525495,
+        "lower_length": 0.3618829158237626
+      },
+      {
+        "id": "Leg_L2",
+        "coxa": [
+          -0.12700000405311584,
+          0.10000000149011612,
+          0.23499999940395355
+        ],
+        "femur": [
+          -0.22300000488758087,
+          0.11760000139474869,
+          0.25200000405311584
+        ],
+        "tibia": [
+          -0.375,
+          0.1550000011920929,
+          0.36899998784065247
+        ],
+        "foot": [
+          -0.503000020980835,
+          0.17425000667572021,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19542711024488313,
+        "lower_length": 0.3619372423321424
+      },
+      {
+        "id": "Leg_L3",
+        "coxa": [
+          -0.12700000405311584,
+          0.24500000476837158,
+          0.23499999940395355
+        ],
+        "femur": [
+          -0.22300000488758087,
+          0.2913999855518341,
+          0.25200000405311584
+        ],
+        "tibia": [
+          -0.3499999940395355,
+          0.38999998569488525,
+          0.36899998784065247
+        ],
+        "foot": [
+          -0.4699999988079071,
+          0.44075000286102295,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19884655582238517,
+        "lower_length": 0.3622424105564291
+      },
+      {
+        "id": "Leg_R0",
+        "coxa": [
+          0.12700000405311584,
+          -0.1899999976158142,
+          0.23499999940395355
+        ],
+        "femur": [
+          0.22300000488758087,
+          -0.23479999601840973,
+          0.25200000405311584
+        ],
+        "tibia": [
+          0.3499999940395355,
+          -0.33000001311302185,
+          0.36899998784065247
+        ],
+        "foot": [
+          0.4699999988079071,
+          -0.3790000081062317,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19718274887258533,
+        "lower_length": 0.3620013801502047
+      },
+      {
+        "id": "Leg_R1",
+        "coxa": [
+          0.12700000405311584,
+          -0.054999999701976776,
+          0.23499999940395355
+        ],
+        "femur": [
+          0.22300000488758087,
+          -0.0716399997472763,
+          0.25200000405311584
+        ],
+        "tibia": [
+          0.375,
+          -0.10700000077486038,
+          0.36899998784065247
+        ],
+        "foot": [
+          0.503000020980835,
+          -0.12520000338554382,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19504698169525495,
+        "lower_length": 0.3618829158237626
+      },
+      {
+        "id": "Leg_R2",
+        "coxa": [
+          0.12700000405311584,
+          0.10000000149011612,
+          0.23499999940395355
+        ],
+        "femur": [
+          0.22300000488758087,
+          0.11760000139474869,
+          0.25200000405311584
+        ],
+        "tibia": [
+          0.375,
+          0.1550000011920929,
+          0.36899998784065247
+        ],
+        "foot": [
+          0.503000020980835,
+          0.17425000667572021,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19542711024488313,
+        "lower_length": 0.3619372423321424
+      },
+      {
+        "id": "Leg_R3",
+        "coxa": [
+          0.12700000405311584,
+          0.24500000476837158,
+          0.23499999940395355
+        ],
+        "femur": [
+          0.22300000488758087,
+          0.2913999855518341,
+          0.25200000405311584
+        ],
+        "tibia": [
+          0.3499999940395355,
+          0.38999998569488525,
+          0.36899998784065247
+        ],
+        "foot": [
+          0.4699999988079071,
+          0.44075000286102295,
+          0.03099999949336052
+        ],
+        "upper_length": 0.19884655582238517,
+        "lower_length": 0.3622424105564291
+      }
+    ]
+  },
+  "unity_import": {
+    "valid": true,
+    "width": 1.064000129699707,
+    "height": 0.43900007009506226,
+    "depth": 0.8982499837875366,
+    "ground": -4.470348358154297e-08,
+    "renderers": 48,
+    "pivots": 32,
+    "eyes": 4
+  },
+  "live_demo": {
+    "connected": true,
+    "completed": true,
+    "acknowledged": true,
+    "gaitReady": true,
+    "diagnosticPresent": true,
+    "observerDrivesPolicy": false,
+    "finitePose": true,
+    "decisions": 26,
+    "moves": 23,
+    "blocks": 0,
+    "poseFrames": 1511,
+    "steppingFrames": 1202,
+    "minimumPlantedFeet": 4,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/live-20261012-020645-999891/run-184e0cf2464b49e19a3597608c6ec9f7/thought.jsonl",
+    "session": "01b0c2f4eb1542c2bf0fbc05347c948b",
+    "profile": "cold"
+  },
+  "python_tests": 97,
+  "closed_diagnostic_status": 200,
+  "closed_journal_unchanged": true,
+  "journal_sha256": "69062e615ce76a05f83eb04abaeba1269ca9233516f128466c9ffa12bc676e9f",
+  "runtime_script_exceptions": 0,
+  "source_sha256": {
+    "Tools/build_arachnid.py": "8040418a9cbe3a7a4dd9c6d61f81d9c66c547be34086553d1ad2b898f77b3f84",
+    "Tools/start_arachnid.py": "dcdd8253b80fce0c309f8b7bc23ea022061424ed19bc0de78cc227ab34a64737",
+    "Tools/plot_arachnid_evidence.py": "5366f237dbe4aa5e1b5e3d41f85767107e855430ab0a895a15f8839cb6ba9ed9",
+    "Bridge/arachnid_server.py": "05b1969e92a050715b9e99e2edb49fc9b55b5a84cc47ea01b8fff2343d9bc4b3",
+    "Bridge/tests/test_arachnid_diagnostic.py": "83f61a9552c369a3f076cf55aef67b7eff2b158125b7fd1ed354b3714a4ca076",
+    "Assets/EchoArachnid/Runtime/ArachnidGait.cs": "2ef7906f3f01df263199f4fb0834bb47b4c25179ffc55d248ad0ba7d4f92887f",
+    "Assets/EchoArachnid/Runtime/ArachnidDemo.cs": "800ff616028f3fb4d5d58c420f4a94d45eca0d7457974bb6948670262eda173a",
+    "Assets/EchoArachnid/Runtime/ArachnidHUD.cs": "74c1c631a9fa08131f2114cdb8e6dc113077100ddcbfd8c3b8560715a8040b2c",
+    "Assets/EchoArachnid/Editor/ArachnidEditor.cs": "234f25992490b15f39087ee2fb9c5325f0aec5c5a87c9c272967b77386b176c4",
+    "Assets/Echo/Navigation/NavigationClient.cs": "3ce0c5a16e97c1e44a227080bb9d3dfc8427b5be421ac78ec2deae20da2ab8b0",
+    "Assets/Echo/Navigation/NavigationWorld.cs": "bfbf6144eb483ece3624b8c2f35b3f35459f03891b6ae887be4b20b6955221f4",
+    "Assets/Echo/Navigation/RobotSensor.cs": "e8b5f9c6820d475a3d1653417a7db20ab63306cabc1541e0ee9fc5ce3e93bcce",
+    "Assets/EchoArachnid/Models/ECHO5_Arachnid.fbx": "c8c4ad63154e283a49bacf518d5f60bbf447d7207580c973b75d5f0cfd54a8f9",
+    "ArtSource/ECHO5_Arachnid/ECHO5_Arachnid.blend": "8fd9554723e53d129d6d56b081b6a65cbf038b4a610de81f18260707f62cedde",
+    "ArtSource/ECHO5_Arachnid/ECHO5_Arachnid.glb": "03b1f9c51411818cc0c1631aaa938706d0e0b1c42f424e7ea5c3647a7da85969",
+    "Assets/Scenes/ECHO5_ArachnidLab.unity": "25f92494845dc52a2773773b3033ae52848487c6b06ad26598d86c34766e2580"
+  },
+  "scope": "One development integration demo; not a generalization benchmark. Procedural gait and diagnostic LIF are not learned locomotion or the navigation policy."
+}

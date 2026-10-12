@@ -1,0 +1,78 @@
+{
+    "valid": true,
+    "scope": "PhysX controlled proposal, not autonomous route selection",
+    "trials": [
+        {
+            "stage": "first_encounter",
+            "session": "e64c2c8c2b6940778f6518f1314339fd",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-4d1d455515404268aa604cfc75cd6e04/thought.jsonl",
+            "action": "wait",
+            "collisions": 1,
+            "moves": 3,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "second_encounter",
+            "session": "6dca951aa39d45719136f66440d44f12",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-0275bb54f13247f0bbcbd44c5aede817/thought.jsonl",
+            "action": "wait",
+            "collisions": 0,
+            "moves": 0,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "cross_session_restart",
+            "session": "e0755d270730462fa0df3551ed42f1a1",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-1e24793d3e1a4aae861991b7c58d5660/thought.jsonl",
+            "action": "wait",
+            "collisions": 0,
+            "moves": 0,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "similar_safe_context",
+            "session": "0fed9255b07848f79763c4775faf33bb",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-3eecae62ad67450483e2d663aef7b7ac/thought.jsonl",
+            "action": "move",
+            "collisions": 0,
+            "moves": 1,
+            "cam": 4,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "obstacle_removed",
+            "session": "a7d53def48cd4236a4af06b7b9bc3f2e",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-fb7f92f044684ff78e111716d6458682/thought.jsonl",
+            "action": "move",
+            "collisions": 0,
+            "moves": 1,
+            "cam": 5,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "no_cam_control",
+            "session": "297a99a3ac3745658d344a22acfaeedf",
+            "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419/conditioning/brain/run-6d1adc6e3601447087c8c50bdf2ca88d/thought.jsonl",
+            "action": "move",
+            "collisions": 1,
+            "moves": 1,
+            "cam": 6,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        }
+    ]
+}

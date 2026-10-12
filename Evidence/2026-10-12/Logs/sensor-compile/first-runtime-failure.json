@@ -1,0 +1,86 @@
+{
+    "unityVersion": "6000.0.84f1",
+    "utc": "2026-10-11T00:58:25.5315920Z",
+    "passed": false,
+    "failures": 1,
+    "tests": [
+        {
+            "name": "front_wall_and_occluded_endpoints",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 37.662600000000008
+        },
+        {
+            "name": "behind_camera_not_observed",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.9489
+        },
+        {
+            "name": "ten_metre_range_from_eye",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.349
+        },
+        {
+            "name": "odometry_origin_and_camera_frustum",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 3.6457
+        },
+        {
+            "name": "absolute_rotated_fov_and_yaw_wrapping",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.3522000000000005
+        },
+        {
+            "name": "outside_fov_not_observed",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.5377
+        },
+        {
+            "name": "own_identity_layers_and_triggers",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 8.924000000000002
+        },
+        {
+            "name": "physics_only_without_map_or_semantics",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 4.9866
+        },
+        {
+            "name": "preview_physics_scenes_are_isolated",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 3.2885
+        },
+        {
+            "name": "rgb_geometry_occlusion_and_original_robot",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 164.5138
+        },
+        {
+            "name": "billboards_face_each_rendering_camera",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 22.1832
+        },
+        {
+            "name": "reinitialize_and_owned_resource_cleanup",
+            "passed": false,
+            "detail": "System.InvalidOperationException: Destroying the sensor leaked its camera/texture or destroyed a robot.\n  at EchoStation.SensorVerification.Cleanup () [0x000e8] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/SensorVerification.cs:340 \n  at EchoStation.SensorVerification.Check (EchoStation.SensorVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/SensorVerification.cs:80 ",
+            "milliseconds": 8.4764
+        },
+        {
+            "name": "invalid_inputs_fail_explicitly",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.6227
+        }
+    ]
+}

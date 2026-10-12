@@ -1,0 +1,268 @@
+{
+  "date": "2026-10-12",
+  "scope": "E[6]/CAM arachnid integration, development-only",
+  "tests": {
+    "total": 110,
+    "passed": 110,
+    "log": "Logs/Arachnid/basal-tests-r3.log"
+  },
+  "audit_negative_checks": {
+    "altered_receipt_rejected": true,
+    "altered_gate_rejected": true,
+    "pending_close_rejected": true
+  },
+  "paired_cpu_worlds": [
+    {
+      "arms": [
+        {
+          "actor": "NavigationAgent",
+          "budgetUsed": 7916,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        },
+        {
+          "actor": "ArachnidAgent",
+          "budgetUsed": 86571,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        }
+      ],
+      "world": 0
+    },
+    {
+      "arms": [
+        {
+          "actor": "NavigationAgent",
+          "budgetUsed": 7745,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        },
+        {
+          "actor": "ArachnidAgent",
+          "budgetUsed": 86400,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        }
+      ],
+      "world": 1
+    },
+    {
+      "arms": [
+        {
+          "actor": "NavigationAgent",
+          "budgetUsed": 6212,
+          "completed": false,
+          "metrics": {
+            "calibrationAccepted": 6,
+            "confirmedMoves": 6,
+            "decisions": 12,
+            "failedMoves": 1,
+            "moves": 7,
+            "repeatedFailures": 0,
+            "restored": 0,
+            "scans": 4
+          }
+        },
+        {
+          "actor": "ArachnidAgent",
+          "budgetUsed": 54539,
+          "completed": false,
+          "metrics": {
+            "calibrationAccepted": 6,
+            "confirmedMoves": 6,
+            "decisions": 12,
+            "failedMoves": 1,
+            "moves": 7,
+            "repeatedFailures": 0,
+            "restored": 0,
+            "scans": 4
+          }
+        }
+      ],
+      "world": 2
+    },
+    {
+      "arms": [
+        {
+          "actor": "NavigationAgent",
+          "budgetUsed": 7503,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        },
+        {
+          "actor": "ArachnidAgent",
+          "budgetUsed": 86158,
+          "completed": true,
+          "metrics": {
+            "calibrationAccepted": 14,
+            "confirmedMoves": 14,
+            "decisions": 19,
+            "moves": 14,
+            "restored": 0,
+            "scans": 4
+          }
+        }
+      ],
+      "world": 3
+    }
+  ],
+  "unity": {
+    "connected": true,
+    "completed": true,
+    "acknowledged": true,
+    "gaitReady": true,
+    "diagnosticPresent": true,
+    "observerDrivesPolicy": false,
+    "finitePose": true,
+    "blockProbe": true,
+    "obstacleInjected": true,
+    "decisions": 34,
+    "moves": 30,
+    "blocks": 1,
+    "poseFrames": 765,
+    "steppingFrames": 491,
+    "minimumPlantedFeet": 4,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/live-20261012-022623-186412/run-8efacd5196cb47fd9f52252a4c73e7b2/thought.jsonl",
+    "session": "98e13ef8c4b1450186529640a505a9e7",
+    "profile": "cold",
+    "basal": {
+      "schema": "echo.arachnid.basal.v1",
+      "wsp": "02110408281400640a00000005000022",
+      "cause": "0 celdas nuevas; soporte motor 8/8; U decae.",
+      "gate": "OK / sin modificación",
+      "scope": "CAM de esta sesión; D/B sin sensor; C es soporte motor, no probabilidad.",
+      "available": true,
+      "urgencyControl": true,
+      "memoryControl": true,
+      "E": [
+        40,
+        20,
+        0,
+        100,
+        10,
+        0
+      ],
+      "camUsed": 34,
+      "camCapacity": 4096,
+      "camDestroyed": 0,
+      "camDropped": 0,
+      "lastWritten": 2157,
+      "lastRead": 1596,
+      "memoryReads": 1,
+      "memoryVetoes": 0,
+      "urgencyScans": 1,
+      "episodes": [
+        {
+          "slot": 2157,
+          "sequence": 34,
+          "verified": true,
+          "label": "#34 move / arrived",
+          "summary": "(7,1) → (6,1); comando 0; arrived",
+          "extractHash": "d60cda90fb7e5ae4c179a7f960fc86825f9bf22b7e53f8f1bcf27e656b74eb32"
+        },
+        {
+          "slot": 2285,
+          "sequence": 33,
+          "verified": true,
+          "label": "#33 move / arrived",
+          "summary": "(7,2) → (7,1); comando 3; arrived",
+          "extractHash": "9f45afe65307a009f7ead31cb45c677bb3aaacd8635492b39328ed7154a2bbaf"
+        },
+        {
+          "slot": 3076,
+          "sequence": 32,
+          "verified": true,
+          "label": "#32 move / arrived",
+          "summary": "(7,3) → (7,2); comando 3; arrived",
+          "extractHash": "79aea3aa38a4dae78faea3556f4c75f860eccb333dd829d19213e778558562f5"
+        },
+        {
+          "slot": 1624,
+          "sequence": 31,
+          "verified": true,
+          "label": "#31 move / arrived",
+          "summary": "(6,3) → (7,3); comando 2; arrived",
+          "extractHash": "072887af84faccd78d53501d6bbbd7c6e85f16ec31189042b64fcddc9c6f51a4"
+        },
+        {
+          "slot": 1475,
+          "sequence": 30,
+          "verified": true,
+          "label": "#30 move / arrived",
+          "summary": "(6,4) → (6,3); comando 3; arrived",
+          "extractHash": "cebe14e4ac81f1bcddb4c03bc6855d060786311318f694248df893210160b84f"
+        },
+        {
+          "slot": 2681,
+          "sequence": 29,
+          "verified": true,
+          "label": "#29 move / arrived",
+          "summary": "(5,4) → (6,4); comando 2; arrived",
+          "extractHash": "8f1bbbec46f650a098a50c9bbdd0efd97cba7d9b9c524d76e65e9c6d272d6a23"
+        }
+      ]
+    }
+  },
+  "journal_sha256": "193f6dd2c2594af631ef9fb26d54cfad58d1973cf34805f53e2d6aef44746cee",
+  "files": {
+    "Bridge/navigation.py": "dc7879000d360e1eff3d31247c67dd05b5f4d58561a39c654237db0b6f9884be",
+    "Bridge/arachnid_state.py": "b84c56dfe4d60f0c8a664b54191ebc91300a7fb1875b06b38c964cb34f45db54",
+    "Bridge/arachnid_server.py": "90ceecb6be2f76fdcb10834b262732262ce098b5f57057de39c93f69f6cb0203",
+    "Bridge/tests/test_arachnid_state.py": "58f2b581a9e13ec8a5743cfa3af34f6722b24921969ae1cb89d7662add0b6d7e",
+    "Assets/Echo/Navigation/NavProtocol.cs": "d1001a747853c4004443e5d9a2c853f96168631208a51fcc99bb6400fd989760",
+    "Assets/EchoArachnid/Runtime/ArachnidDemo.cs": "2bdb28995df83228dc118ef000f3a512abf14aeb768a8a3e3b94f32c20089672",
+    "Assets/EchoArachnid/Runtime/ArachnidHUD.cs": "9fab60641ab89b9cad1a18ddfd0c7c55d033fb3b026f905f5ae570d056880ea3",
+    "Tools/audit_arachnid_state.py": "c0b3ce91fc84668622f4dc3d300cd106fab46c0af82903dc498933e16af9cd06",
+    "Docs/Arachnid/README.md": "2efac3ac9d26b5dadbd56704c6b9b47575fa78f066b25e9bfaaccd004c258eea",
+    "Docs/Arachnid/E6-CAM.md": "8bc9b7bd446175472b94c9d0dfb5c6a84990d2935ad86aeb2ab6a5214abdafae",
+    "Docs/Arachnid/basal-live-audit-20261012.json": "1d90517dfb9ef9b155aa60056f23bec2c19de4e2b15dcbb45c299e9504ccd94e",
+    "Logs/Arachnid/basal-tests-r3.log": "7093fce51a48a8eae962b8cd1044991055a05397123f330397bc48a74adf760d",
+    "Logs/Arachnid/editor-basal-r1.log": "fe0466796389edec5425170c8dd2116dd3888ccaaf854e7ed613e9745a27b121",
+    "Logs/Arachnid/unity-basal-result.json": "423a87d2471092765b89b5e566604fb9ce3d17a75e3be99e2476321dee8bebf8",
+    "Logs/Arachnid/unity-basal-block.png": "d3900d825d356ed1bce3531bee508c24cb459b58a0aa630b03299fb9013048f2",
+    "Logs/Arachnid/unity-basal-live.png": "9eb0ff0246a6675a39e84953829575906b22675da86213852c19728fe6d27949"
+  },
+  "limits": [
+    "CAM active state is session-local",
+    "D/B have no physical sensor",
+    "C is motor calibration support, not truth probability",
+    "No demonstrated success gain: both arms 3/4",
+    "LIF observer does not drive actions",
+    "Procedural gait, not learned locomotion"
+  ]
+}

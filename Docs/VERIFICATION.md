@@ -1,5 +1,3 @@
-> Historical verification of the private station. The publication changes visuals and source discovery; see [PUBLICATION.md](PUBLICATION.md) for fresh checks. Archived receipts: [Evidence](../Evidence/INDEX.md).
-
 # Verificación de ECHO Station
 
 Comprobación completada el 11 de octubre de 2026, a las 02:28 de Madrid.

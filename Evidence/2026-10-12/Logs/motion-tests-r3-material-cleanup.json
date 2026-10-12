@@ -1,0 +1,80 @@
+{
+    "unityVersion": "6000.0.84f1",
+    "utc": "2026-10-11T00:04:29.9473450Z",
+    "passed": false,
+    "failures": 1,
+    "tests": [
+        {
+            "name": "arrival_and_no_drift",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 38.298
+        },
+        {
+            "name": "acceleration_and_explicit_stop",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 9.4397
+        },
+        {
+            "name": "frontal_wall_unreachable",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 31.724300000000004
+        },
+        {
+            "name": "reverse_wall_unreachable",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 38.4273
+        },
+        {
+            "name": "corner_slides_to_reachable_target",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 11.1355
+        },
+        {
+            "name": "large_dt_thin_wall_no_tunnelling",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 9.5648
+        },
+        {
+            "name": "initial_overlap_never_depenetrates",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 1.3529
+        },
+        {
+            "name": "own_hierarchy_and_nonworld_layers_ignored",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 21.5649
+        },
+        {
+            "name": "invalid_inputs_are_inert",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 2.1203000000000005
+        },
+        {
+            "name": "retarget_and_blocked_state_reset",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 18.8607
+        },
+        {
+            "name": "prediction_toggle_and_curvature",
+            "passed": true,
+            "detail": "Behavior verified.",
+            "milliseconds": 27.3136
+        },
+        {
+            "name": "visual_build_ik_planting_and_cleanup",
+            "passed": false,
+            "detail": "System.InvalidOperationException: Destroying a robot leaked an owned procedural material.\n  at EchoStation.MotionVerification.Visual () [0x002f5] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:320 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 123.8906
+        }
+    ]
+}

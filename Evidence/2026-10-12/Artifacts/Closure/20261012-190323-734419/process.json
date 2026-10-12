@@ -1,0 +1,13 @@
+{
+  "pid": 514388,
+  "command": [
+    "/home/roger/REALRXOS/RXos/echoai/ECHO-5/.venv/bin/python",
+    "-B",
+    "/home/roger/Unity/ECHO-Station/Tools/check.py",
+    "--integration",
+    "--worker",
+    "--output",
+    "/home/roger/Unity/ECHO-Station/Artifacts/Closure/20261012-190323-734419",
+    "--development-only"
+  ]
+}

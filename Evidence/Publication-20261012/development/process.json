@@ -1,0 +1,13 @@
+{
+  "pid": 525166,
+  "command": [
+    "/usr/bin/python3",
+    "-B",
+    "/home/roger/github-restructure/publish-20261012/echounity/Tools/check.py",
+    "--integration",
+    "--worker",
+    "--output",
+    "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012",
+    "--development-only"
+  ]
+}

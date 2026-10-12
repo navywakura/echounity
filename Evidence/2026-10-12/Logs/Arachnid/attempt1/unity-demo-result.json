@@ -1,0 +1,14 @@
+{
+    "connected": true,
+    "completed": true,
+    "acknowledged": true,
+    "gaitReady": true,
+    "diagnosticPresent": true,
+    "observerDrivesPolicy": false,
+    "decisions": 27,
+    "moves": 24,
+    "blocks": 2,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/live-20261012-r1/run-78c0e0a24f3d4fbf9d0ad14081818a3e/thought.jsonl",
+    "session": "07aa44c0401e480fbd13aab6bef355ab",
+    "profile": "cold"
+}

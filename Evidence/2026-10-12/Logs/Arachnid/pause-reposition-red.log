@@ -1,0 +1,17 @@
+test_confirmed_edge_can_reach_a_new_calibration_sample (test_navigation_reposition.RepositionTests.test_confirmed_edge_can_reach_a_new_calibration_sample) ... FAIL
+
+======================================================================
+FAIL: test_confirmed_edge_can_reach_a_new_calibration_sample (test_navigation_reposition.RepositionTests.test_confirmed_edge_can_reach_a_new_calibration_sample)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/roger/Unity/ECHO-Station/Bridge/tests/test_navigation_reposition.py", line 31, in test_confirmed_edge_can_reach_a_new_calibration_sample
+    self.assertEqual(decision['action'],'move',decision['reason'])
+AssertionError: 'wait' != 'move'
+- wait
++ move
+ : No hay ruta respaldada ni nueva orientación de cámara disponible.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.196s
+
+FAILED (failures=1)

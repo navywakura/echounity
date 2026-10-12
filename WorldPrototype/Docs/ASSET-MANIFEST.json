@@ -1,0 +1,117 @@
+[
+  {
+    "file": "Assets/Resources/Art/Tiles/seasons_tiles.png",
+    "source": "/home/roger/Descargas/seasons_tiles.png",
+    "sha256": "8a2343bbefe3d14062dddf7f8aad1cc9ae4f3571400e2951934cb6deface9a39"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/seasons_trees.png",
+    "source": "/home/roger/Descargas/seasons_trees.png",
+    "sha256": "34cf143dea7c7fca8b79d87b3cf5cd70619b552760472c234a3396e6db49b0ba"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_tileset_final.png",
+    "source": "/home/roger/Descargas/snowplains_tileset_final.png",
+    "sha256": "0e9d1cb56ffb3ff872252b09f2305118ebaf5e24704f3d07f3ecc303914ab0db"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/iso_dungeon_walls_by_pfunked.png",
+    "source": "/home/roger/Descargas/iso_dungeon_walls_by_pfunked.png",
+    "sha256": "8e7ad9b17e3e4f8aafb59eb66374504cfc4133e1ce0d36e4e9409c4963e9910a"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/grass.png",
+    "source": "snow_tilesets_source.zip:grass_overcast.png",
+    "sha256": "e326832a771f86c7b812b1d787e0c58c1fc13f31787a7da964530844a7a74ebb"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/rock.png",
+    "source": "snow_tilesets_source.zip:rock_diffuse.png",
+    "sha256": "e57a7abfa9408a8d1516401089f2a5506819657e7f25944854c049d5573018c4"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/snow.jpg",
+    "source": "snow_tilesets_source.zip:snow_ground.jpg",
+    "sha256": "a616d8c320fef5291802937da8fb4a42bac645c89252086ae147d16325e8c0c9"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/bark.png",
+    "source": "snow_tilesets_source.zip:bark.png",
+    "sha256": "3a4143438941e70b830633f8f7d3516c5e15632eab2095b7c0cdb43efadf130a"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/metal.png",
+    "source": "snow_tilesets_source.zip:metal.png",
+    "sha256": "20917bd583c75e28027b2f8921ea59a95b89137dd42fc7c0b3db5246803acb5b"
+  },
+  {
+    "file": "Assets/Resources/Art/Terrain/CREDITS.txt",
+    "source": "snow_tilesets_source.zip:CREDITS.txt",
+    "sha256": "f89435eb727c23d8a544954075d3d99b7bca512fd512b99b71cf57e9b13581d5"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/CREDITS.txt",
+    "source": "snow_tilesets.zip:CREDITS.txt",
+    "sha256": "db65db607ff3929eca078c7f12b4af88ff452ddc878a5acddfbc6ca405ec08db"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_ice.png",
+    "source": "snow_tilesets.zip:snowplains_ice.png",
+    "sha256": "ecab169ee934c9043e016c357f74d94b44ffd74a4477d13882079945f93efa41"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_other.png",
+    "source": "snow_tilesets.zip:snowplains_other.png",
+    "sha256": "bac172f5fd23894b004fa35d6f321bfb2f2d64a0be9bf1adfd7f3aeca7357465"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_rottentower.png",
+    "source": "snow_tilesets.zip:snowplains_rottentower.png",
+    "sha256": "edd5f767fe4f4f8ad2f96c9ea7e1275469bb0326e4da6871ee8c7f717f746818"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_structures.png",
+    "source": "snow_tilesets.zip:snowplains_structures.png",
+    "sha256": "8c138ff79a0f9c39fe5a38b9d1fb0e30c93b7d18fcb6b17dbd82270589f982b9"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_tileset.png",
+    "source": "snow_tilesets.zip:snowplains_tileset.png",
+    "sha256": "e1359f7b3aa4ba50ba039223d8e6c1bab325edf488956811813880c3dd381b8c"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_trees.png",
+    "source": "snow_tilesets.zip:snowplains_trees.png",
+    "sha256": "663ef6288e62ff654b220b1ab1431e3c59af4d68517f8b398034daf41b36cc40"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/snowplains_water.png",
+    "source": "snow_tilesets.zip:snowplains_water.png",
+    "sha256": "01a72cad8b323a404c7d20e51dd4a96da5649250a4e03b59e2a826e961e56556"
+  },
+  {
+    "file": "Assets/Resources/Art/Tiles/tiled_snowplains_2x2.png",
+    "source": "snow_tilesets.zip:tiled_snowplains_2x2.png",
+    "sha256": "b3e930101f838f39b1bf25c427ed632da1aab4c11da89088d3aecf278b19e8bb"
+  },
+  {
+    "file": "Assets/Resources/Art/SciFi/console_01.png",
+    "source": "Adventure Forge Spaceship:console_01.png",
+    "sha256": "a7211bd200e49694902b28baf44cb7eb2ffaab5089d48be42078448966c48d84"
+  },
+  {
+    "file": "Assets/Resources/Art/SciFi/control_panel.png",
+    "source": "Adventure Forge Spaceship:control_panel.png",
+    "sha256": "cf0b1d92dbf088e5fcc19f638b3fed6ab61f20c0ba7eacc95436ad8078efa226"
+  },
+  {
+    "file": "Assets/Resources/Art/SciFi/crate_metal.png",
+    "source": "Adventure Forge Spaceship:crate_metal.png",
+    "sha256": "26462c506a20998fa1c28a6cdc81a2689d5ea565bfae39a2396dcec9732ad641"
+  },
+  {
+    "file": "Assets/Resources/Art/SciFi/terminal_01.png",
+    "source": "Adventure Forge Spaceship:terminal_01.png",
+    "sha256": "2bbfc708cc3a37712f2fb15a9e849bafd247dcfffa012a2d54d4fe68a37b808d"
+  }
+]

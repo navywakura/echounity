@@ -11,5 +11,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EchoStation.unity
     guid: d2e69126edbe07342be9e8bab245f7c8
+  - enabled: 1
+    path: Assets/Scenes/ECHO5_ArachnidLab.unity
+    guid: 9cc74e7865e2e38aca4ae64d7c6603ef
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0

@@ -13,6 +13,9 @@ namespace EchoStation
         public static string NextMission="irrigation";
         public StationWorld World;
         public PredictiveMotor Motor;
+        public string Endpoint="http://127.0.0.1:8771";
+        public bool TerminalAcknowledged {get;private set;}
+        public string TerminalReceipt {get;private set;}
         public bool Automatic {get; private set;}
         public bool Connected {get;private set;}
         public string Status="Conectando con el núcleo local…";
@@ -29,6 +32,8 @@ namespace EchoStation
         string pendingSession,pendingObjectId;
         void Start()
         {
+            var args=Environment.GetCommandLineArgs();int endpointIndex=Array.IndexOf(args,"-closureEndpoint");
+            if(endpointIndex>=0)Endpoint=args[endpointIndex+1];
             World.Mission=NextMission;
             Application.targetFrameRate=45;
             Session=Guid.NewGuid().ToString("N");
@@ -43,7 +48,7 @@ namespace EchoStation
         }
         IEnumerator Health()
         {
-            using(var q=UnityWebRequest.Get("http://127.0.0.1:8770/health"))
+            using(var q=UnityWebRequest.Get(Endpoint+"/health"))
             {
                 q.timeout=4;yield return q.SendWebRequest();
                 Connected=q.result==UnityWebRequest.Result.Success;
@@ -59,7 +64,7 @@ namespace EchoStation
         public void Begin()
         {
             Pause();
-            Session=Guid.NewGuid().ToString("N");Sequence=0;Latest=null;
+            Session=Guid.NewGuid().ToString("N");Sequence=0;Latest=null;TerminalAcknowledged=false;TerminalReceipt="";
             Automatic=true;usedBridge=true;Status="Observando el entorno";StartCoroutine(Loop());
         }
         public void Pause()
@@ -96,13 +101,15 @@ namespace EchoStation
             usedBridge=false;
             var observation=World.Observe(Session,Sequence);
             string payload=JsonUtility.ToJson(observation);
-            var q=new UnityWebRequest("http://127.0.0.1:8770/finish","POST");
+            var q=new UnityWebRequest(Endpoint+"/finish","POST");
             q.uploadHandler=new UploadHandlerRaw(Encoding.UTF8.GetBytes(payload));q.downloadHandler=new DownloadHandlerBuffer();
             q.SetRequestHeader("Content-Type","application/json");q.timeout=5;
             // Independent of movement coroutines: pause/reload must not cancel its receipt.
             var operation=q.SendWebRequest();operation.completed+=_=>
             {
                 if(q.result!=UnityWebRequest.Result.Success)Debug.LogWarning("ECHO terminal receipt not acknowledged: "+q.error);
+                TerminalAcknowledged=q.result==UnityWebRequest.Result.Success;
+                TerminalReceipt=q.downloadHandler.text;
                 q.Dispose();
             };
         }
@@ -123,7 +130,7 @@ namespace EchoStation
             {
                 var obs=World.Observe(Session,Sequence);
                 string request=JsonUtility.ToJson(obs);
-                using(var q=new UnityWebRequest("http://127.0.0.1:8770/decide","POST"))
+                using(var q=new UnityWebRequest(Endpoint+"/decide","POST"))
                 {
                     q.uploadHandler=new UploadHandlerRaw(Encoding.UTF8.GetBytes(request));
                     q.downloadHandler=new DownloadHandlerBuffer();q.SetRequestHeader("Content-Type","application/json");q.timeout=10;

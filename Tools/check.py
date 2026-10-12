@@ -14,6 +14,9 @@ from launch import ECHO,UNITY,running_editor
 
 
 def main():
+    if '--integration' in sys.argv and '--python-only' not in sys.argv:
+        from closure_check import main as closure_main
+        return closure_main()
     parser=argparse.ArgumentParser()
     parser.add_argument('--worker',action='store_true')
     parser.add_argument('--integration',action='store_true')

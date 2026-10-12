@@ -1,0 +1,78 @@
+{
+    "valid": true,
+    "scope": "PhysX controlled proposal, not autonomous route selection",
+    "trials": [
+        {
+            "stage": "first_encounter",
+            "session": "35e4ea76f9be40dd98b44617492f6d3b",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/brain/run-85ab8882b4e04bd99fb15d31fb8c1e87/thought.jsonl",
+            "action": "wait",
+            "collisions": 1,
+            "moves": 3,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "second_encounter",
+            "session": "5837e86d4c284c9d967ef1cb61def29a",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/brain/run-0e0b2955ea874118883df3c591e45333/thought.jsonl",
+            "action": "wait",
+            "collisions": 0,
+            "moves": 0,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "cross_session_restart",
+            "session": "a3629186823c4365a3905184fa9307a8",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/brain/run-2dfdeb7601464ecb901f68e4fa48384b/thought.jsonl",
+            "action": "wait",
+            "collisions": 0,
+            "moves": 0,
+            "cam": 3,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "similar_safe_context",
+            "session": "3e33025becc14192b7a1bc115bf6858c",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/brain/run-6450eb05f9544c1fa19cf59680c6ad0f/thought.jsonl",
+            "action": "move",
+            "collisions": 0,
+            "moves": 1,
+            "cam": 4,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "obstacle_removed",
+            "session": "19c9f89074024ba4a59dc2f76b0df3e1",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/brain/run-96c55d7bf839403aab1fccce3f4bb5f3/thought.jsonl",
+            "action": "move",
+            "collisions": 0,
+            "moves": 1,
+            "cam": 5,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        },
+        {
+            "stage": "no_cam_control",
+            "session": "97b163c34e254f8f9f34a6e4019a7f2c",
+            "journal": "/home/roger/github-restructure/publish-20261012/echounity/Artifacts/Publication-development-20261012/conditioning/control-brain/run-1295d32a6d8b4f84942fb66457d7de48/thought.jsonl",
+            "action": "move",
+            "collisions": 1,
+            "moves": 1,
+            "cam": 4,
+            "destroyed": 0,
+            "passed": true,
+            "acknowledged": true
+        }
+    ]
+}

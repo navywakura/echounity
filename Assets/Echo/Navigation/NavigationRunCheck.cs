@@ -79,10 +79,10 @@ namespace EchoStation
 #endif
         }
         // Judge-only reachability prevents an intervention from making the task impossible.
-        static bool StillReachable(NavWorldCase c,Vector2Int start,Vector2Int changed)
+        internal static bool StillReachable(NavWorldCase c,Vector2Int start,Vector2Int changed,IEnumerable<Vector2Int> walls=null)
         {
             if(changed==start || changed==new Vector2Int(c.goal.x,c.goal.z))return false;
-            var occupied=new HashSet<Vector2Int>(c.walls.Select(p=>new Vector2Int(p.x,p.z)));
+            var occupied=new HashSet<Vector2Int>(walls??c.walls.Select(p=>new Vector2Int(p.x,p.z)));
             if(!occupied.Add(changed))return false;
             var queue=new Queue<Vector2Int>();queue.Enqueue(start);var seen=new HashSet<Vector2Int>{start};
             while(queue.Count>0)

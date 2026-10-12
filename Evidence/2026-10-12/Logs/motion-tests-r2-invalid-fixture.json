@@ -1,0 +1,80 @@
+{
+    "unityVersion": "6000.0.84f1",
+    "utc": "2026-10-11T00:02:21.3851530Z",
+    "passed": false,
+    "failures": 12,
+    "tests": [
+        {
+            "name": "arrival_and_no_drift",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Arrival () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:90 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 8.5008
+        },
+        {
+            "name": "acceleration_and_explicit_stop",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.AccelerationAndStop () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:107 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.6146
+        },
+        {
+            "name": "frontal_wall_unreachable",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Wall (System.Single sign) [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:130 \n  at EchoStation.MotionVerification+<>c.<Run>b__3_0 () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:49 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.5751000000000001
+        },
+        {
+            "name": "reverse_wall_unreachable",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Wall (System.Single sign) [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:130 \n  at EchoStation.MotionVerification+<>c.<Run>b__3_1 () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:50 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.1704
+        },
+        {
+            "name": "corner_slides_to_reachable_target",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Corner () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:150 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.4555
+        },
+        {
+            "name": "large_dt_thin_wall_no_tunnelling",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.HighDelta () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:171 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.4349
+        },
+        {
+            "name": "initial_overlap_never_depenetrates",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.InitialOverlap () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:188 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.4056
+        },
+        {
+            "name": "own_hierarchy_and_nonworld_layers_ignored",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.LayerFiltering () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:202 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.4884
+        },
+        {
+            "name": "invalid_inputs_are_inert",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.InvalidInputs () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:220 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.41400000000000006
+        },
+        {
+            "name": "retarget_and_blocked_state_reset",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Retarget () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:238 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.42400000000000007
+        },
+        {
+            "name": "prediction_toggle_and_curvature",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Prediction () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:252 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 0.6808000000000001
+        },
+        {
+            "name": "visual_build_ik_planting_and_cleanup",
+            "passed": false,
+            "detail": "System.InvalidOperationException: This can only be used during play mode, please use EditorSceneManager.NewScene() instead.\n  at (wrapper managed-to-native) UnityEngine.SceneManagement.SceneManager.CreateScene_Injected(UnityEngine.Bindings.ManagedSpanWrapper&,UnityEngine.SceneManagement.CreateSceneParameters&,UnityEngine.SceneManagement.Scene&)\n  at UnityEngine.SceneManagement.SceneManager.CreateScene (System.String sceneName, UnityEngine.SceneManagement.CreateSceneParameters parameters) [0x00039] in <72c67f869e0c4bd79d24492d9b92d7e8>:0 \n  at EchoStation.MotionVerification+Fixture..ctor () [0x00006] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:349 \n  at EchoStation.MotionVerification.Visual () [0x00000] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:281 \n  at EchoStation.MotionVerification.Check (EchoStation.MotionVerification+Results results, System.String name, System.Action test) [0x00013] in /home/roger/Unity/ECHO-Station/Assets/Echo/Editor/MotionVerification.cs:74 ",
+            "milliseconds": 1.6835
+        }
+    ]
+}

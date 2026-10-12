@@ -1,0 +1,22 @@
+Library/
+Temp/
+Obj/
+Logs/
+Builds/
+UserSettings/
+*.csproj
+*.sln
+.vscode/
+.idea/
+__pycache__/
+*.pyc
+
+# Omitted from the public copy: redistribution rights were not established.
+/Assets/Resources/Art/SciFi/
+/Assets/Resources/Art/SciFi.meta
+/Assets/Resources/Art/Tiles/seasons_tiles.png
+/Assets/Resources/Art/Tiles/seasons_tiles.png.meta
+/Assets/Resources/Art/Tiles/seasons_trees.png
+/Assets/Resources/Art/Tiles/seasons_trees.png.meta
+/Assets/Resources/Art/Tiles/iso_dungeon_walls_by_pfunked.png
+/Assets/Resources/Art/Tiles/iso_dungeon_walls_by_pfunked.png.meta

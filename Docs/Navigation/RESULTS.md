@@ -1,5 +1,3 @@
-> Historical measurements, preserved during publication. The bounded [evidence selection](../../Evidence/INDEX.md) contains complete physical/station journals and CPU summaries; full CPU campaigns are not bundled. ECHO-5 closure remains pending; S6 is later work.
-
 # Cámara, mapa y aprendizaje de navegación — revisión 2
 
 El 11 de octubre de 2026 la revisión 2 cumplió la puerta de navegación fijada
@@ -31,11 +29,11 @@ de elegir la primera tarea estaba fijada antes de la confirmación.
 
 Recibos CPU:
 
-- [Confirmación R2](../../Evidence/2026-10-11/Artifacts/Navigation/confirmation-v2-20261011/report.json).
-- [Desarrollo R2](../../Evidence/2026-10-11/Artifacts/Navigation/development-v2-20261011/report.json):
+- [Confirmación R2](../../Evidence/2026-10-12/Artifacts/Navigation/confirmation-v2-20261011/report.json).
+- [Desarrollo R2](../../Evidence/2026-10-12/Artifacts/Navigation/development-v2-20261011/report.json):
   8/8, 7/8 y 0/8 metas respectivamente.
-- [Fuentes, datos y modelo congelados](../../Evidence/2026-10-11/Artifacts/Navigation/development-v2-20261011/freeze.json).
-- [Manifiesto de particiones](../../Evidence/2026-10-11/Artifacts/Navigation/worlds-v2.seed-manifest.json).
+- [Fuentes, datos y modelo congelados](../../Evidence/2026-10-12/Artifacts/Navigation/development-v2-20261011/freeze.json).
+- [Manifiesto de particiones](../../Evidence/2026-10-12/Artifacts/Navigation/worlds-v2.seed-manifest.json).
 
 La ejecución física de Unity utilizó otro espacio de artefactos y comenzó sin
 checkpoint. Resolvió 4 episodios de adquisición y 3 de desarrollo. La auditoría
@@ -45,17 +43,17 @@ intervención añadió un obstáculo después de decidir el movimiento: produjo 
 bloqueo real, se actualizó el mapa y se alcanzó la meta. También se comprobó
 pausar y continuar sin reiniciar la sesión.
 
-- [Verificación completa](../../Evidence/2026-10-11/Receipts/navigation-verification.json): válida, fuentes
+- [Verificación completa](../../Evidence/2026-10-12/Logs/navigation-verification.json): válida, fuentes
   sin cambios durante las comprobaciones, servidor nuevo con PID y argumentos.
-- [Episodios físicos](../../Evidence/2026-10-11/Receipts/navigation-integration-tests.json): 7/7.
-- [Auditoría física](../../Evidence/2026-10-11/Receipts/navigation-physical-audit.json): válida, 152 planes
+- [Episodios físicos](../../Evidence/2026-10-12/Logs/navigation-integration-tests.json): 7/7.
+- [Auditoría física](../../Evidence/2026-10-12/Logs/navigation-physical-audit.json): válida, 152 planes
   reproducidos mediante el núcleo sin priors de efectos.
-- [Pruebas Python](../../Evidence/2026-10-11/Receipts/navigation-python.log): 94.
-- [Pruebas de manipulación de recibos](../../Evidence/2026-10-11/Receipts/navigation-audit-unit.log): 23.
-- [Cámara](../../Evidence/2026-10-11/Receipts/sensor-tests.json): 13; [mundo](../../Evidence/2026-10-11/Receipts/navigation-world-tests.json): 11.
+- [Pruebas Python](../../Evidence/2026-10-12/Logs/navigation-python.log): 94.
+- [Pruebas de manipulación de recibos](../../Evidence/2026-10-12/Logs/navigation-audit-unit.log): 23.
+- [Cámara](../../Evidence/2026-10-12/Logs/sensor-tests.json): 13; [mundo](../../Evidence/2026-10-12/Logs/navigation-world-tests.json): 11.
 
 El modelo de la interfaz se copió del checkpoint adquirido físicamente. Su
-[recibo de procedencia](../../Evidence/2026-10-11/Artifacts/Navigation/approved-model.json) conserva
+[recibo de procedencia](../../Evidence/2026-10-12/Artifacts/Navigation/approved-model.json) conserva
 el hash y la auditoría de origen. Las sesiones interactivas escriben en otro
 directorio y no modifican los recibos de aquella evaluación.
 
@@ -65,15 +63,15 @@ el margen de una celda podía declararla libre y borrar una pared recordada. La
 [prueba de regresión](../../Bridge/tests/test_navigation_corner.py) usa un mundo
 sintético, sin tareas reservadas. Primero falló y después pasó al exigir que el
 segmento observado atraviese la región central de la celda. Los registros
-[rojo](../../Evidence/2026-10-11/Receipts/navigation-corner-red.log) y [verde](../../Evidence/2026-10-11/Receipts/navigation-corner-green.log)
+[rojo](../../Evidence/2026-10-12/Logs/navigation-corner-red.log) y [verde](../../Evidence/2026-10-12/Logs/navigation-corner-green.log)
 conservan el cambio. Las 28 geometrías de R2 son distintas de las 28 de R1.
 Los números 15/16 y 16/16 proceden de conjuntos diferentes; no permiten atribuir
 su diferencia exclusivamente a esta corrección.
 
-Se conserva el [resultado R1](../../Evidence/2026-10-11/Artifacts/Navigation/confirmation-20261011/report.json),
-sus manifiestos de fuentes y datos (los diarios CPU completos no se publican aquí). La primera automatización física llegó al paso de auditoría
+Se conserva el [resultado R1](../../Evidence/2026-10-12/Artifacts/Navigation/confirmation-20261011/report.json),
+sus fuentes y datos. La primera automatización física llegó al paso de auditoría
 antes de que su script estuviera disponible; falló con código 2. Después se
-auditó la evidencia sin alterarla, dejando un [recibo de recuperación](../../Evidence/2026-10-11/Receipts/navigation-verification-recovery-v1.json).
+auditó la evidencia sin alterarla, dejando un [recibo de recuperación](../../Evidence/2026-10-12/Logs/navigation-verification-recovery-v1.json).
 La automatización completa de R2 terminó sin ese fallo.
 
 El efecto de los cuatro comandos se aprende por observación y eliminación de

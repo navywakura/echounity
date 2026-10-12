@@ -19,6 +19,7 @@ namespace EchoStation
         // Reserved only for the duration of this camera's render; never change collision settings.
         private const int SelfRenderLayer = 31;
         private const float EyeHeight = .92f, HorizontalFov = 100f, RangeMetres = 10f;
+        public float MountHeight = EyeHeight;
 
         [NonSerialized] public Camera View;
         public RenderTexture Image { get; private set; }
@@ -136,7 +137,7 @@ namespace EchoStation
         private void SynchronizeView()
         {
             if (!robot || !View) return;
-            View.transform.SetPositionAndRotation(robot.position + Vector3.up * EyeHeight,
+            View.transform.SetPositionAndRotation(robot.position + Vector3.up * Mathf.Clamp(MountHeight,.1f,1.2f),
                 Quaternion.Euler(0, Yaw, 0));
 #if UNITY_EDITOR
             // Preview cameras must render the same isolated scene their physics query uses.
@@ -154,6 +155,10 @@ namespace EchoStation
 
         private void RenderImage()
         {
+            // PhysX depth rays work without a graphics device. Camera.Render does not.
+            // RGB is a passive viewer; a headless check must never call a null renderer.
+            if (SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null)
+            { RestoreRobotLayers(); return; }
             RenderTexture previous = RenderTexture.active;
             try
             {

@@ -1,0 +1,97 @@
+{
+    "connected": true,
+    "completed": true,
+    "acknowledged": true,
+    "gaitReady": true,
+    "diagnosticPresent": true,
+    "observerDrivesPolicy": false,
+    "finitePose": true,
+    "blockProbe": false,
+    "obstacleInjected": false,
+    "decisions": 26,
+    "moves": 23,
+    "blocks": 0,
+    "poseFrames": 1411,
+    "steppingFrames": 1101,
+    "minimumPlantedFeet": 4,
+    "journal": "/home/roger/Unity/ECHO-Station/Artifacts/Arachnid/runtime-v1/run-953b4ff2f28942d8bab5de45a2d98d2e/thought.jsonl",
+    "session": "c867fc1f63a64272b39c3d2384fd86bb",
+    "profile": "cold",
+    "basal": {
+        "schema": "echo.arachnid.basal.v1",
+        "wsp": "02110408281400640a00000005000019",
+        "cause": "0 celdas nuevas; soporte motor 8/8; U decae.",
+        "gate": "OK / sin modificación",
+        "scope": "CAM persistente; D/B sin transductor físico asignado; C es soporte motor, no probabilidad.",
+        "available": true,
+        "urgencyControl": true,
+        "memoryControl": true,
+        "E": [
+            40,
+            20,
+            0,
+            100,
+            10,
+            0
+        ],
+        "camUsed": 26,
+        "camCapacity": 4096,
+        "camDestroyed": 0,
+        "camDropped": 0,
+        "lastWritten": 2956,
+        "lastRead": -1,
+        "memoryReads": 0,
+        "memoryVetoes": 0,
+        "urgencyScans": 0,
+        "episodes": [
+            {
+                "slot": 2956,
+                "sequence": 26,
+                "verified": true,
+                "label": "#26 move / arrived",
+                "summary": "(7,1) → (6,1); comando 0; arrived",
+                "extractHash": "c5aa35fe2f4ce242a337e7636ecaca2c3c7a2cacaf044125f01486eb0a2ee3c3"
+            },
+            {
+                "slot": 3890,
+                "sequence": 25,
+                "verified": true,
+                "label": "#25 move / arrived",
+                "summary": "(7,2) → (7,1); comando 3; arrived",
+                "extractHash": "7864e6861a398bbac6e395afa3f843f728bfb9df93cae85daa919a77e5b13a30"
+            },
+            {
+                "slot": 321,
+                "sequence": 24,
+                "verified": true,
+                "label": "#24 move / arrived",
+                "summary": "(7,3) → (7,2); comando 3; arrived",
+                "extractHash": "e6eb99f5ce8034b9dc963e0f9010c3e1d59e1bdd9b198a6f4815c7d75f401f52"
+            },
+            {
+                "slot": 603,
+                "sequence": 23,
+                "verified": true,
+                "label": "#23 move / arrived",
+                "summary": "(8,3) → (7,3); comando 0; arrived",
+                "extractHash": "908760db5f540ebf99d67120e35928e2f7be7f39502a24ead5d04877d3f820fe"
+            },
+            {
+                "slot": 2543,
+                "sequence": 22,
+                "verified": true,
+                "label": "#22 move / arrived",
+                "summary": "(9,3) → (8,3); comando 0; arrived",
+                "extractHash": "ee55e1aade063e1bf08f36ab4851de00fd2a4fc37bae2263ef8962040d96ded7"
+            },
+            {
+                "slot": 1409,
+                "sequence": 21,
+                "verified": true,
+                "label": "#21 move / arrived",
+                "summary": "(9,4) → (9,3); comando 3; arrived",
+                "extractHash": "911f2741cda5ac9409742d1c092f8c89e0a559b77e5b3883eb55f26feae5b393"
+            }
+        ]
+    }
+}

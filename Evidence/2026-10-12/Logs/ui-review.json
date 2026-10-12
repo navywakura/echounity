@@ -1,0 +1,9 @@
+{
+  "valid": true,
+  "inspection": "Visual review of actual Unity Play view: readable wide layout, five rooms, original 3D robot, connected bridge, pending initial decision/budget",
+  "screenshot": "/home/roger/Unity/ECHO-Station/Logs/control-panel.png",
+  "sha256": "a214e487f73625bd6e600a468cf171a81a204100912092a0725c983bb415a6c2",
+  "runtime_sources_match_verification": true,
+  "unity_pid": 91742,
+  "bridge_pid": 91721
+}

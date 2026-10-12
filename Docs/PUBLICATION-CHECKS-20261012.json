@@ -1,0 +1,58 @@
+{
+  "schema": "echounity.publication-checks.v2",
+  "date": "2026-10-12",
+  "python": "3.14.6 (main, Jun 11 2026, 00:00:00) [GCC 15.2.1 20260123 (Red Hat 15.2.1-7)]",
+  "unity": "6000.0.84f1",
+  "echoai_commit": "f6062de0462a523296eb2cbb704472f4faa4a022",
+  "project_sources": [
+    "ECHO-Station",
+    "ECHO-World-Prototype"
+  ],
+  "bridge_tests": 121,
+  "unity_world_checks": 22,
+  "unity_motion_checks": 12,
+  "world_prototype_checks": 52,
+  "legacy_tamper_tests": 23,
+  "legacy_evidence_files": 50,
+  "archive_path_tamper_tests": 21,
+  "public_development": {
+    "started": "2026-10-12T17:43:08.529210+00:00",
+    "valid": true,
+    "checks": {
+      "bridge_tests": true,
+      "unity_prepare": true,
+      "conditioning_physics": true,
+      "development": true,
+      "station": true,
+      "decision_latency_measured": true,
+      "offline": true,
+      "resources_below_60mb": true,
+      "audit": true
+    },
+    "finished": "2026-10-12T17:46:28.674343+00:00",
+    "development_only": true
+  },
+  "public_development_journals": 18,
+  "public_development_audit_valid": true,
+  "original_closure_archive": "Evidence/2026-10-12/Artifacts/Closure/20261012-191553-460628",
+  "publication_evidence": "Evidence/Publication-20261012",
+  "changed_scope": "Import names, path discovery, archive path mapping, public scene IDs/body, docs and packaging. No agent-policy or held-out-world tuning.",
+  "packaging_issue": {
+    "symptom": "Station body missing; duplicate serialized identifier 9223372036854775807",
+    "cause": "17 placeholder renderer fileIDs in the previous public scene exceeded signed 64-bit range",
+    "correction": "Remapped to unique in-range IDs, then integrated existing arachnid with Unity; physics and three missions passed"
+  },
+  "source_manifest": "SOURCE-MANIFEST.json",
+  "preflight": {
+    "python_parsed": 69,
+    "secret_matches": [],
+    "oversize_files": [],
+    "agent_config_files": [],
+    "missing_links": []
+  },
+  "live_source_check": {
+    "files": 493,
+    "changed": []
+  },
+  "original_closure_journals_reaudited": 34
+}
