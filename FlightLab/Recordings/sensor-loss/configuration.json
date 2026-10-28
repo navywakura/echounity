@@ -1,0 +1,33 @@
+{
+  "image": "5364c865ebf08b1dd19ee7a6a46ca3c3911056269974e7d9db2ced4a74201d27",
+  "arm": "memx",
+  "variant": "warehouse",
+  "seconds": 60,
+  "inspections": 4,
+  "fault": "sensor_stale",
+  "network": "none",
+  "resources": {
+    "cpu": 1.5,
+    "ram_bytes": 2147483648,
+    "swap": 0
+  },
+  "initial_memory": true,
+  "started_unix": 1793175363.9275506,
+  "container": "echo-flightlab-1793175363759688737",
+  "sources": {
+    "robotics/flightlab/__init__.py": "007dbac350f14bd24cffafdb8906b462cf92fc46363ed0a91a79bf685dd4781d",
+    "robotics/flightlab/core.py": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7",
+    "robotics/flightlab/world.py": "9f9dbe2f2c3dd35f7b90981d32b4ee622ba9b91769cf44d060ca231a877f2c78",
+    "robotics/flightlab/flight.py": "eca63dab45d3c0dcef557efe000f102eb027edd619f054976c3834c69a54ff63",
+    "robotics/flightlab/launch.py": "549ca0571691479fdfd3c3a34d33eea34c629fab94495798dced9b5aba6dbc1b",
+    "robotics/flightlab/audit.py": "3d330189903e796553e6bd44fe5b246413021b93f967455eafa88e18e43cfaba",
+    "robotics/flightlab/telemetry.py": "f998fbbbb3b98039a8f4e739a1ecfbdc6363c3d3828f8f9dc4aed6de40a81f9a",
+    "robotics/flightlab/school.py": "1924d275533a8e543fd325f6dedb8811703df0747bc85a14a060770bc68d3332",
+    "robotics/flightlab/checks.py": "843c3f90001c802500cd3641ab006ee5470aedde92ba2f288b002c824b1bab76",
+    "robotics/flightlab/physics.py": "c8623bdcbae09067b6db181a91361b8763e5e25f693f70507a736670155bdae0",
+    "echo58/memx/memory.py": "04b403079b05a299586be86b96bb848f4b56db121df26b3dc64a0c7b67e154ea",
+    "echo58/wspfiles/codec.py": "151a42fdcde531391ed6e906bb0acc8c22fea14db5fbfd841d24e31a32b4771b",
+    "echo58/wspfiles/memory.py": "b33667f0ee0872f1f0f9ec6a2e2c81302e5f9157d37ba5563e563fc9034ea5a1",
+    "nexus0/pattern1r_v4/assets/flightrunner_survey.py": "2e73e2f1aa808c356d89c77939699e055b89e88cd307b5ed805d67753ca48fe8"
+  }
+}

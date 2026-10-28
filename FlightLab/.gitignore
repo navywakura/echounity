@@ -1,0 +1,11 @@
+/Unity/Library/
+/Unity/Temp/
+/Unity/Logs/
+/Unity/Build/
+/Unity/obj/
+/Unity/UserSettings/
+/Unity/build*.log
+/Unity/build-result.json
+/Artifacts/
+__pycache__/
+*.pyc

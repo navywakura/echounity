@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/navywakura/echoai",
+  "commit": "f3f0cb7b28bdcb4be2c6983969e299a9aceac7d2",
+  "version": "5.8.3",
+  "sha256": {
+    "echo58/memx/memory.py": "04b403079b05a299586be86b96bb848f4b56db121df26b3dc64a0c7b67e154ea",
+    "echo58/wspfiles/codec.py": "151a42fdcde531391ed6e906bb0acc8c22fea14db5fbfd841d24e31a32b4771b",
+    "echo58/wspfiles/memory.py": "b33667f0ee0872f1f0f9ec6a2e2c81302e5f9157d37ba5563e563fc9034ea5a1",
+    "nexus0/pattern1r_v4/assets/flightrunner_survey.py": "2e73e2f1aa808c356d89c77939699e055b89e88cd307b5ed805d67753ca48fe8"
+  }
+}

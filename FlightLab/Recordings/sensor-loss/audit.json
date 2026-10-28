@@ -1,0 +1,10 @@
+{
+  "status": "PASS_IDENTICAL_REPLAY",
+  "decisions": 65,
+  "frames": 224,
+  "memory_records": 24,
+  "maximum_altitude_m": 1.8417,
+  "flight_status": "CONTINGENCY_LANDED",
+  "returned_home": false,
+  "api_calls": 0
+}

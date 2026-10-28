@@ -1,0 +1,132 @@
+[
+  {
+    "video": "01-memoria.mp4",
+    "source": "FlightLab/Recordings/memx",
+    "speed": 4,
+    "source_sha256": "dd83248843d4edb82cda4feed5a480761bc0f53a56938a568d28902c75066bb5",
+    "sha256": "1b82912bf3e1a0651f1c02e1219243c369206f85a481ab39c764c3d6a7f51a63",
+    "recording": {
+      "status": "COMPLETE",
+      "source": "memx",
+      "caption": "MEMORIA-X · 3/4 puntos · regreso parcial",
+      "fps": 24,
+      "frames": 762,
+      "expectedFrames": 762,
+      "width": 1280,
+      "height": 800,
+      "speed": 4.0
+    },
+    "probe": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 800,
+      "r_frame_rate": "24/1",
+      "duration": "31.750000",
+      "nb_read_frames": "762"
+    }
+  },
+  {
+    "video": "02-sin-memoria.mp4",
+    "source": "FlightLab/Recordings/empty",
+    "speed": 4,
+    "source_sha256": "d4ad4b3336882a40fb81a979a4ffa69a5ca83be3e34a6195fe2fcbaf2e7560ec",
+    "sha256": "38ea355c3a0054b33ef3b825467349f1588022731e7cd9675d2e24076b8437b1",
+    "recording": {
+      "status": "COMPLETE",
+      "source": "empty",
+      "caption": "SIN MEMORIA · 3/4 puntos · regreso parcial",
+      "fps": 24,
+      "frames": 769,
+      "expectedFrames": 769,
+      "width": 1280,
+      "height": 800,
+      "speed": 4.0
+    },
+    "probe": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 800,
+      "r_frame_rate": "24/1",
+      "duration": "32.041667",
+      "nb_read_frames": "769"
+    }
+  },
+  {
+    "video": "03-cache.mp4",
+    "source": "FlightLab/Recordings/cache",
+    "speed": 4,
+    "source_sha256": "a24e73a0147e2be7182a52ea5e9d560ddb083cdfb15cdcf84b7a6d04778b3906",
+    "sha256": "4d7381b9fe1e5b47805482ea381774a0d87f4813cdc4b41d75ed8d63e4fb9da0",
+    "recording": {
+      "status": "COMPLETE",
+      "source": "cache",
+      "caption": "CACHÉ SIMPLE · 4/4 puntos · misión completa",
+      "fps": 24,
+      "frames": 727,
+      "expectedFrames": 727,
+      "width": 1280,
+      "height": 800,
+      "speed": 4.0
+    },
+    "probe": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 800,
+      "r_frame_rate": "24/1",
+      "duration": "30.291667",
+      "nb_read_frames": "727"
+    }
+  },
+  {
+    "video": "04-obstaculo-nuevo.mp4",
+    "source": "FlightLab/Recordings/changed",
+    "speed": 4,
+    "source_sha256": "ceb9f6c2307301899937b70e826c78b01fe16a96edff3ac2aef5138140c50bd4",
+    "sha256": "7cc5fe22a6005ac7ee4787c24dd1ed284a0e0daee76d1e1c3cbbc548dcf29bae",
+    "recording": {
+      "status": "COMPLETE",
+      "source": "changed",
+      "caption": "OBSTÁCULO NUEVO · 3/4 puntos · regreso parcial",
+      "fps": 24,
+      "frames": 787,
+      "expectedFrames": 787,
+      "width": 1280,
+      "height": 800,
+      "speed": 4.0
+    },
+    "probe": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 800,
+      "r_frame_rate": "24/1",
+      "duration": "32.791667",
+      "nb_read_frames": "787"
+    }
+  },
+  {
+    "video": "05-perdida-lidar.mp4",
+    "source": "FlightLab/Recordings/sensor-loss",
+    "speed": 2,
+    "source_sha256": "a382dda3d783c039e9f19d80ef96d416ba660182a05832d6537d7655d3921c44",
+    "sha256": "dcffe0d0c5a508e4a1a27777b87870ebb4f976972c5bc9ee86580ff97e7fa3da",
+    "recording": {
+      "status": "COMPLETE",
+      "source": "sensor-loss",
+      "caption": "PÉRDIDA DE LiDAR · 0/4 puntos · aterrizaje de contingencia",
+      "fps": 24,
+      "frames": 422,
+      "expectedFrames": 422,
+      "width": 1280,
+      "height": 800,
+      "speed": 2.0
+    },
+    "probe": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 800,
+      "r_frame_rate": "24/1",
+      "duration": "17.583333",
+      "nb_read_frames": "422"
+    }
+  }
+]

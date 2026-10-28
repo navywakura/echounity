@@ -1,0 +1,17 @@
+{
+  "inputs": [
+    {
+      "path": "FlightLab/Recordings/school/memory.wsp",
+      "records": 24,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    }
+  ],
+  "provenance": {
+    "calibrated_energy": false,
+    "coordinate_frame": "home-observed-px4-enu-v1",
+    "model": "X500",
+    "scope": "same-map-spatial-sectors",
+    "source": "flightlab-observed-inspections"
+  },
+  "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+}

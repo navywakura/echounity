@@ -1,0 +1,11 @@
+{
+  "source": "Media/FlightLab/ECHO-FLIGHTLAB-DEMO.mp4",
+  "source_sha256": "35c59b9b75dbe04fec7f7aad1abb344a2de44281b3bd4fd11539b495ca129efe",
+  "clip_start_s": 10,
+  "clip_duration_s": 8,
+  "fps": 8,
+  "width": 720,
+  "height": 450,
+  "speed": "Same timeline as the source montage; this portion is a labeled 4x replay",
+  "sha256": "92a2310afaab5680dcdf321907c10ad42af14aead4f6dc8c2fa7effa594a0a7a"
+}

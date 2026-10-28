@@ -1,0 +1,13 @@
+{
+  "source_run": "FlightLab/Recordings/memx",
+  "description": "Actual Gazebo/PX4 development flight; partial mission returned home",
+  "flight_status": "RETURNED_PARTIAL",
+  "api_calls": 0,
+  "evidence": {
+    "frames.jsonl": "dd83248843d4edb82cda4feed5a480761bc0f53a56938a568d28902c75066bb5",
+    "audit.json": "ae2252342b073de479eee50e9011c21986d9ba763524f9de9468d09c5b153968",
+    "physical-audit.json": "40dad84fa080bdb247806e5e9eb92db76f125c742d83e9dca09ebebb6cee586d",
+    "result.json": "519cd97e26db6237d6fbc666c03df726ef23897fa7f0880c73cd6b57d5fc6134"
+  },
+  "packaging": "Source receipts and original core bytes preserved; only this display path is portable."
+}

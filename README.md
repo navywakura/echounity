@@ -1,111 +1,99 @@
-<p align="center"><img src="Media/unity-live-1.0.png" width="100%" alt="ECHO-5 mechanical arachnid in Unity, with its observed map, camera and E6/CAM panel" /></p>
-<h1 align="center">ECHO Unity</h1>
+<h1 align="center">ECHO Unity · Flight Lab</h1>
+<p align="center"><strong>Fly through a simulated warehouse. Observe the space. Carry memory into the next flight.</strong></p>
 <p align="center">
-  <img src="https://img.shields.io/badge/Unity-6000.0.84f1-222222?logo=unity&amp;logoColor=white" alt="Unity 6000.0.84f1" />
-  <img src="https://img.shields.io/badge/C%23-worlds-512BD4" alt="C# worlds" />
-  <img src="https://img.shields.io/badge/Python-local_brain-3776AB?logo=python&amp;logoColor=white" alt="Python local brain" />
-  <img src="https://img.shields.io/badge/Station_1.0-contract_passed-238636" alt="Station 1.0 contract passed" />
-  <img src="https://img.shields.io/badge/World_Prototype-beta_0.0.2-d97706" alt="World prototype beta 0.0.2" />
+  <a href="https://rxlabs.org">RxLabs</a> ·
+  <a href="https://github.com/navywakura/echoai">ECHO-AI</a> ·
+  <a href="FlightLab/README.md">Flight Lab guide</a> ·
+  <a href="STATION.md">Station & arachnid</a> ·
+  <a href="WorldPrototype/README.md">World Prototype</a>
 </p>
 
-Unity worlds, original models and local interfaces for [ECHO-AI](https://github.com/navywakura/echoai).
-This repository contains two separate Unity projects:
+[![Watch the full recorded flight demonstration](Media/FlightLab/preview.gif)](https://github.com/navywakura/echounity/raw/refs/heads/main/Media/FlightLab/ECHO-FLIGHTLAB-DEMO.mp4)
 
-- **Root — ECHO-Station 1.0:** the eight-legged mechanical arachnid, navigation laboratory, three station missions, E[6]/CAM integration and a causal inspector. Its [closure contract](Docs/Arachnid/CLOSURE-1.0.md) passed in the recorded simulation runs.
-- **[WorldPrototype/](WorldPrototype/)** — **Echo MMO Prototype BETA 0.0.2:** a playable local isometric voxel world with procedural terrain, building, inventory, survival controls and local chat. Networking and ECHO NPCs are future work.
+**[Watch the full demonstration — 2 min 24 s](https://github.com/navywakura/echounity/raw/refs/heads/main/Media/FlightLab/ECHO-FLIGHTLAB-DEMO.mp4)** · [Five individual recordings](Media/FlightLab/README.md)
 
-The ECHO brain stays in **navywakura/echoai** and is imported as a sibling checkout. This repository contains Unity adapters and evidence, without duplicating the ECHO implementation. S6 is separate research deferred until after ECHO-5.5.
+These are actual recorded **Gazebo/PX4 simulated flights**, shown in Unity at **4× playback**; the LiDAR-loss case is shown at **2×**. The speed is labeled on screen. Playback acceleration preserves the recorded trajectory and does not increase the simulated flight speed.
 
-## Run the arachnid
+## What happens in the demo?
 
-Use Unity **6000.0.84f1** and Python **3**. The bridge uses the standard library; Blender is optional for editing the original model.
+An X500 drone starts at its base inside a warehouse. Its LiDAR reveals the nearby space as it moves. A CPU adapter builds an observed map, chooses reachable inspection points, avoids observed obstacles and keeps time in reserve to return.
+
+ECHO's **MEMORIA-X** stores the consequences of inspections. A `.wsp` file works like a **memory card**: save what an agent observed, load it on a later compatible flight, and reuse that experience. In this demonstration, memories refer to familiar spatial sectors of the same map.
+
+Imagine a warehouse inspection: the first flight pauses to inspect a sector and records the result; the next can reuse that record while checking its current sensors. A newly observed obstacle changes the route. If LiDAR disappears, the adapter requests a contingency landing.
+
+The responsibilities are explicit:
+
+| Component | What it does |
+|---|---|
+| **Gazebo Harmonic** | Simulates gravity, collisions, motors and sensors in a 3D world |
+| **PX4 1.15.4** | Estimates the vehicle state and controls its flight |
+| **ECHO + Flight Lab adapter** | Supplies persistent memory and CPU exploration, route selection and return decisions |
+| **Unity** | Shows the recorded or live flight, onboard view and observed map |
+
+The adapter is a new robotics planner using ECHO's existing memory modules. Navigation currently plans at a fixed estimated altitude of 1.5 m. All local decisions run without an LLM or paid API.
+
+## Try it in Unity
+
+Install **Unity 6000.0.84f1** with Unity Hub, then:
 
 ```sh
-git clone https://github.com/navywakura/echoai.git
 git clone https://github.com/navywakura/echounity.git
 cd echounity
+```
+
+1. In Unity Hub, choose **Add project from disk** and select **`FlightLab/Unity`**.
+2. Open **`Assets/Scenes/FlightLab.unity`** and press **Play**.
+3. Watch the included recorded flight. No simulator or Python setup is needed for this replay.
+
+**Controls:** `1` overview · `2` follow · `3` onboard camera · `K` observed map/world · `Space` pause · mouse wheel zoom · right mouse button orbit. The onboard camera is an operator view; this version's policy receives LiDAR.
+
+For a standalone **Linux** viewer, install Linux Build Support and build:
+
+```sh
 export UNITY_EDITOR='/path/to/Unity/Editor/Unity'
-python3 -B Tools/start_arachnid.py --no-blender
+sh FlightLab/Tools/build.sh
+sh FlightLab/Tools/view.sh --speed 4
 ```
 
-Enter Play mode in `Assets/Scenes/ECHO5_ArachnidLab.unity`. The launcher starts the local bridge on **127.0.0.1:8771**. The browser inspector is at **http://127.0.0.1:8771/**. To use a different checkout layout, set `ECHOAI_SOURCE` or `ECHO5_SOURCE`; see [setup and verification](Docs/REPRODUCE.md).
+To generate new flights, see the [Gazebo/PX4 setup and bounded launch commands](FlightLab/README.md#run-a-new-simulated-flight).
 
-```sh
-python3 -B Tools/start_arachnid.py --bridge-only         # use an already open editor
-python3 -B Tools/start_arachnid.py --station --no-blender # irrigation, delivery, detour
-python3 -B Tools/launch.py                              # historical NavigationLab, port 8770
-```
+## What the recorded flights achieved
 
-The arachnid has eight articulated legs with procedural IK, original Blender/FBX/GLB assets, four emissive optical sensors and a first-person RGB camera. Its controller uses **simulated depth and odometry**, not learned recognition from RGB. It accumulates an observed map and learns the effects of four movement commands. Planning, sensor integration, task dependencies and locomotion are programmed algorithms.
+An inspection point is a target sector. An obstacle contact is a physical contact reported by Gazebo; ordinary ground contact during takeoff and landing is counted separately.
 
-E[6] records measured consequence signals. CAM stores verified episodes, persists its 4,096 slots and can inhibit a previously blocked command in the same compatible context. New depth evidence can retire that inhibition while preserving the episode. D and B have no physical transducer in this demo. The 256-unit LIF observer is explicitly **passive: `drives_policy = false`**.
+| Case | Inspection points | Outcome | Obstacle contacts |
+|---|---:|---|---:|
+| MEMORIA-X | 3/4 | Returned to base with a partial mission | 0 |
+| Start without inspection memory | 3/4 | Returned to base with a partial mission | 0 |
+| Simple cache control | 4/4 | Completed the mission and returned | 0 |
+| New obstacle | 3/4 | Returned to base with a partial mission | 0 |
+| LiDAR signal lost | 0/4 | Contingency landing away from base | 0 |
 
-## Inspect actual decisions
+Each row is one development flight. This set demonstrates the integration and its observed behavior; the cache completed more points than MEMORIA-X, so it does not establish a memory advantage. [Recorded data, metrics and replay](FlightLab/RESULTS.md).
 
-![Causal inspector with a verified CAM receipt](Media/trace-inspector.png)
+**Verification:** 31 CPU tests, five identical decision replays, separate checks of physical takeoff/contact evidence, and recorded video-to-frame provenance. The simulator uses simulated indoor GPS; hardware deployment follows a separate calibration and validation stage.
 
-Select a CAM veto to inspect **observation → context → memory slot and SHA-256 → gate → executed command**. The viewer reads the existing `thought.jsonl`; it neither fabricates inner speech nor feeds explanations back to the actor. No LLM is required.
+## Earlier projects are still here
 
-## Recorded Station 1.0 results
+| Project | Open in Unity Hub | Explore |
+|---|---|---|
+| **ECHO-Station 1.0 / mechanical arachnid** | Repository root | [Original README and recorded results](STATION.md) · [Decision inspector](STATION.md#inspect-actual-decisions) |
+| **Echo MMO Prototype BETA 0.0.2** | `WorldPrototype/` | [Features, controls and screenshots](WorldPrototype/README.md) |
+| **ECHO Flight Lab** | `FlightLab/Unity/` | [Setup, sensors and recording tools](FlightLab/README.md) |
 
-| Check | Recorded result |
-|---|---|
-| Controlled physical conditioning | 6/6 checks: second encounter, safe context, extinction, restart and paired control |
-| Development navigation and station missions | 8/8 maps + 3/3 missions |
-| Fresh held-out maps | 16/16; four families; no irrecoverable blocks |
-| Journal audit | 34/34 valid |
-| Software and geometry | 121 Python tests; 22 world checks; 12 motion checks |
-| Brain RSS, sampled every 50 ms | Peak 35.08 MB in development; Unity excluded |
-| Offline test | Complete CPU geometric mission; zero external packets in a loopback-only namespace |
+Station, the arachnid, World Prototype, their assets and historical evidence are retained. Each Unity project is opened separately.
 
-These are **bounded simulation results**, not universal intelligence, biological learning, zero-error guarantees or measured power savings. The conditioning test fixes the proposed command to isolate memory; the held-out navigation test is separate. The offline run does not include Unity/PhysX. [Full methodology, metrics and limits](Docs/Arachnid/CLOSURE-1.0.md).
-
-The [archive](Evidence/INDEX.md) includes complete historical records and unsuccessful runs with original hashes. The [publication report](Docs/PUBLICATION-20261012.md) separately records checks of this portable export. Original closure manifests describe the original execution, not subsequent packaging edits.
-
-## World Prototype BETA 0.0.2
-
-Open **WorldPrototype/** as a separate project in Unity Hub, or:
-
-```sh
-python3 WorldPrototype/Tools/world.py open
-```
-
-Procedural chunks, biomes, caves and trees; click/WASD movement; manual jump; blocks and magnetized drops; ten inventory slots; torches; 20 HP; stamina; fall damage; a 15-minute day and 15-minute night; local speech bubbles and a pause/restart menu. See [features, controls and screenshots](WorldPrototype/README.md).
-
-The coordinate range and chunk system do not demonstrate a 200-player MMO. Multiplayer, public/private servers, factions, enemies, XP progression and ECHO-controlled NPCs are not implemented.
-
-## Source and verification
+## Source and licenses
 
 ```text
-Assets/               Station, NavigationLab and ArachnidLab scenes, C# and prefabs
-ArtSource/            Original Blender model, exports, render and generation report
-Bridge/               Local HTTP service, E6/CAM, causal inspector and Python tests
-Tools/                Launchers, Blender generator, checks, resource measurement and audits
-Docs/                 Design, measured results, closure contract and asset notices
-Evidence/             Original scientific records, including unsuccessful development
-Media/                Real captures and provenance
-WorldPrototype/       Separate playable voxel-world Unity project
+FlightLab/Unity/       Editable drone viewer, scene and included replay
+FlightLab/Adapter/     CPU flight adapter importing the official ECHO modules
+FlightLab/Tools/       Portable launch, build, tests and read-only replay verification
+FlightLab/Recordings/  Five recorded simulated flights and inspection-school memory
+Media/FlightLab/       Full MP4, individual clips and screenshots
+Assets/, Bridge/, …   Original Station and arachnid project, retained
+WorldPrototype/       Original separate voxel-world project, retained
 ```
 
-Bounded checks without running a new confirmation:
-
-```sh
-python3 -B Tools/check.py --worker --python-only
-python3 -B Tools/check_evidence.py --tamper-tests
-python3 -B Tools/check_publication.py
-python3 -B WorldPrototype/Tools/world.py verify
-```
-
-For **new development runs** with this root project closed in Unity:
-
-```sh
-python3 -B Tools/check.py --integration --development-only
-```
-
-Omitting `--development-only` deliberately opens a **new** frozen-source confirmation after development passes; it does not replay the archived examination. The complete pipeline needs Linux user/network namespaces, `ip` and `psutil` in the selected Python environment.
-
-## Assets and licenses
-
-Original code: **GPL-3.0-or-later**. Original arachnid geometry/materials: **CC0-1.0**, with [its asset notice](ArtSource/ECHO5_Arachnid/ASSET-NOTICE.md). Redistributable WorldPrototype textures retain their individual [credits](WorldPrototype/Docs/ASSETS.md).
-
-Adventure Forge source artwork and standalone atlases without confirmed redistribution terms are excluded. The public worlds have visual fallbacks; historical captures can depict optional local artwork. No editor caches, private agent configuration or browser profiles are distributed. See [NOTICE.md](NOTICE.md) and [local asset import](Docs/ASSETS.md).
+Original source is **GPL-3.0-or-later**. PX4/X500 assets retain their supplied **BSD** licenses; [Flight Lab credits](FlightLab/NOTICE.md). The original arachnid geometry remains CC0, and World Prototype retains its existing texture credits. [Repository license](LICENSE) · [Existing asset notices](NOTICE.md).

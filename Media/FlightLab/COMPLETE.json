@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED",
+  "combined": "ECHO-FLIGHTLAB-DEMO.mp4",
+  "sha256": "35c59b9b75dbe04fec7f7aad1abb344a2de44281b3bd4fd11539b495ca129efe",
+  "probe": {
+    "codec_name": "h264",
+    "width": 1280,
+    "height": 800,
+    "r_frame_rate": "24/1",
+    "duration": "144.458333",
+    "nb_read_frames": "3467"
+  },
+  "clips": 5,
+  "api_calls": 0
+}

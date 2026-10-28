@@ -1,0 +1,10 @@
+{
+  "status": "PASS_IDENTICAL_REPLAY",
+  "decisions": 401,
+  "frames": 648,
+  "memory_records": 25,
+  "maximum_altitude_m": 1.8655,
+  "flight_status": "RETURNED_PARTIAL",
+  "returned_home": true,
+  "api_calls": 0
+}

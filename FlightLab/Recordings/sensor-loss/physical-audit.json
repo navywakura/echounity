@@ -1,0 +1,10 @@
+{
+  "observed_ascent_m": 1.8584,
+  "airborne_observed_s": 19.588,
+  "takeoff_verified": true,
+  "contact_channel_verified": true,
+  "reported_mission_status": "CONTINGENCY_LANDED",
+  "physical_mission_status": "CONTINGENCY_LANDED",
+  "observed_obstacle_contact_samples": 0,
+  "scope": "recorded simulated flight; not a resimulation or hardware safety certificate"
+}

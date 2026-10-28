@@ -1,0 +1,10 @@
+{
+  "observed_ascent_m": 1.8813,
+  "airborne_observed_s": 107.248,
+  "takeoff_verified": true,
+  "contact_channel_verified": true,
+  "reported_mission_status": "RETURNED_PARTIAL",
+  "physical_mission_status": "RETURNED_PARTIAL",
+  "observed_obstacle_contact_samples": 0,
+  "scope": "recorded simulated flight; not a resimulation or hardware safety certificate"
+}

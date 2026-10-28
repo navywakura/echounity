@@ -1,12 +1,13 @@
 {
-  "schema": "echounity.publication-source.v2",
-  "snapshotDate": "2026-10-12",
+  "schema": "echounity.publication-source.v3",
+  "snapshotDate": "2026-10-28",
   "sourceProjects": [
     "ECHO-Station",
-    "ECHO-World-Prototype"
+    "ECHO-World-Prototype",
+    "ECHO-Flight-Lab"
   ],
-  "scope": "All distributed Unity source, original art, settings, docs, licensed textures and historical evidence. Excludes this manifest itself and generated files.",
-  "researchStatus": "ECHO-Station 1.0 recorded contract passed; MMO prototype beta0.0.2 remains local; S6 separate and deferred.",
+  "scope": "Current distributed files, including Flight Lab; previous inventory preserved in Docs/SOURCE-MANIFEST-BEFORE-FLIGHTLAB.json. Excludes this manifest and generated files.",
+  "researchStatus": "Station and World Prototype preserved; Flight Lab r1 is a technical development integration with descriptive recorded flights.",
   "echoaiDependency": "navywakura/echoai@f6062de0462a523296eb2cbb704472f4faa4a022",
   "files": [
     {
@@ -1553,6 +1554,11 @@
       "path": "Docs/SOURCE-MANIFEST-20261011.json",
       "bytes": 47058,
       "sha256": "92400fabd5ee5b4289ef99d29fa563ba1b9de74ee3dedf28998fb6e2d30e88b9"
+    },
+    {
+      "path": "Docs/SOURCE-MANIFEST-BEFORE-FLIGHTLAB.json",
+      "bytes": 477323,
+      "sha256": "8659d2b00fa9229d7c4c267b21157a7a078214fab9bc2fcd74f7ec86a5a9beaa"
     },
     {
       "path": "Docs/VERIFICATION.md",
@@ -8860,9 +8866,864 @@
       "sha256": "5951849bee842d1c0fbeecf61982445ac0ae497d33acc41ffbf898c41cde9c32"
     },
     {
+      "path": "FlightLab/.gitignore",
+      "bytes": 163,
+      "sha256": "afaac97cabefaf1b74189ae2a99234aaf27e7dcf0f219c77936ea254b2885a44"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/__init__.py",
+      "bytes": 46,
+      "sha256": "007dbac350f14bd24cffafdb8906b462cf92fc46363ed0a91a79bf685dd4781d"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/LICENSE",
+      "bytes": 1532,
+      "sha256": "5fcb2a52fc0390cc8c7eccaa0cde9316c810f38811efb357e1ede7858e26e289"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/LICENSE",
+      "bytes": 1526,
+      "sha256": "cee4ef94e73cd38fb2886f5d7e7a04d6488f54b1e70cd8b1b29d74f38bfdba5b"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/model.config",
+      "bytes": 768,
+      "sha256": "52fdda8e66faa5095434d54e4dcaad5a6a8833cd014e0a5b439349ed8b4a1b67"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/model.sdf",
+      "bytes": 3402,
+      "sha256": "76d8668c9c1a10348f9b7011d892203f319e5051dc8c0eb06c62e52db8e6714e"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/thumbnails/1.png",
+      "bytes": 32312,
+      "sha256": "54d00187e5a03766d5e7b73311bc6bfa22f51cd98b823a287b2da8c551c3175e"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/thumbnails/2.png",
+      "bytes": 52133,
+      "sha256": "cb6040c119b2a382030165a2a98ab9e9cf816557808a4549c323f2a3792cb8b4"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/thumbnails/3.png",
+      "bytes": 28374,
+      "sha256": "848f431c64b34df15c59ad874e6211695ac53ee932ad3509ebb7c6372fc67375"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/thumbnails/4.png",
+      "bytes": 27300,
+      "sha256": "86e1b7f31a49894caeef210f43248587d6454eba467a492f9bc147bf732ae666"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500/thumbnails/5.png",
+      "bytes": 23786,
+      "sha256": "b76053e95f7aff65c6f83533fb5635554292acb26fe51376c2d62e437e350e75"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/LICENSE",
+      "bytes": 1526,
+      "sha256": "cee4ef94e73cd38fb2886f5d7e7a04d6488f54b1e70cd8b1b29d74f38bfdba5b"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/materials/textures/CF.png",
+      "bytes": 1567802,
+      "sha256": "3a56ec48eeaaf7774e8d3e8e5e88f6973bfa5652c610974c3eb2dbec6ec85944"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/materials/textures/nxp.png",
+      "bytes": 25522,
+      "sha256": "6c2262c84e0f5f55dbe38e712e6508d654fb6e7c427d1a19cdd62231bc2d52b1"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/materials/textures/rd.png",
+      "bytes": 26435,
+      "sha256": "9d8851c37dc612c336b46e41744c17fb8333a0af33ac4be93f7147f7549a8e25"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/1345_prop_ccw.stl",
+      "bytes": 522784,
+      "sha256": "ba197e0961117a3462b555d65edf3433ba8ff5691624100a185242cb5f456244"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/1345_prop_cw.stl",
+      "bytes": 521884,
+      "sha256": "7aa4b61c1ddc5304c9c1f5602eacf5e2ec5eafb95dd1f2a3368342f256122fc0"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/5010Base.dae",
+      "bytes": 369574,
+      "sha256": "798396a1945c7ff55a0840b77869e27affdd35fed0d784fff96b68f50f160ea0"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/5010Bell.dae",
+      "bytes": 393792,
+      "sha256": "b90a1b2dd63a8ebbe1f3339ed18cef23673e0d8f03314fd9b9533a68b6b66668"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/CF.png",
+      "bytes": 1567802,
+      "sha256": "3a56ec48eeaaf7774e8d3e8e5e88f6973bfa5652c610974c3eb2dbec6ec85944"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/meshes/NXP-HGD-CF.dae",
+      "bytes": 22399616,
+      "sha256": "7321861b113866996dfa79b403def5666d4b796810840d2c057c7b51fc315b0a"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/model.config",
+      "bytes": 773,
+      "sha256": "4856afbdeb52f19468f56ddaf4be57c04688f347b8cef2f609daacd2d014d437"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/model.sdf",
+      "bytes": 17361,
+      "sha256": "f0f04e4314eebde287eea2b0a962e31a9009f1d98470734a8137e888f78c5bf9"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/thumbnails/1.png",
+      "bytes": 32312,
+      "sha256": "54d00187e5a03766d5e7b73311bc6bfa22f51cd98b823a287b2da8c551c3175e"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/thumbnails/2.png",
+      "bytes": 52133,
+      "sha256": "cb6040c119b2a382030165a2a98ab9e9cf816557808a4549c323f2a3792cb8b4"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/thumbnails/3.png",
+      "bytes": 28374,
+      "sha256": "848f431c64b34df15c59ad874e6211695ac53ee932ad3509ebb7c6372fc67375"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/thumbnails/4.png",
+      "bytes": 27300,
+      "sha256": "86e1b7f31a49894caeef210f43248587d6454eba467a492f9bc147bf732ae666"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/assets/px4/models/x500_base/thumbnails/5.png",
+      "bytes": 23786,
+      "sha256": "b76053e95f7aff65c6f83533fb5635554292acb26fe51376c2d62e437e350e75"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/audit.py",
+      "bytes": 3005,
+      "sha256": "406f2a20ed7c9bb7daad997af7f5b9298c95d3ad968921f430e89b38eb4ec519"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/checks.py",
+      "bytes": 2090,
+      "sha256": "0928dfbf16c3c7376aae65eff471fc0ce0c9881682d97290aece04adfe925b36"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/flight.py",
+      "bytes": 16082,
+      "sha256": "dac6a933064b104974c17993e5073044394bb9f75b95ef4e56373d95eb47eb72"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/launch.py",
+      "bytes": 5848,
+      "sha256": "7a5fdef1aac016938e966a5f7dc07c8232ce74f7bda2945ee06a02c6bcfdbb77"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/physics.py",
+      "bytes": 1945,
+      "sha256": "5985950d8bfcfe534337adefec18f85436cb96e59ef72b4ad2abc1346be5f0b5"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/school.py",
+      "bytes": 1671,
+      "sha256": "1924d275533a8e543fd325f6dedb8811703df0747bc85a14a060770bc68d3332"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/telemetry.py",
+      "bytes": 1544,
+      "sha256": "e752cd44a925b48e88257bbe1a81f8822ab4e3b2d2516d75001c6cfc50f85ca1"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/videos.py",
+      "bytes": 7963,
+      "sha256": "2278233018e01c0e7d0f45d7d91c22d1671932b2417ba425dd850b4c8220e6c6"
+    },
+    {
+      "path": "FlightLab/Adapter/echo_flightlab/world.py",
+      "bytes": 6102,
+      "sha256": "9f9dbe2f2c3dd35f7b90981d32b4ee622ba9b91769cf44d060ca231a877f2c78"
+    },
+    {
+      "path": "FlightLab/ECHO-COMPATIBILITY.json",
+      "bytes": 578,
+      "sha256": "2f07184dbb31ef2b4d1a35c8d1f0b077b5dd6f26f48690537f5467dd16965d16"
+    },
+    {
+      "path": "FlightLab/MANIFEST.json",
+      "bytes": 31434,
+      "sha256": "f22aa393c7e220d68d175b20d0a0cab132ac1bba2597d4a166975964e804df0e"
+    },
+    {
+      "path": "FlightLab/NOTICE.md",
+      "bytes": 1215,
+      "sha256": "fbf317802b2c4fa52b3b1c73f29efe02c2de52db29de0367330aa3b0219877b7"
+    },
+    {
+      "path": "FlightLab/README.md",
+      "bytes": 6666,
+      "sha256": "d4e5fe86c57e2062c53f675a4783727d9e15c6c93ce8153c845d4bfbe70a4415"
+    },
+    {
+      "path": "FlightLab/RESULTS.md",
+      "bytes": 3157,
+      "sha256": "7b6b2d538c4f62f074ce4a36158858b80b707063ae273e6638a225cb9de456cb"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/audit.json",
+      "bytes": 215,
+      "sha256": "90e239321b07251a68861f87b4cf79700c07fb9ac0232f04054ef23699a1c723"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/configuration.json",
+      "bytes": 1885,
+      "sha256": "de01199ebadd0d06c23c9eae20d43cd42737b1c779a0f82c540b4cb574fed4e0"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/decisions.jsonl",
+      "bytes": 1336889,
+      "sha256": "56a91de253c20ed774f8cc0c25f1951443724fe313bf5dce859966362040824b"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/frames.jsonl",
+      "bytes": 10376282,
+      "sha256": "a24e73a0147e2be7182a52ea5e9d560ddb083cdfb15cdcf84b7a6d04778b3906"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/initial-memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/memory.wsp",
+      "bytes": 9652,
+      "sha256": "1339b47ce86197f127f018bc0158b7dd7a700ea753caa16ff082eeccab76ce7b"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/physical-audit.json",
+      "bytes": 362,
+      "sha256": "1a51d2a485bb560e461a9b622c0d5c4daa6ec559777fdd3427ac9e9afd8a7c0b"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/result.json",
+      "bytes": 386,
+      "sha256": "17dc2e92e8e70038a25261548959a2b457833087014d0b49071ec5cf48f11799"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/scenario/scene.json",
+      "bytes": 2840,
+      "sha256": "8aba8694150f289b6dec47e527a396850d0b1c5b34e2cc44ff2c12941415ba12"
+    },
+    {
+      "path": "FlightLab/Recordings/cache/sources/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/audit.json",
+      "bytes": 215,
+      "sha256": "5bc1b1d7ed04871434558c07413c6cc5ec1a4690be444f859ffdf6edebb326a6"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/configuration.json",
+      "bytes": 1881,
+      "sha256": "442a5bcb8fb3a10fa6185d130bfcba13bf5e3ee77246358f846e5e4f638b0576"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/decisions.jsonl",
+      "bytes": 1477807,
+      "sha256": "232d75223fe4d65ecb59081b0a175713ee503f97d957c11b0ee5bd0622e59ede"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/frames.jsonl",
+      "bytes": 13333829,
+      "sha256": "ceb9f6c2307301899937b70e826c78b01fe16a96edff3ac2aef5138140c50bd4"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/initial-memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/memory.wsp",
+      "bytes": 7354,
+      "sha256": "8a6f91743c9de69cc41577fdc26d00803ae4762184d3873a017985c8d9f915c1"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/physical-audit.json",
+      "bytes": 363,
+      "sha256": "9d5a1791b59a7599ace838047e77f7c8e490513e773ea73e40968b36561eb996"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/result.json",
+      "bytes": 387,
+      "sha256": "83320090684b47597fa21c045620f4bdbeb8cf994e99209b37bd309bd60947b8"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/scenario/scene.json",
+      "bytes": 3097,
+      "sha256": "03f3a4725cd09b87fda7dbedb9180c4486fc689f8189ca8d9df49ee6d4519f2a"
+    },
+    {
+      "path": "FlightLab/Recordings/changed/sources/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/audit.json",
+      "bytes": 215,
+      "sha256": "2508f9db0613af6f5dd88db1ace7e459e95a48f2bb3daf66fc721ac6eefa79bb"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/configuration.json",
+      "bytes": 1781,
+      "sha256": "02864143bff0e16a916cb95df76293d4dd8e7ec9f282c2c229fdf163c56203fd"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/decisions.jsonl",
+      "bytes": 1464492,
+      "sha256": "dcb2188461a847c0e748fd2f2e1bb066db24c7185e89424b8adcfb134418b38f"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/frames.jsonl",
+      "bytes": 11554694,
+      "sha256": "d4ad4b3336882a40fb81a979a4ffa69a5ca83be3e34a6195fe2fcbaf2e7560ec"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/initial-memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/memory.wsp",
+      "bytes": 8691,
+      "sha256": "8cf1c9efde924b1f02edefbe3b9890a1bef59d248e1729ce04434504f8da9a70"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/physical-audit.json",
+      "bytes": 362,
+      "sha256": "1b85a55382bebad68004fb622fe8f10d0552e673da002cbe32bf978aaa4b548f"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/result.json",
+      "bytes": 385,
+      "sha256": "333339ef5de9ecfdccfcb2dd06873817df4e630e5c38d521680588043a5fe199"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/scenario/scene.json",
+      "bytes": 2840,
+      "sha256": "8aba8694150f289b6dec47e527a396850d0b1c5b34e2cc44ff2c12941415ba12"
+    },
+    {
+      "path": "FlightLab/Recordings/empty/sources/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/audit.json",
+      "bytes": 215,
+      "sha256": "ae2252342b073de479eee50e9011c21986d9ba763524f9de9468d09c5b153968"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/configuration.json",
+      "bytes": 1780,
+      "sha256": "241386ff2e28d2e634d495b257312cc89a86975373e5a2ca7abc1de499a95ecd"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/decisions.jsonl",
+      "bytes": 1412886,
+      "sha256": "0294c3266864ff130066781bf7267a8070bc89b8d9b379d6b7a7b44080d926b0"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/frames.jsonl",
+      "bytes": 11469932,
+      "sha256": "dd83248843d4edb82cda4feed5a480761bc0f53a56938a568d28902c75066bb5"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/initial-memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/memory.wsp",
+      "bytes": 5248,
+      "sha256": "ce422b6e623107b6dd49373388a2e6ddf156ff5e1e37f74bc90b8c2ad4690cfa"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/physical-audit.json",
+      "bytes": 363,
+      "sha256": "40dad84fa080bdb247806e5e9eb92db76f125c742d83e9dca09ebebb6cee586d"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/result.json",
+      "bytes": 386,
+      "sha256": "519cd97e26db6237d6fbc666c03df726ef23897fa7f0880c73cd6b57d5fc6134"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/scenario/scene.json",
+      "bytes": 2840,
+      "sha256": "8aba8694150f289b6dec47e527a396850d0b1c5b34e2cc44ff2c12941415ba12"
+    },
+    {
+      "path": "FlightLab/Recordings/memx/sources/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Recordings/school/decisions.jsonl",
+      "bytes": 1203609,
+      "sha256": "e200c6784e060d99eb5d49c9ceae7370487e4fd9ef028d1cdc9f2ca66ed2f361"
+    },
+    {
+      "path": "FlightLab/Recordings/school/memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/school/reproduction.json",
+      "bytes": 490,
+      "sha256": "c241bc96f1727765bc2b2ea0d8e40d2672e1c6ff14e06f21a692a18ab7372387"
+    },
+    {
+      "path": "FlightLab/Recordings/school/result.json",
+      "bytes": 386,
+      "sha256": "2c2751e07f03519d686a0ce65e944f4c66929a00037ec8547ea63d1a26cd3095"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/audit.json",
+      "bytes": 217,
+      "sha256": "fb7738ada889fa7dde13e91c1fdeb9b2943313338ecbe0a8c169b0068ce40590"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/configuration.json",
+      "bytes": 1892,
+      "sha256": "a4f111c03906e68ef992b663dcbf7d3f7bfb5fcc52e96afadd08b087acda8bb3"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/decisions.jsonl",
+      "bytes": 171894,
+      "sha256": "a5aaf9a3319657b674d45cb3b465030b04c1b2a6023cb7938679d8323d45f171"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/frames.jsonl",
+      "bytes": 2056087,
+      "sha256": "a382dda3d783c039e9f19d80ef96d416ba660182a05832d6537d7655d3921c44"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/initial-memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/memory.wsp",
+      "bytes": 5056,
+      "sha256": "8dda59bcccf17ed388776d92a218e2f1b92dd39bf241f155a2d2a9c3e3e760fd"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/physical-audit.json",
+      "bytes": 366,
+      "sha256": "3a4c3c1393d59d07ae15d2b30af76bb4c81e56e1dd5f7901cf8101258b100fda"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/result.json",
+      "bytes": 385,
+      "sha256": "f8bfb6af699dced8053b531126e53a870335311688ff12f5e5b2fe51f805207b"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/scenario/scene.json",
+      "bytes": 2840,
+      "sha256": "8aba8694150f289b6dec47e527a396850d0b1c5b34e2cc44ff2c12941415ba12"
+    },
+    {
+      "path": "FlightLab/Recordings/sensor-loss/sources/core.py",
+      "bytes": 10216,
+      "sha256": "b0a25052efbad5cfb6e137cbe885c003e596e4ab7a1340085e9681dfa82c94e7"
+    },
+    {
+      "path": "FlightLab/Tests/test_core.py",
+      "bytes": 5089,
+      "sha256": "457a9e5a30e54df30cfc22d480d74b62f162c1642c4c3eacf44db94a41022215"
+    },
+    {
+      "path": "FlightLab/Tests/test_physics.py",
+      "bytes": 747,
+      "sha256": "e638f9e22cbd6d1138ffe2b6930b3dd4422f5a5e39fcd162c05b7082d70c5841"
+    },
+    {
+      "path": "FlightLab/Tests/test_telemetry.py",
+      "bytes": 1839,
+      "sha256": "8864f76b2535615ab982e81287f998d6f820f83bddcad6615deedbfa887c74f5"
+    },
+    {
+      "path": "FlightLab/Tests/test_videos.py",
+      "bytes": 1864,
+      "sha256": "5dbca535fb6e63a679df6daace269e37ffd1b7363841fd0f46d48900565836a9"
+    },
+    {
+      "path": "FlightLab/Tests/test_world.py",
+      "bytes": 1697,
+      "sha256": "d9535c59021bade8289aaa1f404f86a6f41975fd65ab2c1823895374832537ca"
+    },
+    {
+      "path": "FlightLab/Tools/build.sh",
+      "bytes": 779,
+      "sha256": "4d35e38cb0f5f380f7a6d29f8d10348d308619c4558c302eef13a67047869804"
+    },
+    {
+      "path": "FlightLab/Tools/flightlab.py",
+      "bytes": 3527,
+      "sha256": "766877338b6073c3c7d3bde10ff4b88de68e875f2ec1a5911613907b930cbcf7"
+    },
+    {
+      "path": "FlightLab/Tools/run.sh",
+      "bytes": 192,
+      "sha256": "f728f4b8363c5f159ac0a9724e92107623a60c568a8b861fa72f364b78d886aa"
+    },
+    {
+      "path": "FlightLab/Tools/service.sh",
+      "bytes": 683,
+      "sha256": "ad0327e07614bcf7c3774d9947b0c377c9c6021b1918895066ed00a781a6b426"
+    },
+    {
+      "path": "FlightLab/Tools/test_portable.py",
+      "bytes": 1431,
+      "sha256": "6192c7d590d0db9dc3680cd020b9119ce4f639ce43b11125f127fe18d001d826"
+    },
+    {
+      "path": "FlightLab/Tools/view.sh",
+      "bytes": 604,
+      "sha256": "efc384d5d2e6cff3828975471f559ab7e57c849089a8e06259625e3fb6e6ad88"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Editor.meta",
+      "bytes": 172,
+      "sha256": "ba6a15c7d67952dee1797f23e1582ba6d9b5fd244d2e161df347391074f55f58"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Editor/FlightBuild.cs",
+      "bytes": 2993,
+      "sha256": "36d6e2f20cd718f5ba3011c03a31ce231f94cfdc1e159c0524c6d4e14363f402"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Editor/FlightBuild.cs.meta",
+      "bytes": 59,
+      "sha256": "588879d1fc7d9a6cbdb6447a19edbe92c4aeabae23d3ae5f1bd7af1ad82302a7"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Resources.meta",
+      "bytes": 172,
+      "sha256": "7d8668f78abee12f736b397798b6152dd16e73653734b63409e05659b54b93dc"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Resources/FlightLine.mat",
+      "bytes": 1134,
+      "sha256": "482ff6516ac6d5d131fe86c8e595e45fa2c301b0ae99e5e1d733c09de69e4649"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Resources/FlightLine.mat.meta",
+      "bytes": 188,
+      "sha256": "c1e6d3e2e97db4c508c01bf5e98d2f3635091062e5497148c335f95424055bba"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Resources/FlightSurface.mat",
+      "bytes": 2207,
+      "sha256": "4a69433de21f35763fbdbbd5f3a978b76789fd8f5b26cad93d457c64c2238eee"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Resources/FlightSurface.mat.meta",
+      "bytes": 188,
+      "sha256": "e1712123f25ae0043e0821106c05c769664234d6d9f461712a76e3c3ed2a9228"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scenes.meta",
+      "bytes": 172,
+      "sha256": "c982eb427e6dcbb91df83b4240bae0f81cf37a1680dbccf815e65751df82263e"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scenes/FlightLab.unity",
+      "bytes": 4786,
+      "sha256": "fbf89b0d79284ebbd7f0c66415a31ffdef8e1f8bdab5d896ad8cd66c9326e2bd"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scenes/FlightLab.unity.meta",
+      "bytes": 155,
+      "sha256": "0fa6714c56309da145e48ebfccef36a88259d30ad8f9ce531a19ba9b045b773f"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scripts.meta",
+      "bytes": 172,
+      "sha256": "abdc4491da4d2dfd9f21d3acd3e5bc4460649a5dd7d423a0771a4cf7d356d663"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scripts/FlightData.cs",
+      "bytes": 1968,
+      "sha256": "8675a7dc0c800bd7a7b33c6f4aa0e66ad397ea7cb5c1c68ea92935da1f52ee56"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scripts/FlightData.cs.meta",
+      "bytes": 59,
+      "sha256": "522bc691fbe25ba7b95a7e06eabdbecea3f08affac7a3f72159eb861b8525015"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scripts/FlightViewer.cs",
+      "bytes": 21161,
+      "sha256": "ae1a04eecaa35985bbd886a54f4f5b1d4ec1f69861a45dc97c995a044d77ba35"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/Scripts/FlightViewer.cs.meta",
+      "bytes": 59,
+      "sha256": "92269ff7fb6ce6e5b2d29168e6a80577926c1c2b53c3d914d705487a2be17b0a"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets.meta",
+      "bytes": 172,
+      "sha256": "1440faccd488211f4fbf055762f1441fd9b910e39f3e047b2327fd090416b836"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo.meta",
+      "bytes": 172,
+      "sha256": "c5dda48536d38d4efed3847436e55870583ef6ad47d6c1f7bd7f8237f300a17a"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/frames.jsonl",
+      "bytes": 11469932,
+      "sha256": "dd83248843d4edb82cda4feed5a480761bc0f53a56938a568d28902c75066bb5"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/frames.jsonl.meta",
+      "bytes": 155,
+      "sha256": "d45946f6a45a6ee507f2278bc4cba7906772278b6a017e4aaa1b0f3244845af6"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/provenance.json",
+      "bytes": 674,
+      "sha256": "22dcadacfa94edd93ee81d8a2c27f37bea506934a76070ded66b831583632ca6"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/provenance.json.meta",
+      "bytes": 155,
+      "sha256": "e6ef865c7c35799aa0607f92dbcb2e522967b7c274be81e4be9a3920648192c8"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/scenario.meta",
+      "bytes": 172,
+      "sha256": "f240df7a23e06bc6262a6d8c68b7857c9d5a81c6cfcdc69f22c86e448a9a7294"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/scenario/scene.json",
+      "bytes": 2840,
+      "sha256": "8aba8694150f289b6dec47e527a396850d0b1c5b34e2cc44ff2c12941415ba12"
+    },
+    {
+      "path": "FlightLab/Unity/Assets/StreamingAssets/Demo/scenario/scene.json.meta",
+      "bytes": 155,
+      "sha256": "5e9ae514c376882a989d7b1ee043d61b76fa9a090c46167500e3ac71428bd4a1"
+    },
+    {
+      "path": "FlightLab/Unity/Packages/manifest.json",
+      "bytes": 295,
+      "sha256": "7a486c36995c4abb6d9f16c8c1ae9dddaf08fec1df0bfa64ccf16465c9b5950e"
+    },
+    {
+      "path": "FlightLab/Unity/Packages/packages-lock.json",
+      "bytes": 931,
+      "sha256": "a5417030653feca94fd2bc0c6faab6cf31d5dce1dcf59f042cbccee2b87032ec"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/AudioManager.asset",
+      "bytes": 443,
+      "sha256": "9a554916fe138ebcad8443ee9b079363ecc72795c39d0e80f5f7ca99e2c6f5e7"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/ClusterInputManager.asset",
+      "bytes": 114,
+      "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/DynamicsManager.asset",
+      "bytes": 1553,
+      "sha256": "f27512e38f80c091df2dd163ece09f86f8fe67395659af0a0ca873a88fd1c6a7"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/EditorBuildSettings.asset",
+      "bytes": 190,
+      "sha256": "41bc588f6ecc03944687d496f024917cabb061e21c148a6471b74581df14f908"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/EditorSettings.asset",
+      "bytes": 1603,
+      "sha256": "06753c21648950aee0013b70f79a9035ac52aec6204d44cc2ac55a84034ad9ca"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/GraphicsSettings.asset",
+      "bytes": 2372,
+      "sha256": "fbf0856b7693639a5388ae693a455baaad354c1d8dc548601de3dc61c4ab12c3"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/InputManager.asset",
+      "bytes": 5816,
+      "sha256": "d0f454ddb880912abcae92e3e12957a7446786ba89e24937e019ff3bbc0d4300"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/MemorySettings.asset",
+      "bytes": 1226,
+      "sha256": "2c9e2339b4fa50f4782840d37dde021508d411b99278614cba335d206edb1738"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/MultiplayerManager.asset",
+      "bytes": 157,
+      "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/NavMeshAreas.asset",
+      "bytes": 1361,
+      "sha256": "7ebbf8f53b8033104e1878b95ca07a28d0954092d81c220f14196a42f651e658"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/Physics2DSettings.asset",
+      "bytes": 1820,
+      "sha256": "9b78fdd0bac0f486c052ca65ddc0e5022d322b12874931a49456d407c5bbfc00"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/PresetManager.asset",
+      "bytes": 146,
+      "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/ProjectSettings.asset",
+      "bytes": 20192,
+      "sha256": "7579a30bcf67412cfb274be2b50c76651d5f5d391bf211c9c514d8644c710ab1"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/ProjectVersion.txt",
+      "bytes": 85,
+      "sha256": "a48c8dd72f418e20b17a48f6b93b98e87a10d4c448befb6edeba79810c30fdab"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/QualitySettings.asset",
+      "bytes": 9658,
+      "sha256": "bbc1846ac2fa9fdaa62fb1d1425c30ae0a30a98972eb158e8f0bcd9f862f70c4"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/SceneTemplateSettings.json",
+      "bytes": 3535,
+      "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/TagManager.asset",
+      "bytes": 411,
+      "sha256": "da4b5eefc927f8b91bcf9e56a186d2b852f49d9cbe91d466638d26c79d6a83ce"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/TimeManager.asset",
+      "bytes": 305,
+      "sha256": "3396f52fdc16d445024e01d7a2d99db6f0a37569d1d73c0302e9ffb857d90287"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/UnityConnectSettings.asset",
+      "bytes": 1063,
+      "sha256": "11251dae0356b6f43dd2c67bb511f6b7ecda4e5de425186bba3297e6f3dc1c6f"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/VFXManager.asset",
+      "bytes": 492,
+      "sha256": "9378043da38a17f2198d52a10c17789161d30e3285a387ca3687a71551c32448"
+    },
+    {
+      "path": "FlightLab/Unity/ProjectSettings/VersionControlSettings.asset",
+      "bytes": 172,
+      "sha256": "e199cdfa6a8f2bf33cfd47e549198f13e3eb2a5099e908fdb4e0f14d939ccc6b"
+    },
+    {
       "path": "LICENSE",
       "bytes": 37697,
       "sha256": "cfe2b752e88ea9e1ea2d7090ed3b975ce7012c371500c50c84587ece14db5bf7"
+    },
+    {
+      "path": "Media/FlightLab/01-memoria.mp4",
+      "bytes": 8872152,
+      "sha256": "1b82912bf3e1a0651f1c02e1219243c369206f85a481ab39c764c3d6a7f51a63"
+    },
+    {
+      "path": "Media/FlightLab/02-sin-memoria.mp4",
+      "bytes": 8786645,
+      "sha256": "38ea355c3a0054b33ef3b825467349f1588022731e7cd9675d2e24076b8437b1"
+    },
+    {
+      "path": "Media/FlightLab/03-cache.mp4",
+      "bytes": 8567972,
+      "sha256": "4d7381b9fe1e5b47805482ea381774a0d87f4813cdc4b41d75ed8d63e4fb9da0"
+    },
+    {
+      "path": "Media/FlightLab/04-obstaculo-nuevo.mp4",
+      "bytes": 8897428,
+      "sha256": "7cc5fe22a6005ac7ee4787c24dd1ed284a0e0daee76d1e1c3cbbc548dcf29bae"
+    },
+    {
+      "path": "Media/FlightLab/05-perdida-lidar.mp4",
+      "bytes": 6300433,
+      "sha256": "dcffe0d0c5a508e4a1a27777b87870ebb4f976972c5bc9ee86580ff97e7fa3da"
+    },
+    {
+      "path": "Media/FlightLab/COMPLETE.json",
+      "bytes": 349,
+      "sha256": "0be31b0430b68ca38dc717c03f57aad319924fc6ed102d1f3b6418aa794853d2"
+    },
+    {
+      "path": "Media/FlightLab/ECHO-FLIGHTLAB-DEMO.mp4",
+      "bytes": 41422969,
+      "sha256": "35c59b9b75dbe04fec7f7aad1abb344a2de44281b3bd4fd11539b495ca129efe"
+    },
+    {
+      "path": "Media/FlightLab/README.md",
+      "bytes": 1283,
+      "sha256": "d04cb71d30ee25720a357af2346b0a60bc64064f8462ad188b1ac7287bc2e00d"
+    },
+    {
+      "path": "Media/FlightLab/manifest.json",
+      "bytes": 3681,
+      "sha256": "7123796b4ba752e9c964e615ced9b54e7d6e25ce3836c46210a90835a4d524aa"
+    },
+    {
+      "path": "Media/FlightLab/preview.gif",
+      "bytes": 4603070,
+      "sha256": "92a2310afaab5680dcdf321907c10ad42af14aead4f6dc8c2fa7effa594a0a7a"
+    },
+    {
+      "path": "Media/FlightLab/preview.json",
+      "bytes": 403,
+      "sha256": "4f1415485c747478be6cb42779c129c161327793ee0ae8654a986550c20602ae"
+    },
+    {
+      "path": "Media/FlightLab/unity-follow.png",
+      "bytes": 414598,
+      "sha256": "432ab9ae02f9695deab24e39f4393c3ff65922c0bd8e859e4c74d4f8b65306ba"
+    },
+    {
+      "path": "Media/FlightLab/unity-live.png",
+      "bytes": 434299,
+      "sha256": "26d5a0b242b8c1b865a1543844957823211b85ee5e6dfbcd4988ed1d761cb2c0"
+    },
+    {
+      "path": "Media/FlightLab/unity-observed.png",
+      "bytes": 158847,
+      "sha256": "f65a987004a77523c4d4970964e4a5d432b2747540b9437310605f8d95e5588b"
+    },
+    {
+      "path": "Media/FlightLab/unity-overview.png",
+      "bytes": 206708,
+      "sha256": "fd25d57e325f98eb1a1ed166089a2c18089569965f6072146d176d8ae66c354d"
     },
     {
       "path": "Media/PROVENANCE-20261012.json",
@@ -9031,6 +9892,11 @@
     },
     {
       "path": "README.md",
+      "bytes": 6268,
+      "sha256": "c4686b27bdaaa1aa0c55a75880c749f47a05c62e32a6f9bc40e7433f950f92af"
+    },
+    {
+      "path": "STATION.md",
       "bytes": 7754,
       "sha256": "0aaf22957c47ef2d2c2a1ea5ca203cd0ea7a5d43d663f3b18038657ee4a74de4"
     },
@@ -9969,5 +10835,6 @@
       "bytes": 4555,
       "sha256": "9cc10ecb3170ed8146366f6c28281e4a14b85fe91e367549bf9973b02d841305"
     }
-  ]
+  ],
+  "echoaiFlightLabDependency": "navywakura/echoai@f3f0cb7b28bdcb4be2c6983969e299a9aceac7d2"
 }
